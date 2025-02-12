@@ -1,3 +1,7 @@
+
+html{
+  scroll-behavior: smooth
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +9,7 @@
 :root {
   /* Base Colors */
   --Dark: #000000;
-  --primary: #6c52e8;
+  --primary: #A2D148;
   --secondary: #fbfbfb;
   --ternary: #05f60d;
   --primary-dark: #a3cc0f;
@@ -24,7 +28,7 @@
   /* Default Font Sizes */
   --font-size-body: 20px;
   --font-size-h1: 2.5rem;
-  --font-size-h2: 75px;
+  --font-size-h2: 50px;
   --font-size-h3: 1.75rem;
   --font-size-p: 18px;
 
@@ -38,16 +42,17 @@
 @media (max-width: 1200px) {
   :root {
     --font-size-h1: 2.25rem;
-    --font-size-h2: 1.875rem;
+    --font-size-h2: 54px;
     --font-size-h3: 1.5rem;
     --font-size-body: 20px;
+    --font-line-height-h2: 65px;
   }
 }
 
 @media (max-width: 992px) {
   :root {
     --font-size-h1: 2rem;
-    --font-size-h2: 1.75rem;
+    --font-size-h2: 50px;
     --font-size-h3: 1.4rem;
     --font-size-body: 20px;
   }
@@ -56,18 +61,21 @@
 @media (max-width: 768px) {
   :root {
     --font-size-h1: 1.75rem;
-    --font-size-h2: 1.5rem;
+    --font-size-h2: 42px;
     --font-size-h3: 1.25rem;
     --font-size-body: 20px;
+    --font-line-height-h2: 55px;
   }
 }
 
 @media (max-width: 576px) {
   :root {
     --font-size-h1: 1.5rem;
-    --font-size-h2: 1.25rem;
+    --font-size-h2: 32px;
     --font-size-h3: 1.125rem;
     --font-size-body: 20px;
+    --font-line-height-h2: 42px;
+
   }
 }
 
@@ -84,7 +92,7 @@ body {
 
 h1 {
   font-size: var(--font-size-h1);
-  font-family: var(--font-secondary);
+  font-family: var( --font-mont-heavy);
 }
 
 h2 {
@@ -147,6 +155,17 @@ p {
 
 
 
+        
+    @keyframes fly {
+      0% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-20px) translateX(10px); }
+      100% { transform: translateY(0) translateX(0); }
+    }
+    .animate-fly {
+      animation: fly 3s infinite ease-in-out;
+    }
+ 
+         
 
 
 

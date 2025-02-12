@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         primary: "var(--primary)",
+        Dark:"var(--Dark)",
         secondary: "var(--secondary)",
         ternary: "var(--ternary)",
         "primary-dark": "var(--primary-dark)", // Correctly maps to the CSS variable
@@ -18,7 +19,7 @@ export default {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
         // heading: ['Mont Heavy DEMO', 'sans-serif'],
-        heading: ["var(--font-mont-heavy)", "sans-serif"], // Uses Custom Font
+        Mont: ["var(--font-mont-heavy)", "sans-serif"], // Uses Custom Font
       },  
       container: {
         center: true,
@@ -34,7 +35,7 @@ export default {
           sm: "2rem", // Padding for small devices
           lg: "4rem", // Padding for large devices
           xl: "5rem", // Padding for extra large devices
-          '2xl': "6rem", // Padding for larger screens
+          '2xl': "2rem", // Padding for larger screens
         },
       },
     },

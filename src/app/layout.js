@@ -1,12 +1,14 @@
 import { Poppins } from "next/font/google";
 import "./StyleCss/globals.css";
 
+import Header from "./Components/UIUX/Header"
+
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "600", "700"],
 });
-const montHeavy = {
+const Mont = {
   variable: "--font-mont-heavy",
   className: "font-heading",
 };
@@ -20,8 +22,11 @@ export default function RootLayout({ children }) {
   //   <html lang="en" className={poppins.variable}>
   //   <body className="antialiased">{children}</body>
   // </html>
-  <html lang="en" className={`${poppins.variable} ${montHeavy.variable}`}>
-  <body className="antialiased">{children}</body>
+  <html lang="en" className={`${poppins.variable} ${Mont.variable}`}>
+  <body className="antialiased">
+    <Header/>
+    {children}
+    </body>
 </html>
   );
 }
