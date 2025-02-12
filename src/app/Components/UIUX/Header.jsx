@@ -67,12 +67,12 @@ export default function Navbar() {
 
             {/* Mobile Menu Button (Toggle) */}
             <div
-              className="lg:hidden cursor-pointer flex flex-col gap-1 transition-transform hover:scale-110"
+              className="lg:hidden cursor-pointer flex flex-col gap-[5px] transition-transform hover:scale-110"
               onClick={() => setIsOpen(!isOpen)} // Toggle menu
             >
-              <span className="w-8 h-1 bg-gray-700"></span>
-              <span className="w-8 h-1 bg-gray-700"></span>
-              <span className="w-8 h-1 bg-gray-700"></span>
+              <span className="w-8 h-[2px] bg-primary"></span>
+              <span className="w-8 h-[2px]  bg-primary"></span>
+              <span className="w-8 h-[2px]  bg-primary"></span>
             </div>
           </header>
         </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center z-50">
+        <nav className="fixed inset-0 bg-[#000000c4] backdrop-blur-md flex flex-col items-center justify-center z-50">
           {/* Close Button (Toggle Off) */}
           <button
             onClick={() => setIsOpen(false)}
@@ -111,8 +111,8 @@ export default function Navbar() {
                     <div
                       className={`block text-white text-xl font-medium py-3 px-8 w-[90%] mx-auto border border-gray-500 rounded-lg transition-all duration-300 ${
                         pathname === item.url
-                          ? "bg-gray-200 text-black shadow-md"
-                          : "hover:bg-gray-600"
+                          ? "bg-primary text-black shadow-md"
+                          : "hover:bg-white hover:text-black"
                       }`}
                     >
                       {item.name}
@@ -126,7 +126,7 @@ export default function Navbar() {
             <div className="mt-6">
               <Link
                 href="tel:584584758"
-                className="flex items-center gap-3 border border-green-500 text-green-500 px-6 py-3 rounded-lg hover:bg-green-500 hover:text-black transition-all duration-300"
+                className="flex items-center gap-3 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-black transition-all duration-300"
               >
                 <Image src={callicon} alt="Call Icon" width={30} height={30} />
                 <span className="text-lg">Let’s Talk</span>
