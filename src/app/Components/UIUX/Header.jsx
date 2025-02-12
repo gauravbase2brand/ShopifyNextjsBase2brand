@@ -19,8 +19,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="absolute w-full h-[100px] bg-gradient-to-b from-black via-[#121212] to-transparent z-[1000]">
-        <div className="container mx-auto absolute w-full left-0 right-0">
+      <div className="absolute w-full h-[100px] bg-gradient-to-b from-black via-[#121212] to-transparent z-[1000] ">
+        <div className="container mx-aut0 fixed w-full left-0 right-0">
           <header className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link href="/" className="cursor-pointer">
@@ -70,10 +70,32 @@ export default function Navbar() {
               className="lg:hidden cursor-pointer flex flex-col gap-[5px] transition-transform hover:scale-110"
               onClick={() => setIsOpen(!isOpen)} // Toggle menu
             >
-              <span className="w-8 h-[2px] bg-primary"></span>
-              <span className="w-8 h-[2px]  bg-primary"></span>
-              <span className="w-8 h-[2px]  bg-primary"></span>
+              {/* Show hamburger icon when menu is closed */}
+              {!isOpen ? (
+                <>
+                  <span className="w-8 h-[2px] bg-primary"></span>
+                  <span className="w-8 h-[2px] bg-primary"></span>
+                  <span className="w-8 h-[2px] bg-primary"></span>
+                </>
+              ) : (
+                /* Show cross icon when menu is open */
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 text-white hover:text-gray-300 transition-all duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
             </div>
+           
           </header>
         </div>
       </div>
@@ -82,7 +104,7 @@ export default function Navbar() {
       {isOpen && (
         <nav className="fixed inset-0 bg-[#000000c4] backdrop-blur-md flex flex-col items-center justify-center z-50">
           {/* Close Button (Toggle Off) */}
-          <button
+          {/* <button
             onClick={() => setIsOpen(false)}
             className="absolute top-5 right-5 hover:rotate-180 transition-all duration-300"
           >
@@ -100,7 +122,7 @@ export default function Navbar() {
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
-          </button>
+          </button> */}
 
           {/* Mobile Menu Links */}
           <div className="absolute top-20 w-full flex flex-col items-center">
