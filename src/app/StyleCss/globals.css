@@ -137,7 +137,16 @@ p {
 
 
 
+.text-shadow {
+  font-size: 80px; /* Adjust according to design */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3); /* Light text color */
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); /* Bottom subtle shadow */
+ 
+  transform: rotate(180deg); /* Flips text properly */
 
+}
 
 @font-face {
   font-family: "Mont Heavy DEMO";
