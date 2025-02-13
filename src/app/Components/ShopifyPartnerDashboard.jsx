@@ -54,7 +54,7 @@ const ShopifyPartnerDashboard = () => {
                 />
               </div>
             </div>
-            <div className="absolute lg:left-[24%] left-[30%] md:top-[30%] top-[30px] z-50">
+            <div className="absolute lg:left-[24%] left-[27%] md:top-[30%] top-[30px] z-50">
               <Image
                 src={ShopifyCertifiedPartner}
                 alt="Shopify Partner Dashboard Illustration"
