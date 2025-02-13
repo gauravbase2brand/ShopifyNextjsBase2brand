@@ -40,18 +40,19 @@ const ShopifyPartnerDashboard = () => {
 
             <div className="lg:hidden block">
               <div className="flex flex-col  ">
+              <Image
+                  src={Partnermobile}
+                  alt="Shopify Partner Dashboard Illustration"
+                  className=""
+                  data-aos="fade-up"
+                />
                 <Image
                   src={Directorymobile}
                   alt="Shopify Partner Dashboard Illustration"
                   className=""
                   data-aos="fade-up"
                 />
-                <Image
-                  src={Partnermobile}
-                  alt="Shopify Partner Dashboard Illustration"
-                  className=""
-                  data-aos="fade-up"
-                />
+            
               </div>
             </div>
             <div className="absolute lg:left-[24%] left-[27%] md:top-[30%] top-[30px] z-50">
