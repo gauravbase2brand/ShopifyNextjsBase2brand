@@ -71,10 +71,11 @@ html{
 @media (max-width: 576px) {
   :root {
     --font-size-h1: 1.5rem;
-    --font-size-h2: 32px;
+    --font-size-h2: 26px;
     --font-size-h3: 1.125rem;
     --font-size-body: 20px;
     --font-line-height-h2: 42px;
+    --font-size-p: 16px;
 
   }
 }
