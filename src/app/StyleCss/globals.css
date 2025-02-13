@@ -112,7 +112,7 @@ p {
   font-size: var(--font-size-p);
   line-height: var(--para-line-height);
   color: var(--secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 

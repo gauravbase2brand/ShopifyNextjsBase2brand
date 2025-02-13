@@ -9,7 +9,7 @@ const Heading = ({ Heading1, Heading2, Paragraph, paragraphWidth }) => {
   }, []);
     return (
         <>
-        <div className="py-6">
+        <div className="xl:py-10 lg:py-6 py-4">
         <div className="container">
             {/* Heading with dynamic width using Tailwind CSS breakpoints */}
             <h2 className={`text-center w-full mx-auto`} data-aos="zoom-in">
