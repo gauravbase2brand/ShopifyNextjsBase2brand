@@ -8,6 +8,7 @@ const Heading = ({ Heading1, Heading2, Paragraph, paragraphWidth }) => {
     AOS.init({ duration: 1000 });
   }, []);
     return (
+        
         <>
         <div className="xl:py-10 lg:py-6 py-4">
         <div className="container">
