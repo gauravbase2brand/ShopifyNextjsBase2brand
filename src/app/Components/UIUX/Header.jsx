@@ -60,7 +60,12 @@ export default function Navbar() {
               <div className="flex items-center space-x-4">
                 <span className="text-lg text-white">Let’s Talk</span>
                 <Link href="tel:584584758">
-                  <Image src={callicon} alt="Call Icon" width={35} height={35} />
+                  <Image
+                    src={callicon}
+                    alt="Call Icon"
+                    width={35}
+                    height={35}
+                  />
                 </Link>
               </div>
             </div>
@@ -95,7 +100,6 @@ export default function Navbar() {
                 </svg>
               )}
             </div>
-           
           </header>
         </div>
       </div>
@@ -103,26 +107,7 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isOpen && (
         <nav className="fixed inset-0 bg-[#000000c4] backdrop-blur-md flex flex-col items-center justify-center z-50">
-          {/* Close Button (Toggle Off) */}
-          {/* <button
-            onClick={() => setIsOpen(false)}
-            className="absolute top-5 right-5 hover:rotate-180 transition-all duration-300"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-white hover:text-gray-300 transition-all duration-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button> */}
+        
 
           {/* Mobile Menu Links */}
           <div className="absolute top-20 w-full flex flex-col items-center">

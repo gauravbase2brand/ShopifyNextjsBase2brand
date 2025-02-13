@@ -30,7 +30,7 @@ const Banner = () => {
       <div className="relative z-10">
         <h1 className="md:text-[100px] xl:text-[130px] text-[80px]   font-bold leading-tight ">
           We are <br />
-          <span className="relative inline-block px-4 py-2 bg-primary text-black text-[80px] xl:text-[170px] md:text-[150px] leading-[90px] md:leading-[150px] -rotate-2">
+          <span className="relative inline-block px-4 py-2 bg-primary text-black text-[70px] xl:text-[170px] md:text-[150px] leading-[80px] md:leading-[150px] -rotate-2">
             SHOPIFY
           </span>
           <br />
