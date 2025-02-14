@@ -9,7 +9,7 @@ const Heading = ({ Heading1, Heading2, Paragraph, paragraphWidth }) => {
   }, []);
 
   return (
-    <div className="xl:py-10 lg:py-6 py-4" data-aos="zoom-in">
+    <div className="xl:py-6 lg:py-6 py-4" data-aos="zoom-in">
       <div className="container">
         {/* Heading */}
         <h2 className="text-center w-full mx-auto">
