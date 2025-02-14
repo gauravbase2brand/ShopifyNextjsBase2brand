@@ -7,6 +7,12 @@ import Heading from "./Components/UIUX/Heading";
 import fiestsliderimage from "../../public/assets/fiestsliderimage.webp";
 import TrustedLeadingBrands from "./Components/TrustedLeadingBrands";
 
+import cardimage from "../../public/assets/cardimage.webp"
+import cardimage3 from "../../public/assets/cardimage3.webp"
+import cardimage4 from "../../public/assets/cardimage4.webp"
+import cardimage5 from "../../public/assets/cardimage5.webp"
+import cardimage6 from "../../public/assets/cardimage6.webp"
+
 const page = () => {
   return (
     <>
@@ -31,6 +37,7 @@ const page = () => {
       <div className="relative w-full">
       <div className=" sticky top-0   ">
         <ServicesWeProvide
+        phase="  Phase | 01"
           TitleERP="ERP Software"
           Cardpara1="Enterprise resource planning refers to the software and
                 systems that an enterprise uses to manage core business
@@ -46,64 +53,67 @@ const page = () => {
 
       <div className=" sticky top-0   ">
         <ServicesWeProvide
-          TitleERP="ERP Solutions"
-          Cardpara1="Enterprise resource planning refers to the software and
-                systems that an enterprise uses to manage core business
-                processes. It collects data across departments, such as supply
-                chain, sales, human resources, procurement, accounting, and
-                project management."
-          CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
+          phase="  Phase | 02"
+          TitleERP="Shopify API Integration"
+          Cardpara1="Shopify API integration is key for businesses looking to streamline e-commerce operations. It connects Shopify with external systems, enabling smooth data synchronization, efficient workflows, and personalized customer experiences. This powerful integration enhances operational efficiency and helps businesses improve their online presence across platforms."
+          CardPara2=""
           CardButton="Explore"
           CardLink="/about"
-          CardImage={fiestsliderimage}
+          CardImage={cardimage}
           Cardbg="#5C772A"
         />
       </div>
 
       <div className=" sticky top-0   ">
         <ServicesWeProvide
-          TitleERP="ERP System"
-          Cardpara1="Enterprise resource planning refers to the software and
-                systems that an enterprise uses to manage core business
-                processes. It collects data across departments, such as supply
-                chain, sales, human resources, procurement, accounting, and
-                project management."
-          CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
+          phase="  Phase | 03"
+          TitleERP="Custom apps & Integrations"
+          Cardpara1="Custom apps and integrations let you add unique features to your Shopify store. Built specifically for your store, they allow customization of your admin, access to store data via Shopify APIs, and integration with other platforms using the Storefront API."
+          CardPara2=""
           CardButton="Get Started"
           CardLink="/about"
-          CardImage={fiestsliderimage}
+          CardImage={cardimage3}
         
         />
       </div>
 
       <div className=" sticky top-0  ">
         <ServicesWeProvide
-          TitleERP="ERP System"
-          Cardpara1="Enterprise resource planning refers to the software and
-                systems that an enterprise uses to manage core business
-                processes. It collects data across departments, such as supply
-                chain, sales, human resources, procurement, accounting, and
-                project management."
-          CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
+          phase="  Phase | 04"
+          TitleERP="CRM"
+          Cardpara1="This phase helps you scale your solutions, uncover new
+growth areas, and stay ahead in a competitive market."
+          CardPara2=""
           CardButton="Get Started"
           CardLink="/about"
-          CardImage={fiestsliderimage}
+          CardImage={cardimage4}
              Cardbg="#5C772A"
         />
       </div>
 
       <div className=" sticky top-0 ">
         <ServicesWeProvide
-          TitleERP="ERP System"
-          Cardpara1="Enterprise resource planning refers to the software and
-                systems that an enterprise uses to manage core business
-                processes. It collects data across departments, such as supply
-                chain, sales, human resources, procurement, accounting, and
-                project management."
-          CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
+          phase="  Phase | 05"
+          TitleERP="POS"
+          Cardpara1="This phase helps you scale your solutions, uncover new
+growth areas, and stay ahead in a competitive market."
+          CardPara2=""
           CardButton="Get Started"
           CardLink="/about"
-          CardImage={fiestsliderimage}
+          CardImage={cardimage5}
+        />
+      </div>
+      <div className=" sticky top-0 ">
+        <ServicesWeProvide
+          phase="  Phase | 06"
+          TitleERP="Our Products"
+          Cardpara1="This phase helps you scale your solutions, uncover new
+growth areas, and stay ahead in a competitive market."
+          CardPara2=""
+          CardButton="Get Started"
+          CardLink="/about"
+          CardImage={cardimage6}
+            Cardbg="#5C772A"
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
 import Button from "./UIUX/Button";
-const ERPContainer = ({
+const ServicesWeProvide = ({
   TitleERP,
   Cardpara1,
   CardPara2,
@@ -12,6 +12,7 @@ const ERPContainer = ({
   CardLink,
   CardImage,
   Cardbg,
+  phase,
 }) => {
   const [loading, setLoading] = useState(true);
 
@@ -29,6 +30,7 @@ const ERPContainer = ({
       CardLink={CardLink}
       CardImage={CardImage}
       Cardbg={Cardbg}
+      phase={phase}
     />
   );
 };
@@ -41,6 +43,7 @@ const ERPSection = ({
   CardLink,
   CardImage,
   Cardbg,
+  phase
 }) => {
   return (
     <>
@@ -48,7 +51,7 @@ const ERPSection = ({
         <section className="grid grid-cols-1 md:grid-cols-2 items-stretch text-white my-4 gap-3 bg-Dark rounded-[20px]">
           {/* Left Content */}
           <div
-            className="space-y-4 rounded-[20px] p-4 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] border-[#96BF47] bg-Dark"
+            className="space-y-7 rounded-[20px] p-4 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] border-[#96BF47] bg-Dark"
             // style={{
             //   background:
             //     "radial-gradient(circle, #4d8f2d54 3%, #96dd1963 100%)",
@@ -66,7 +69,7 @@ const ERPSection = ({
             ) : (
               <>
                 <div className="px-3 py-1 bg-green-700 rounded-full text-sm inline-block">
-                  Phase | 01
+                {phase}
                 </div>
                 <h2 className="text-4xl font-bold">{TitleERP}</h2>
                 <p className="text-gray-300">{Cardpara1}</p>
@@ -97,4 +100,4 @@ const ERPSection = ({
   );
 };
 
-export default ERPContainer;
+export default ServicesWeProvide;
