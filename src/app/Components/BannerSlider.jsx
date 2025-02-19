@@ -23,7 +23,10 @@ export default function BannerSlider() {
             <div
                 className="relative w-full   overflow-hidden"
                 style={{
-                    background: "radial-gradient(circle, #59890063, #000000)", // Correct radial gradient syntax
+                    // background:" linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(150,191,71,0.8974397376137955) 52%, rgba(0,0,0,1) 81%)"
+                    // background: "radial-gradient(circle, #59890063, #000000)", // Correct radial gradient syntax
+                    background: "rgb(153,212,39)",
+background: "radial-gradient(circle, rgba(153,212,39,0.8498206899947479) 0%, rgba(0,0,0,0.8890363762692577) 100%)"
                 }}
             >
 

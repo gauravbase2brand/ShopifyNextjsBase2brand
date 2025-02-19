@@ -5,6 +5,7 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Heading from "./UIUX/Heading";
 import brandlogo1 from "../../../public/assets/icons/brandlogo1.svg";
+import Lowerbanner from "../../../public/assets/leading-lower-banner.webp"
 import row1 from "../../../public/assets/icons/row1.svg";
 import row12 from "../../../public/assets/icons/row12.svg";
 import row13 from "../../../public/assets/icons/row13.svg";
@@ -42,15 +43,20 @@ import rowfive5 from "../../../public/assets/icons/rowfive5.svg";
 import rowfive6 from "../../../public/assets/icons/rowfive6.svg";
 import rowfive7 from "../../../public/assets/icons/rowfive7.svg";
 
+import startitle from "../../../public/assets/icons/star-title.svg";
+import shopifylogo from "../../../public/assets/shopifylogo.webp";
 const firstRowBrands = [brandlogo1, row1, row12, row13, row14, row15, row16];
 const secondRowBrands = [rowsecond1, rowsecond2, rowsecond3, rowsecond4, rowsecond5, rowsecond6, row15];
 const thirdRowBrands = [rowthird1, rowthird2, rowthird3, rowthird4, rowthird5, rowthird6, rowthird7];
 const fourthRowBrands = [rowfour1, rowfour2, rowfour3, rowfour4, rowfour5, rowthird6, rowfour6];
 const fifthRowBrands = [rowfive1, rowfive2, rowfive3, rowfive4 ,rowfive5 , rowfive6,rowfive7];
 
+const lbannerfirstband = ["WE ARE SHOPIFY EXPERT","WE ARE SHOPIFY EXPERT","WE ARE SHOPIFY EXPERT","WE ARE SHOPIFY EXPERT","WE ARE SHOPIFY EXPERT","WE ARE SHOPIFY EXPERT"]
+
 export default function Brand() {
   return (
     <>
+    
       <div className="relative">
         <div className="container pb-3">
           <div className="logo_brand relative">
@@ -70,7 +76,7 @@ export default function Brand() {
               <Marquee speed={50} gradient={false} direction="left" className="flex gap-3">
                 {firstRowBrands.map((logo, index) => (
                   <div key={index} className=" lg:p-[20px_45px] p-[20px_25px]">
-                    <Image src={logo} alt={`first-row-${index}`} width={100} className="w-full h-[34px]" />
+                    <Image src={logo} alt={`first-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
               </Marquee>
@@ -79,7 +85,7 @@ export default function Brand() {
               <Marquee speed={60} gradient={false} direction="right" className="flex gap-3 mt-3">
                 {secondRowBrands.map((logo, index) => (
                   <div key={index} className="lg:p-[20px_45px] p-[20px_25px]">
-                    <Image src={logo} alt={`second-row-${index}`} width={100} className="w-full h-[34px]" />
+                    <Image src={logo} alt={`second-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
               </Marquee>
@@ -88,7 +94,7 @@ export default function Brand() {
               <Marquee speed={55} gradient={false} direction="left" className="flex gap-3 mt-3">
                 {thirdRowBrands.map((logo, index) => (
                   <div key={index} className="lg:p-[20px_45px] p-[20px_25px]">
-                    <Image src={logo} alt={`third-row-${index}`} width={100} className="w-full h-[34px]" />
+                    <Image src={logo} alt={`third-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
               </Marquee>
@@ -97,7 +103,7 @@ export default function Brand() {
               <Marquee speed={60} gradient={false} direction="right" className="flex gap-3 mt-3">
                 {fourthRowBrands.map((logo, index) => (
                   <div key={index} className="lg:p-[20px_45px] p-[20px_25px]">
-                    <Image src={logo} alt={`second-row-${index}`} width={100} className="w-full h-[34px]" />
+                    <Image src={logo} alt={`second-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
               </Marquee>
@@ -105,7 +111,7 @@ export default function Brand() {
               <Marquee speed={50} gradient={false} direction="left" className="flex gap-3">
                 {fifthRowBrands.map((logo, index) => (
                   <div key={index} className=" lg:p-[20px_45px] p-[20px_25px]">
-                    <Image src={logo} alt={`first-row-${index}`} width={100} className="w-full h-[34px]" />
+                    <Image src={logo} alt={`first-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
               </Marquee>
@@ -113,11 +119,52 @@ export default function Brand() {
             </div>
           </div>
         </div>
-
-     
         <div className="absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000] z-[1000]"></div>
-
+ 
       </div>
+      <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[200px] relative">
+          <div className="bg-green" 
+          style={{
+            background:" linear-gradient(90deg, rgba(92,119,42,1) 24%, rgba(171,221,78,1) 51%)",
+            padding:"15px 0px"
+          }}
+          >
+            <Marquee speed={50} gradient={false} direction="right" className="flex gap-[20px]">
+             {
+              lbannerfirstband.map((title,index)=>(
+                <div key={index} className="flex ps-4 pe-4 text-black items-center gap-2">
+                 <Image src={startitle} width={500} height={200} alt="*" className="h-[15px] w-[15px] " />
+                 {title}
+                </div>
+              ))
+             }
+            </Marquee> 
+          </div>
+          <div className="bg-white absolute rotate-[354deg] z-[1] py-[15px] px-0" 
+          style={{
+            padding:"15px 0px"
+          }}
+          >
+            <Marquee speed={50} gradient={false} direction="left" className="flex gap-[20px]">
+             {
+              lbannerfirstband.map((title,index)=>(
+                <div key={index} className="flex ps-4 pe-4 text-black items-center gap-2">
+                 <Image src={startitle} width={500} height={200} alt="*" className="h-[15px] w-[15px] " />
+                 {title}
+                </div>
+              ))
+             }
+            </Marquee> 
+          </div>
+          <div className="absolute inset-0 flex items-center justify-center z-[1]">
+           <Image src={shopifylogo} width={1000}
+           height={500}
+           alt=""
+           className="w-[150px] h-[150px]"
+           />
+          </div>
+        </div>
+
     </>
   );
 }
