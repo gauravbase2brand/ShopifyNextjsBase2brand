@@ -13,6 +13,7 @@ import cardimage4 from "../../public/assets/cardimage4.webp"
 import cardimage5 from "../../public/assets/cardimage5.webp"
 import cardimage6 from "../../public/assets/cardimage6.webp"
 import BestPartners from "./Components/BestPartners";
+import Slider from "./Components/Slider";
 
 const page = () => {
   return (
@@ -120,6 +121,7 @@ growth areas, and stay ahead in a competitive market."
       </div>
       <TrustedLeadingBrands />
       <BestPartners/>
+      <Slider/>
     </>
   );
 };

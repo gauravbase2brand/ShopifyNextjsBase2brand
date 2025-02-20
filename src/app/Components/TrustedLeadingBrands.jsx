@@ -119,7 +119,7 @@ export default function Brand() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000] z-[1000]"></div>
+        <div className="absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000]"></div>
  
       </div>
       <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[200px] relative">

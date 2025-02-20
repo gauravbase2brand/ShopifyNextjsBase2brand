@@ -120,8 +120,19 @@ p {
   font-family: var(--font-mont-heavy);
 }
 
-
-
+.swiper-slide
+{
+  margin-right: 17px;
+  margin-left: 22px;
+}
+@media screen and (max-width:1024px) {
+  .swiper-slide
+  {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+}
 /* @font-face {
   font-family: 'Mont ExtraLight DEMO';
   src: url('../../../public/fonts/Mont/Mont-ExtraLightDEMO.woff2') format('woff2'),

@@ -19,8 +19,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="absolute w-full h-[100px] bg-gradient-to-b from-black via-[#121212] to-transparent z-[1000] ">
-        <div className="container mx-aut0 fixed w-full left-0 right-0">
+      <div className="left-0 right-0 fixed w-full h-[100px] bg-gradient-to-b from-black via-[#121212] to-transparent z-[1000] ">
+        <div className="container mx-aut0 w-full ">
           <header className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link href="/" className="cursor-pointer">
