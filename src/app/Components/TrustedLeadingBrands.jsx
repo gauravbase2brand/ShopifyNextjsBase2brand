@@ -75,7 +75,7 @@ export default function Brand() {
               {/* First Row */}
               <Marquee speed={50} gradient={false} direction="left" className="flex gap-3">
                 {firstRowBrands.map((logo, index) => (
-                  <div key={index} className=" lg:p-[20px_45px] p-[20px_25px]">
+                  <div key={index} className=" lg:p-[20px_15px] p-[20px_25px]">
                     <Image src={logo} alt={`first-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
@@ -84,7 +84,7 @@ export default function Brand() {
               {/* Second Row (Opposite Direction) */}
               <Marquee speed={60} gradient={false} direction="right" className="flex gap-3 mt-3">
                 {secondRowBrands.map((logo, index) => (
-                  <div key={index} className="lg:p-[20px_45px] p-[20px_25px]">
+                  <div key={index} className="lg:p-[20px_15px] p-[20px_25px]">
                     <Image src={logo} alt={`second-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
@@ -93,7 +93,7 @@ export default function Brand() {
               {/* Third Row */}
               <Marquee speed={55} gradient={false} direction="left" className="flex gap-3 mt-3">
                 {thirdRowBrands.map((logo, index) => (
-                  <div key={index} className="lg:p-[20px_45px] p-[20px_25px]">
+                  <div key={index} className="lg:p-[20px_15px] p-[20px_25px]">
                     <Image src={logo} alt={`third-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
@@ -102,7 +102,7 @@ export default function Brand() {
                    {/* fourth Row */}
               <Marquee speed={60} gradient={false} direction="right" className="flex gap-3 mt-3">
                 {fourthRowBrands.map((logo, index) => (
-                  <div key={index} className="lg:p-[20px_45px] p-[20px_25px]">
+                  <div key={index} className="lg:p-[20px_15px] p-[20px_25px]">
                     <Image src={logo} alt={`second-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
@@ -110,7 +110,7 @@ export default function Brand() {
 
               <Marquee speed={50} gradient={false} direction="left" className="flex gap-3">
                 {fifthRowBrands.map((logo, index) => (
-                  <div key={index} className=" lg:p-[20px_45px] p-[20px_25px]">
+                  <div key={index} className=" lg:p-[20px_15px] p-[20px_25px]">
                     <Image src={logo} alt={`first-row-${index}`} width={100} className="w-full h-[34px] object-scale-down" />
                   </div>
                 ))}
@@ -122,7 +122,7 @@ export default function Brand() {
         <div className="absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000]"></div>
  
       </div>
-      <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[200px] relative">
+      <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[250px] relative">
           <div className="bg-green" 
           style={{
             background:" linear-gradient(90deg, rgba(92,119,42,1) 24%, rgba(171,221,78,1) 51%)",

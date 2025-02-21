@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Homebannerline from "../../../public/assets/icons/Homebannerline.svg";
-import homefirsrtbanner from "../../../public/assets/homefirsrtbanner.webp";
-import homesecondbanner from "../../../public/assets/homesecondbanner.webp";
+import homefirsrtbanner from "../../../public/assets/homebanner2.png";
+import homesecondbanner from "../../../public/assets/homebanner1.png";
+import Button from "./UIUX/Button";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[90vh] bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-white text-center overflow-hidden">
+    <div className="relative w-full h-[95vh] bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-white text-center overflow-hidden">
       
       {/* Left Floating Image - FIXED POSITIONING */}
       <div className="absolute left-[-100px] md:left-[-50px] top-1/2 transform -translate-y-1/2">
@@ -14,6 +15,8 @@ const Banner = () => {
           className="w-[200px] md:w-[300px] h-auto object-scale-down animate-fly"
           src={homefirsrtbanner}
           alt="homefirsrtbanner"
+          width={1000}
+          height={500}
         />
       </div>
 
@@ -23,6 +26,8 @@ const Banner = () => {
           className="w-[200px] md:w-[300px] h-auto object-scale-down animate-fly"
           src={homesecondbanner}
           alt="homesecondbanner"
+          width={1000}
+          height={500}
         />
       </div>
 
@@ -36,6 +41,9 @@ const Banner = () => {
           <br />
           Experts!
         </h1>
+        <div className="pt-4">
+        <Button GButton={"Business With Us"} Glink={""}/>
+        </div>
       </div>
 
       {/* Floating Animated Line */}

@@ -10,6 +10,9 @@ import upperlimg1 from "../../../public/assets/slider-images/upper-left-img1.web
 import upperrimg1 from "../../../public/assets/slider-images/upper-right-img1.webp";
 import ratingimg from "../../../public/assets/slider-images/rating-slider.webp";
 import titleimg1 from "../../../public/assets/slider-images/slidertitle1.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const sliderdata = [
   {
     id: 1,
@@ -48,6 +51,9 @@ const sliderdata = [
   }
 ];
 export default function Slider() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const [slideitem, setSlideItem] = useState(4);
 
   useEffect(() => {
@@ -90,7 +96,7 @@ export default function Slider() {
           <Swiper
             loop={true}
             autoplay={{
-              delay: 2000,
+              delay: 2500,
               disableOnInteraction: false
             }}
             pagination={{
@@ -103,7 +109,7 @@ export default function Slider() {
           >
             {sliderdata.map((item, index) =>
               <SwiperSlide key={index}>
-                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]">
+                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]" data-aos="zoom-in">
                   <div className="w-[100%]">
                     <div className="flex justify-around p-[20px] pb-0 rounded-[15px] bg-[#5C772A]">
                       <Image

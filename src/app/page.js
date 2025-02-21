@@ -14,6 +14,9 @@ import cardimage5 from "../../public/assets/cardimage5.webp"
 import cardimage6 from "../../public/assets/cardimage6.webp"
 import BestPartners from "./Components/BestPartners";
 import Slider from "./Components/Slider";
+import Integration from "./Components/Integration";
+import Reviews from "./Components/Reviews";
+import Bulid from "./Components/Bulid";
 
 const page = () => {
   return (
@@ -122,6 +125,9 @@ growth areas, and stay ahead in a competitive market."
       <TrustedLeadingBrands />
       <BestPartners/>
       <Slider/>
+      <Integration/>
+      <Reviews/>
+      <Bulid/>
     </>
   );
 };
