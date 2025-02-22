@@ -89,7 +89,7 @@ export default function Reviews() {
                     <div className="w-[100%] md:w-[40%] flex justify-center">
                       <Image
                         src={data.clientimg}
-                        alt=""
+                        alt="img"
                         width={1000}
                         height={500}
                         className="w-[97%] md:w-[70%]"
@@ -110,6 +110,7 @@ export default function Reviews() {
                           <Image
                             src={data.clientcompany}
                             width={1000}
+                            alt=""
                             height={500}
                             className=" w-[40%] md:w-[20%]"
                           />
@@ -183,13 +184,13 @@ export default function Reviews() {
             <Image src={line2} alt="hy" width={1000} height={500} className="absolute w-[90px] right-0 md:right-[-11%] top-[-14%]"/>
           </div>
           <div className="flex min-h-[110px] w-[70%] md:w-auto border-[#17360f] border-b-[1px] relative">
-            <div className="flex flex-col md:p-0 p-[0_10px] w-[50%] md:min-w-[200px] md:ms-[60px] md:ps-[20px] border-[#17360f] md:border-s-[1px] border-e-[1px]">
+            <div className="flex flex-col md:p-0 p-[0_10px] w-[50%] justify-end md:pb-2 md:min-w-[200px] md:ms-[60px] md:ps-[20px] border-[#17360f] md:border-s-[1px] border-e-[1px]">
               <div className="text-[#96BF47] md:text-[40px] text-[26px] leading-[35px] font-black md:leading-[50px]">
                 <CountUp end={100} enableScrollSpy />+
               </div>
               <span className="text-[12px] text-[#b6b2b2]">Satisfied Clients</span>
             </div>
-            <div className="flex flex-col md:p-0 p-[0_10px] w-[50%] md:min-w-[200px] md:me-[60px] md:pe-[20px] items-end  border-[#17360f] md:border-e-[1px] ">
+            <div className="flex flex-col md:p-0 p-[0_10px] w-[50%] justify-end md:pb-2 md:min-w-[200px] md:me-[60px] md:pe-[20px] items-end  border-[#17360f] md:border-e-[1px] ">
               <div className="text-[#96BF47] md:text-[40px] text-[26px] leading-[35px] font-black md:leading-[50px]">
                 <CountUp end={150} enableScrollSpy />+
               </div>

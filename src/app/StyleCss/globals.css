@@ -81,6 +81,10 @@ html{
 }
 
 /* Base styles */
+.custoum_border:nth-child(4)
+{
+   border: none !important;
+}
 body {
   font-family: var(--font-body), sans-serif;
   font-size: var(--font-size-body);

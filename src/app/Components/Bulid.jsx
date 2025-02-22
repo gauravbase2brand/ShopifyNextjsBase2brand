@@ -1,12 +1,18 @@
-import React from "react";
+"use client"
+import React,{useEffect} from "react";
 import banner from "../../../public/assets/buildbanner.png";
 import Image from "next/image";
 import arrow from "../../../public/assets/arrowfaq.png";
-
+import Buildfaq from "./Buildfaq";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Bulid() {
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
   return (
     <div>
-      <div className="container">
+      <div className="container pb-[5%]">
         {/* Heading  */}
         <div className=" container text-center flex flex-col items-center pb-5">
           <div className="flex flex-row gap-0 md:gap-3">
@@ -18,20 +24,18 @@ export default function Bulid() {
           <h2 className=" md:leading-[60px]">Can Build It</h2>
         </div>
         {/* Build*/}
-        <div>
-          <div>
+        <div className="border-[1px] border-[#3d3d3d] rounded-[20px]">
+          <div data-aos="fade-up">
             <Image
               src={banner}
               width={1000}
               height={500}
               alt=""
-              className="w-[100%]"
+              className="w-[100%] md:h-[auto] rounded-[10px] h-[200px] md:object-contain object-cover"
             />
-          </div>
-
-          
-          <div className="flex flex-col">
-            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center">
+          </div>          
+          <div className="hidden flex-col child_custom md:flex">
+            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="600">
               <div>
               
                <span className="text-[14px]">OPT /01</span>
@@ -52,7 +56,7 @@ export default function Bulid() {
                 
               </div>
             </div>
-            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center">
+            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="700">
               <div>
                 <span className="text-[14px]">OPT /02</span>
               </div>
@@ -69,7 +73,7 @@ export default function Bulid() {
                 <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
               </div>
             </div>
-            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center">
+            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="800">
               <div>
                 <span className="text-[14px]">OPT /03</span>
               </div>
@@ -85,7 +89,7 @@ export default function Bulid() {
                 <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
               </div>
             </div>
-            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center">
+            <div className="flex justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="900">
               <div>
                 <span className="text-[14px]">OPT /04</span>
               </div>
@@ -101,6 +105,9 @@ export default function Bulid() {
                 <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
               </div>
             </div>
+          </div>
+          <div className="md:hidden">
+            <Buildfaq/>
           </div>
         </div>
       </div>

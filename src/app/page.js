@@ -6,7 +6,6 @@ import ShopifyPartnerDashboard from "./Components/ShopifyPartnerDashboard";
 import Heading from "./Components/UIUX/Heading";
 import fiestsliderimage from "../../public/assets/fiestsliderimage.webp";
 import TrustedLeadingBrands from "./Components/TrustedLeadingBrands";
-
 import cardimage from "../../public/assets/cardimage.webp"
 import cardimage3 from "../../public/assets/cardimage3.webp"
 import cardimage4 from "../../public/assets/cardimage4.webp"
@@ -17,6 +16,9 @@ import Slider from "./Components/Slider";
 import Integration from "./Components/Integration";
 import Reviews from "./Components/Reviews";
 import Bulid from "./Components/Bulid";
+import Launched from "./Components/Launched";
+import Team from "./Components/Team";
+import Faqs from "./Components/Faqs";
 
 const page = () => {
   return (
@@ -128,6 +130,9 @@ growth areas, and stay ahead in a competitive market."
       <Integration/>
       <Reviews/>
       <Bulid/>
+      <Launched/>
+      <Team/>
+      <Faqs/>
     </>
   );
 };

@@ -120,7 +120,6 @@ export default function Brand() {
           </div>
         </div>
         <div className="absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000]"></div>
- 
       </div>
       <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[250px] relative">
           <div className="bg-green" 
@@ -144,12 +143,14 @@ export default function Brand() {
           style={{
             padding:"15px 0px"
           }}
+        
+          // One thing you like about your team?  ( Suggestions ) , my team is supotive write a 10 word sentence for my team
           >
             <Marquee speed={50} gradient={false} direction="left" className="flex gap-[20px]">
              {
               lbannerfirstband.map((title,index)=>(
                 <div key={index} className="flex ps-4 pe-4 text-black items-center gap-2">
-                 <Image src={startitle} width={500} height={200} alt="*" className="h-[15px] w-[15px] " />
+                 <Image src={startitle} width={500} height={200} alt="" className="h-[15px] w-[15px] " />
                  {title}
                 </div>
               ))
@@ -160,7 +161,7 @@ export default function Brand() {
            <Image src={shopifylogo} width={1000}
            height={500}
            alt=""
-           className="w-[150px] h-[150px]"
+           className="md:w-[150px] md:h-[150px] w-[110px] h-[110px]"
            />
           </div>
         </div>

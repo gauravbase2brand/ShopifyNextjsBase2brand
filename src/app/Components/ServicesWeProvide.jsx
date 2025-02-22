@@ -48,9 +48,9 @@ const ERPSection = ({
   return (
     <>
       <div className="container">
-        <section className="grid grid-cols-1 md:grid-cols-2 items-stretch text-white my-4  bg-Dark rounded-[20px]">
+        <section className="grid grid-cols-1 md:grid-cols-2 items-stretch text-white my-4  bg-[black] rounded-[20px]">
           {/* Left Content */}
-          <div className="space-y-7 min-h-[430px] rounded-tl-[20px] md:rounded-tr-[0px]  rounded-tr-[20px] md:rounded-bl-[20px] p-4 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] border-[#96BF47] md:border-r-0 bg-Dark"
+          <div className="space-y-7  rounded-tl-[20px] md:rounded-tr-[0px]  rounded-tr-[20px] md:rounded-bl-[20px] p-4 border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] border-[#96BF47] md:border-r-0 bg-Dark"
             // style={{
             //   background:
             //     "radial-gradient(circle, #4d8f2d54 3%, #96dd1963 100%)",
@@ -89,7 +89,7 @@ const ERPSection = ({
               <Image
                 src={CardImage}
                 alt="ERP Image"
-                className="h-full max-h-[280px] w-auto object-contain"
+                className=" w-auto object-contain"
               />
             )}
           </div>
