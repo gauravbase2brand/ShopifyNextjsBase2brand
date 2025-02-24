@@ -35,13 +35,14 @@ const page = () => {
       />
 
       <ShopifyPartnerDashboard />
-      <Heading
+     
+       <ScrollVideo/>
+       <Heading
         Heading1="Services"
         Heading2="We Provide"
         Paragraph="Boost efficiency and innovation with easy-to-use AI solutions tailored to your needs."
         paragraphWidth="w-full sm:w-1/2 lg:w-[40%] md:w-9/12"
       />
-       <ScrollVideo/>
       {/* Sticky Wrapper for Services */}
       <div className="relative w-full">
         <div className=" sticky top-0   ">
