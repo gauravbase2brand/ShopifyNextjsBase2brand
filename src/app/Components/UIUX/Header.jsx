@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation"; // Detect active page
-import base2brand from "../../../../public/assets/base2brand-logo 2.png";
+import base2brand from "../../../../public/assets/base2brand-logo 2new.png";
 import callicon from "../../../../public/assets/icons/Group 1707480214.webp";
 
 export default function Navbar() {
@@ -11,10 +11,11 @@ export default function Navbar() {
   const pathname = usePathname(); // Get current route
 
   const navbarData = [
-    { name: "Home", url: "/" },
-    { name: "About", url: "/about" },
-    { name: "Projects", url: "/projects" },
-    { name: "Resume", url: "/resume" },
+    { name: "CRM", url: "/" },
+    { name: "ERP", url: "/about" },
+    { name: "POS", url: "/projects" },
+    { name: "CUSTOM INTEGRATION", url: "/resume" },
+    { name: "OUR PRODUCTS", url: "/resume2" },
   ];
 
   return (
@@ -36,17 +37,17 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex gap-3 bg-[#ffffff57] backdrop-blur-md px-4 py-2 rounded-full shadow-md">
+            <nav className="hidden lg:flex gap-3 backdrop-blur-md px-4 py-2 rounded-full shadow-md">
               {navbarData.map((item) => (
                 <Link key={item.name} href={item.url}>
                   <div
-                    className={`px-[16px] py-[5px] rounded-full text-white text-sm font-medium transition-all duration-300 ${
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] text-sm font-medium transition-all duration-300 ${
                       pathname === item.url
-                        ? "bg-primary text-black"
-                        : "hover:bg-gray-100 hover:text-black"
+                        ? "bg-#383535  border-2 border-dashed border-[#96BF47]"
+                        : " hover:text-[#96BF47]"
                     }`}
                   >
-                    <span className="text-lg">{item.name}</span>
+                    <span className="text-[16PX]">{item.name}</span>
                   </div>
                 </Link>
               ))}
@@ -54,7 +55,7 @@ export default function Navbar() {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3">
-              <button className="bg-white xl:p-[10px_30px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
+              <button className="bg-white xl:p-[7px_14px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
                 Contact us
               </button>
               <div className="flex items-center space-x-4">

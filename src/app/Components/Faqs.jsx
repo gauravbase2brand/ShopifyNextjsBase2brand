@@ -95,7 +95,7 @@ const Faqs = () => {
   return (
     <div className="pt-4 pb-4">
     <div className=" container text-center flex flex-col items-center pb-5">
-          <div className="flex flex-row gap-0 md:gap-3">
+          <div className="flex md:flex-row flex-col gap-0 md:gap-3">
             <h2 className="md:leading-[60px] ">
               Frequently Asked
             </h2>

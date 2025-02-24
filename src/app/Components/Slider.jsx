@@ -109,7 +109,8 @@ export default function Slider() {
           >
             {sliderdata.map((item, index) =>
               <SwiperSlide key={index}>
-                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]" data-aos="zoom-in">
+                <div className="p-[5%] md:p-0"  data-aos="zoom-in">
+                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]">
                   <div className="w-[100%]">
                     <div className="flex justify-around p-[20px] pb-0 rounded-[15px] bg-[#5C772A]">
                       <Image
@@ -192,13 +193,14 @@ export default function Slider() {
                     </div>
                   </div>
                 </div>
+                </div>
                 {/* </div> */}
               </SwiperSlide>
             )}
           </Swiper>
         </div>
       </div>
-      <div className="absolute bottom-[7px] left-0 w-full lg:h-[170px] h-[80px] bg-gradient-to-b from-black/0 via-[#000000] to-[#000000] z-[10]" />
+      <div className="md:flex hidden absolute bottom-[-7px] left-0 w-full lg:h-[170px] h-[80px] bg-gradient-to-b from-black/0 via-[#000000] to-[#000000] z-[10]" />
     </div>
   );
 }

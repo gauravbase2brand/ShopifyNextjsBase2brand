@@ -19,6 +19,8 @@ import Bulid from "./Components/Bulid";
 import Launched from "./Components/Launched";
 import Team from "./Components/Team";
 import Faqs from "./Components/Faqs";
+import Talk from "./Components/Talk";
+import ScrollVideo from "./Components/Videoani";
 
 const page = () => {
   return (
@@ -39,7 +41,7 @@ const page = () => {
         Paragraph="Boost efficiency and innovation with easy-to-use AI solutions tailored to your needs."
         paragraphWidth="w-full sm:w-1/2 lg:w-[40%] md:w-9/12"
       />
-
+       <ScrollVideo/>
       {/* Sticky Wrapper for Services */}
       <div className="relative w-full">
         <div className=" sticky top-0   ">
@@ -133,6 +135,7 @@ growth areas, and stay ahead in a competitive market."
       <Launched/>
       <Team/>
       <Faqs/>
+      <Talk/>
     </>
   );
 };

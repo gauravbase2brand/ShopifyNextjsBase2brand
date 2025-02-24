@@ -7,7 +7,7 @@ import Button from "./UIUX/Button";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[60vh] md:h-[95vh] bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-white text-center overflow-hidden">
+    <div className="relative w-full h-[100vh] md:h-[95vh] bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-white text-center overflow-hidden">
       
       {/* Left Floating Image - FIXED POSITIONING */}
       <div className="absolute left-[-100px] md:left-[-50px] top-1/2 transform -translate-y-1/2">

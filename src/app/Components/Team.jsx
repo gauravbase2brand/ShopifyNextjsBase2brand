@@ -67,7 +67,7 @@ export default function Team() {
     <div className="flex md:flex-row flex-col pb-[1%]">
       <div className="md:w-[40%] md:p-0 p-[7%_5%_1%] flex items-center">
         <div className="flex container text-start flex-col items-start pb-5">
-          <div className="flex flex-row gap-0 md:gap-3">
+          <div className="flex flex-row md:flex-col gap-2 md:gap-0">
             <h2 className="md:leading-[60px] text-[#989898]">Team</h2>
             <h2 className=" md:leading-[60px] ">Members</h2>
           </div>
@@ -92,8 +92,8 @@ export default function Team() {
         >
             {
                 teamdata.map((data,index)=>(
-                  <SwiperSlide >
-                   <div className="p-[5%] md:p-0" key={index}>
+                  <SwiperSlide key={index}>
+                   <div className="p-[5%] md:p-0" >
                      <div>
                         <Image src={data.img} alt={data.membername} width={1000} height={500} className="" />
                      </div>

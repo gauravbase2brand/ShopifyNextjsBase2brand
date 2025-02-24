@@ -146,7 +146,7 @@ export default function Reviews() {
         </div>
       </div>
       {/* Shopify service */}
-      <div>
+      <div className="overflow-hidden">
         {/*  Shopify service Heading*/}
         <div className=" container text-center flex flex-col items-center">
           <div className="flex md:flex-row flex-col gap-0 md:gap-3">
@@ -181,7 +181,7 @@ export default function Reviews() {
               </div>
               <span className="text-[12px] text-[#b6b2b2]">Projects Completed</span>
             </div>
-            <Image src={line2} alt="hy" width={1000} height={500} className="absolute w-[90px] right-0 md:right-[-11%] top-[-14%]"/>
+            <Image src={line2} alt="hy" width={1000} height={500} className="absolute w-[90px] right-[-8%] md:right-[-11%] top-[-14%]"/>
           </div>
           <div className="flex min-h-[110px] w-[70%] md:w-auto border-[#17360f] border-b-[1px] relative">
             <div className="flex flex-col md:p-0 p-[0_10px] w-[50%] justify-end md:pb-2 md:min-w-[200px] md:ms-[60px] md:ps-[20px] border-[#17360f] md:border-s-[1px] border-e-[1px]">
@@ -196,7 +196,7 @@ export default function Reviews() {
               </div>
               <span className="text-[12px] text-[#b6b2b2]">Shopify Development</span>
             </div>
-            <Image src={line1} alt="hy" width={1000} height={500} className="absolute w-[90px] left-[0%] md:left-[-25%] bottom-[3%]"/>
+            <Image src={line1} alt="hy" width={1000} height={500} className="absolute w-[90px] left-[-25%] md:left-[-25%] bottom-[3%]"/>
           </div>
         </div>
       </div>
