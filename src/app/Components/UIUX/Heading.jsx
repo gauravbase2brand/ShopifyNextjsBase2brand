@@ -20,7 +20,7 @@ const Heading = ({ Heading1, Heading2, Paragraph, paragraphWidth }) => {
         {/* Paragraph */}
         <p
           className={`text-center text-secondary ${
-            paragraphWidth || "w-full sm:w-1/2 lg:w-[50%] md:w-9/12"
+            paragraphWidth || "w-full sm:w-1/2 lg:w-[70%] md:w-9/12"
           } mx-auto`}
         >
           {Paragraph}
