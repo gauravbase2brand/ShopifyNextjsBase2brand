@@ -27,6 +27,7 @@ const page = () => {
     <>
       <Banner />
       <BannerSlider />
+      <ScrollVideo/>
       <Heading
         Heading1="Trusted Shopify"
         Heading2="Partner Agency"
@@ -36,7 +37,7 @@ const page = () => {
 
       <ShopifyPartnerDashboard />
      
-       <ScrollVideo/>
+     
        <Heading
         Heading1="Services"
         Heading2="We Provide"

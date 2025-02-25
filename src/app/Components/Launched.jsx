@@ -1,35 +1,55 @@
-import React from "react";
+"use client"
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 import launchimg1 from "../../../public/assets/launchimg1.png";
 import launchimg2 from "../../../public/assets/launchimg2.png";
 import launchimg3 from "../../../public/assets/launchimg3.png";
 import launchimg4 from "../../../public/assets/launchimg4.png";
-import launchline from "../../../public/assets/launchline2.png";
+import launchline from "../../../public/assets/Line 27.png";
+import greendot from "../../../public/assets/greendot.png";
 import Launchph from "./Launchph";
+
 export default function Launched() {
+  const { scrollYProgress } = useViewportScroll();
+  const [scrollRange, setScrollRange] = useState([0, 1]);
+  const lineRef = useRef(null);
+
+  useEffect(() => {
+    const calculateScrollRange = () => {
+      if (lineRef.current) {
+        const lineHeight = lineRef.current.offsetHeight;
+        const viewportHeight = window.innerHeight;
+        const totalScrollableHeight = lineHeight - viewportHeight;
+        setScrollRange([0, totalScrollableHeight]);
+      }
+    };
+
+    calculateScrollRange();
+    window.addEventListener("resize", calculateScrollRange);
+    return () => window.removeEventListener("resize", calculateScrollRange);
+  }, []);
+
+  const y = useTransform(scrollYProgress, [10, 6], scrollRange);
+
   return (
     <div>
       <div className="container">
         {/* Heading */}
-        <div className=" hidden md:flex container text-center flex-col items-center pb-5">
+        <div className="hidden md:flex container text-center flex-col items-center pb-5">
           <div className="flex flex-row gap-0 md:gap-3">
-            <h2 className="md:leading-[60px] text-[#989898]">
-              Get your website
-            </h2>
-            <h2 className=" md:leading-[60px] ">launched in</h2>
+            <h2 className="md:leading-[60px] text-[#989898]">Get your website</h2>
+            <h2 className="md:leading-[60px]">launched in</h2>
           </div>
-          <h2 className=" md:leading-[60px]">4 weeks</h2>
+          <h2 className="md:leading-[60px]">4 weeks</h2>
         </div>
-        <div className=" flex md:hidden container text-center  flex-col items-center pb-5">
+        <div className="flex md:hidden container text-center flex-col items-center pb-5">
           <div className="flex flex-row gap-0 md:gap-3">
-            <h2 className="md:leading-[60px] text-[#989898]">
-              Get your website
-            </h2>
+            <h2 className="md:leading-[60px] text-[#989898]">Get your website</h2>
           </div>
-          <h2 className=" md:leading-[60px]">launched in 4 weeks</h2>
+          <h2 className="md:leading-[60px]">launched in 4 weeks</h2>
         </div>
         {/* Process Section */}
-
         <div className="hidden md:block">
           <div className="flex">
             {/* left section */}
@@ -38,9 +58,7 @@ export default function Launched() {
                 <div className="p-[5%]" data-aos="fade-up" data-aos-duration="600">
                   <div className="flex justify-center">
                     <div className="w-[90%]">
-                      <span className="text-[12px] text-[#96BF47] w-[15%]">
-                        1st Week
-                      </span>
+                      <span className="text-[12px] text-[#96BF47] w-[15%]">1st Week</span>
                       <div className="w-[100%]">
                         <h3>Research & Propose</h3>
                         <p className="text-[14px] text-[#ddd]">
@@ -66,9 +84,7 @@ export default function Launched() {
                 <div className="p-[5%] pt-[25%]" data-aos="fade-up" data-aos-duration="600">
                   <div className="flex justify-center">
                     <div className="w-[90%]">
-                      <span className="text-[12px] text-[#96BF47] w-[15%]">
-                        3rd Week
-                      </span>
+                      <span className="text-[12px] text-[#96BF47] w-[15%]">3rd Week</span>
                       <div className="w-[100%]">
                         <h3>Write & Revise</h3>
                         <p className="text-[14px] text-[#ddd]">
@@ -78,9 +94,7 @@ export default function Launched() {
                           or marketing materials, we’ll ensure everything is
                           clear, engaging, and on brand. Through collaboration
                           and feedback, we'll make revisions to perfect the
-                          final output, ensuring it meets your
-                          expectations.ision and objectives, setting the stage
-                          for success.
+                          final output, ensuring it meets your expectations.
                         </p>
                       </div>
                     </div>
@@ -96,14 +110,19 @@ export default function Launched() {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-[5%] right-[-3%] flex justify-end h-[92%]">
-                <Image
-                  src={launchline}
-                  alt=""
-                  width={1000}
-                  height={500}
-                  className="w-[auto]"
-                />
+              <div className="absolute top-[5%] right-[-3%] flex justify-end h-[92%]" ref={lineRef}>
+                <div className="relative">
+                  <motion.div style={{ y }}>
+                    <Image src={greendot} alt="" />
+                  </motion.div>
+                  <Image
+                    src={launchline}
+                    alt=""
+                    width={1000}
+                    height={500}
+                    className="w-[auto]"
+                  />
+                </div>
               </div>
             </div>
             {/* right section */}
@@ -111,9 +130,7 @@ export default function Launched() {
               <div className="p-[5%] pt-[25%]" data-aos="fade-up" data-aos-duration="600">
                 <div className="flex justify-center">
                   <div className="w-[90%]">
-                    <span className="text-[12px] text-[#96BF47] w-[15%]">
-                      2nd Week
-                    </span>
+                    <span className="text-[12px] text-[#96BF47] w-[15%]">2nd Week</span>
                     <div className="w-[100%]">
                       <h3>Design & Build</h3>
                       <p className="text-[14px] text-[#ddd]">
@@ -141,9 +158,7 @@ export default function Launched() {
               <div className="p-[5%] pt-[25%]" data-aos="fade-up" data-aos-duration="600">
                 <div className="flex justify-center">
                   <div className="w-[90%]">
-                    <span className="text-[12px] text-[#96BF47] w-[15%]">
-                      4th Week
-                    </span>
+                    <span className="text-[12px] text-[#96BF47] w-[15%]">4th Week</span>
                     <div className="w-[100%]">
                       <h3>Testing & Launch</h3>
                       <p className="text-[14px] text-[#ddd]">
@@ -172,7 +187,7 @@ export default function Launched() {
           </div>
         </div>
         <div className="block md:hidden">
-          <Launchph/>
+          <Launchph />
         </div>
       </div>
     </div>
