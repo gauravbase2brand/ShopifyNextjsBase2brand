@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation"; // Detect active page
-import base2brand from "../../../../public/assets/base2brand-logo 2new.png";
+import base2brand from "../../../../public/assets/newlogo1.svg";
 import callicon from "../../../../public/assets/icons/Group 1707480214.webp";
 
 export default function Navbar() {

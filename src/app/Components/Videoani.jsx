@@ -6,7 +6,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import video1 from "../../../public/assets/animation.gif";
 import imageio from "../../../public/assets/gsapaio.png";
-
+import shexp from "../../../public/assets/shopifyexperts.png";
+import shepartners from "../../../public/assets/shopifypartners.png";
+import sheplus from "../../../public/assets/shopifyplus.png";
+import lineimg1 from "../../../public/assets/talkimg2.png";
+import lineimg2 from "../../../public/assets/talkimg1.png";
 // Ensure GSAP works only on the client side
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -20,7 +24,7 @@ export default function Home() {
     // Animate Image Scaling on Scroll
     if (imageRef.current) {
       gsap.to(imageRef.current, {
-        scale: 3, // Scale image 3 times
+        scale: 3.2, // Scale image 3 times
         ease: "power1.out",
         scrollTrigger: {
           trigger: imageRef.current,
@@ -50,31 +54,56 @@ export default function Home() {
 
   return (
     <>
-      <div className="container h-[30vh] md:h-[80vh] overflow-hidden pt-[5%] pb-[5%]">
+       <div className="flex items-center pt-[4%] pb-[1%]">
+              <div className="md:w-[15%] hidden md:block">
+                  <Image src={lineimg1} alt="" width={1000} height={500} className="w-[100%]" />
+              </div>
+              <div className="md:w-[70%] w-[100%] flex flex-wrap justify-center gap-[20px] mg:gap-[0] md:justify-between">
+                 <Image src={sheplus} alt="" width={1000} height={500} className="w-[46%] md:w-[30%]" />
+                 <Image src={shepartners} alt="" width={1000} height={500} className="w-[46%] md:w-[30%]" />
+                 <Image src={shexp} alt="" width={1000} height={500} className="w-[46%] md:w-[30%]" />
+
+              </div>
+              <div className="w-[15%] hidden md:block">
+                  <Image src={lineimg2} alt="" width={1000} height={500} className="w-[100%]" />
+              </div>
+        </div>
+        {/* for desktop */}
+      <div className="md:block hidden container h-[30vh] md:h-[80vh] overflow-hidden pt-[5%] pb-[5%]">
         <div className="flex justify-center items-center relative h-[100%] md:h-[53vh] ">
-          <div>
-            <Image src={imageio} alt />
+          <div className="w-[37%] mr-[10%]">
+            <Image src={imageio} alt  />
           </div>
 
-          <div className="absluate bg-gray-100 ">
+          <div className="absolute w-[45%] bg-gray-100 ">
             <main className="flex flex-col items-center">
               {/* Image and Video Section */}
-              <div className=" w-full flex flex-col gap-10 items-center transform scale-[1.5]">
+              <div className=" w-full flex flex-col gap-10 items-center transform scale-[1.1]">
                 <div ref={imageRef} className="w--[100%]">
                   <Image
                     src={video1}
                     alt="GSAP Image"
-                    className="w-full object-cover"
+                    className="w-full object-cover rounded-[20px]"
                   />
                 </div>
               </div>
             </main>
           </div>
-          <div>
+          <div className="w-[37%] ml-[10%]">
             <Image src={imageio} alt />
           </div>
         </div>
       </div>
+       {/* for moblie */}
+       <div className="block md:hidden pt-[4%]">
+         <div>
+         <Image
+            src={video1}
+            alt="GSAP Image"
+            className="w-full object-cover"
+          />
+         </div>
+       </div>
     </>
   );
 }

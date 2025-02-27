@@ -143,12 +143,12 @@ const imagesdatamobile = [
   rowfive7
 ];
 export default function Brand() {
-  const [visibleitems, setvisibleitems] = useState(10);
+  const [visibleitems, setvisibleitems] = useState(20);
   const loadmoreitems = () => {
-    setvisibleitems(prevVisible => prevVisible + 10);
+    setvisibleitems(prevVisible => prevVisible + 20);
   };
   const loadlessitems = () => {
-    setvisibleitems(10);
+    setvisibleitems(20);
   };
   return (
     <div>
@@ -157,159 +157,79 @@ export default function Brand() {
           <div className="logo_brand relative">
             <Heading Heading1="Trusted by" Heading2="leading brands" />
             {/* for desktop  */}
-            <div className=" lg:p-10 p-4 hidden md:block border-white relative overflow-hidden"
-              style={{
-                background:
-                  "radial-gradient(circle, #4d8f2d54 3%, #96dd1963 100%)",
-                borderRadius: "60px 60px 0px 0px",
-                borderWidth: "1px 1px 0px 1px",
-                borderStyle: "solid",
-                borderColor: "white",
-                boxShadow:
-                  "-20px 0 30px rgba(0, 0, 0, 0.8), 20px 0 30px rgba(0, 0, 0, 0.8)"
-              }}
-            >
-              {/* First Row */}
-              <Marquee
-                speed={50}
-                gradient={false}
-                direction="left"
-                className="flex gap-3"
+            <div>
+              <div
+                className=" lg:p-10 p-4 hidden md:block border-[#8b8787] relative overflow-hidden rounded-tl-[50px] rounded-tr-[50px]"
+                style={{
+                  background:
+                    "radial-gradient(circle, #4d514a54  3%, #63950a63 100%)",
+                  // borderRadius: "60px 60px ",
+                  borderWidth: "1px 1px 0px 1px",
+                  borderStyle: "solid",
+                  borderColor: "white",
+                  boxShadow:
+                    "-20px 0 30px rgba(0, 0, 0, 0.8), 20px 0 30px rgba(0, 0, 0, 0.8)"
+                }}
               >
-                {firstRowBrands.map((logo, index) =>
-                  <div key={index} className=" lg:p-[20px_15px] p-[20px_25px]">
-                    <Image
-                      src={logo}
-                      alt={`first-row-${index}`}
-                      width={100}
-                      className="w-full h-[34px] object-scale-down"
-                    />
-                  </div>
-                )}
-              </Marquee>
+                <div className="flex flex-wrap justify-between gap-y-[10px]">
+                  {imagesdatamobile.map((data, index) =>
+                    <div
+                      className="w-[15%] flex items-center justify-center mb-[15px]"
+                      key={index}
+                    >
+                      <Image src={data} alt="" className="w-[90%] h-[35px] object-contain" />
+                    </div>
+                  )}
+                </div>
+              </div>
 
-              {/* Second Row (Opposite Direction) */}
-              <Marquee
-                speed={60}
-                gradient={false}
-                direction="right"
-                className="flex gap-3 mt-3"
-              >
-                {secondRowBrands.map((logo, index) =>
-                  <div key={index} className="lg:p-[20px_15px] p-[20px_25px]">
-                    <Image
-                      src={logo}
-                      alt={`second-row-${index}`}
-                      width={100}
-                      className="w-full h-[34px] object-scale-down"
-                    />
-                  </div>
-                )}
-              </Marquee>
-
-              {/* Third Row */}
-              <Marquee
-                speed={55}
-                gradient={false}
-                direction="left"
-                className="flex gap-3 mt-3"
-              >
-                {thirdRowBrands.map((logo, index) =>
-                  <div key={index} className="lg:p-[20px_15px] p-[20px_25px]">
-                    <Image
-                      src={logo}
-                      alt={`third-row-${index}`}
-                      width={100}
-                      className="w-full h-[34px] object-scale-down"
-                    />
-                  </div>
-                )}
-              </Marquee>
-
-              {/* fourth Row */}
-              <Marquee
-                speed={60}
-                gradient={false}
-                direction="right"
-                className="flex gap-3 mt-3"
-              >
-                {fourthRowBrands.map((logo, index) =>
-                  <div key={index} className="lg:p-[20px_15px] p-[20px_25px]">
-                    <Image
-                      src={logo}
-                      alt={`second-row-${index}`}
-                      width={100}
-                      className="w-full h-[34px] object-scale-down"
-                    />
-                  </div>
-                )}
-              </Marquee>
-
-              <Marquee
-                speed={50}
-                gradient={false}
-                direction="left"
-                className="flex gap-3"
-              >
-                {fifthRowBrands.map((logo, index) =>
-                  <div key={index} className=" lg:p-[20px_15px] p-[20px_25px]">
-                    <Image
-                      src={logo}
-                      alt={`first-row-${index}`}
-                      width={100}
-                      className="w-full h-[34px] object-scale-down"
-                    />
-                  </div>
-                )}
-              </Marquee>
             </div>
-            {/* for mobile */}
-            
           </div>
         </div>
+        {/* for mobile */}
         <div
-              className=" lg:p-10 p-4 block md:hidden border-white relative overflow-hidden"
-              style={{
-                background:
-                  "radial-gradient(circle, #4d8f2d54 3%, #96dd1963 100%)",
-                // borderRadius: "60px 60px ",
-                borderWidth: "1px 1px 0px 1px",
-                borderStyle: "solid",
-                borderColor: "white",
-                boxShadow:
-                  "-20px 0 30px rgba(0, 0, 0, 0.8), 20px 0 30px rgba(0, 0, 0, 0.8)"
-              }}
-            >
-              <div className="flex flex-wrap">
-                {imagesdatamobile.slice(0, visibleitems).map((data, index) =>
-                  <div
-                    className="w-[50%] flex items-center justify-center mb-[15px]"
-                    key={index}
-                  >
-                    <Image src={data} alt="" className="w-[80%]" />
-                  </div>
-                )}
+          className=" lg:p-10 p-4 block md:hidden border-white relative overflow-hidden"
+          style={{
+            background: "radial-gradient(circle, #4d8f2d54 3%, #96dd1963 100%)",
+            // borderRadius: "60px 60px ",
+            borderWidth: "1px 1px 0px 1px",
+            borderStyle: "solid",
+            borderColor: "white",
+            boxShadow:
+              "-20px 0 30px rgba(0, 0, 0, 0.8), 20px 0 30px rgba(0, 0, 0, 0.8)"
+          }}
+        >
+          <div className="flex flex-wrap">
+            {imagesdatamobile.slice(0, visibleitems).map((data, index) =>
+              <div
+                className="w-[50%] flex items-center justify-center mb-[15px]"
+                key={index}
+              >
+                <Image src={data} alt="" className="w-[80%]" />
               </div>
-              {visibleitems < imagesdatamobile.length
-                ? <div className="w-[100%] flex justify-center">
-                    <button onClick={loadmoreitems}>
-                      <Image src={downarrow} alt="" className="w-[25px]" />
-                    </button>
-                  </div>
-                : <div>
-                    <div className="w-[100%] flex justify-center items-end">
-                      <button onClick={loadlessitems}>
-                        <Image
-                          src={downarrow}
-                          alt=""
-                          className="w-[25px] rotate-180"
-                        />
-                      </button>
-                    </div>
-                  </div>}
-            </div>
+            )}
+          </div>
+          {visibleitems < imagesdatamobile.length
+            ? <div className="w-[100%] flex justify-center">
+                <button onClick={loadmoreitems}>
+                  <Image src={downarrow} alt="" className="w-[25px]" />
+                </button>
+              </div>
+            : <div>
+                <div className="w-[100%] flex justify-center items-end">
+                  <button onClick={loadlessitems}>
+                    <Image
+                      src={downarrow}
+                      alt=""
+                      className="w-[25px] rotate-180"
+                    />
+                  </button>
+                </div>
+              </div>}
+        </div>
         <div className="hidden md:flex absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000]" />
       </div>
+
       <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[250px] relative">
         <div
           className="bg-green"

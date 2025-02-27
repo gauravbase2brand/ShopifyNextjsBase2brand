@@ -83,9 +83,10 @@ export default function Team() {
             delay: 1500,
             disableOnInteraction: false
           }}
-          pagination={{
-            clickable: true
-          }}
+          // pagination={{
+          //   clickable: true
+          // }}
+          pagination={false}
           speed={1000}
           modules={[Autoplay, Pagination, Navigation]}
           slidesPerView={slideitem}

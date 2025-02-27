@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css/navigation";
+import 'swiper/css/pagination';
 import "swiper/css";
 import clinetimg1 from "../../../public/assets/clientreviews.png";
 import clientcom1 from "../../../public/assets/clinetcom1.png";
@@ -74,7 +75,8 @@ export default function Reviews() {
               //   disableOnInteraction: false
               // }}
               pagination={{
-                clickable: true
+                clickable: true,
+                type:"bullets"
               }}
               speed={1000}
               modules={[Autoplay, Pagination, Navigation]}

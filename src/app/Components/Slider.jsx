@@ -99,9 +99,10 @@ export default function Slider() {
               delay: 2500,
               disableOnInteraction: false
             }}
-            pagination={{
-              clickable: true
-            }}
+            // pagination={{
+            //   clickable: true
+            // }}
+            pagination={false}
             speed={1000}
             // navigation={true}
             modules={[Autoplay, Pagination, Navigation]}

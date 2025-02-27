@@ -32,7 +32,8 @@ export default function BannerSlider() {
           // background: "radial-gradient(circle, #59890063, #000000)", // Correct radial gradient syntax
         //   background:" rgb(0,0,0)",
         //   background:"linear-gradient(176deg, rgba(0,0,0,0.407243659182423) 0%, rgba(34,48,8,1) 100%)"
-          background: "linear-gradient(176deg, rgba(0, 0, 0, 0.9) 0%, rgba(34, 48, 8, 1) 100%)"
+          // background: "linear-gradient(176deg, rgba(0, 0, 0, 0.9) 0%, rgba(34, 48, 8, 1) 100%)"
+          background:"transparent"
         }}
       >
         <div className="marquee">
@@ -45,7 +46,7 @@ export default function BannerSlider() {
                   alt={item.alt}
                   width={1000}
                   height={1000}
-                  className="rounded-lg shadow-lg transition-transform duration-300 cursor-pointer md:h-[500px] h-[380px] object-cover"
+                  className="rounded-lg shadow-lg transition-transform duration-300 cursor-pointer md:h-[500px] h-auto object-cover"
                   priority
                 />
               </div>
