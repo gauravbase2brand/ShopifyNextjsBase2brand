@@ -15,13 +15,13 @@ export default function Bulid() {
       <div className="container pb-[5%]">
         {/* Heading  */}
         <div className=" container text-center flex flex-col items-center pb-5">
-          <div className="flex flex-row gap-0 md:gap-3">
+          <div className=" gap-0 md:gap-3">
             <h2 className="md:leading-[60px] text-[#989898]">
               If You Can Imagine It,
             </h2>
-            <h2 className=" md:leading-[60px] ">You</h2>
+            
+            <h2 className=" md:leading-[60px] ">You Can Build It</h2>
           </div>
-          <h2 className=" md:leading-[60px]">Can Build It</h2>
         </div>
         {/* Build*/}
         <div className="border-[1px] border-[#3d3d3d] rounded-[20px]">

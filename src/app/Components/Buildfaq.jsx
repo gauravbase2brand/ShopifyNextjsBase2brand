@@ -43,7 +43,9 @@ const Buildfaq = () => {
       {faqItems.map((item, index) =>
         <div key={index} className="mb-2 custoum_border border-b-[1px] border-[#3d3d3d]">
           <div className="flex items-center relative"  onClick={() => toggleFAQ(index)}>
-            <span className="text-[14px] p-[0px_15px] bg-[#a09b9b]">
+            <span className={`text-[14px] p-[0px_15px]  ${
+                activeIndex === index ? 'bg-[#96BF47] shadow-[inset_0_0_29px_#d8f999,0_0_34px_#b4ff23]' : 'bg-[#96BF47]'
+              }`} >
               {item.no}
             </span>
             <button

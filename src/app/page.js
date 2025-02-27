@@ -25,20 +25,19 @@ import ScrollVideo from "./Components/Videoani";
 const page = () => {
   return (
     <>
+      <div className="bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat ">
       <Banner />
       <BannerSlider />
-      <ScrollVideo/>
+      </div>
+      <ScrollVideo />
       <Heading
         Heading1="Trusted Shopify"
         Heading2="Partner Agency"
         Paragraph="We are an officially registered Shopify Partner, recognized by Shopify for our expertise in developing and optimizing Shopify stores. Our team specializes in creating seamless e-commerce experiences for businesses of all sizes."
         paragraphWidth="w-full  sm:w-1/2  lg:w-[50%] md:w-9/12 "
       />
-
       <ShopifyPartnerDashboard />
-     
-     
-       <Heading
+      <Heading
         Heading1="Services"
         Heading2="We Provide"
         Paragraph="Boost efficiency and innovation with easy-to-use AI solutions tailored to your needs."
@@ -129,15 +128,15 @@ growth areas, and stay ahead in a competitive market."
         </div>
       </div>
       <TrustedLeadingBrands />
-      <BestPartners/>
-      <Slider/>
-      <Integration/>
-      <Reviews/>
-      <Bulid/>
-      <Launched/>
-      <Team/>
-      <Faqs/>
-      <Talk/>
+      <BestPartners />
+      <Slider />
+      <Integration />
+      <Reviews />
+      <Bulid />
+      <Launched />
+      {/* <Team /> */}
+      <Faqs />
+      <Talk />
     </>
   );
 };

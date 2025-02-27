@@ -100,7 +100,7 @@ export default function Home() {
          <Image
             src={video1}
             alt="GSAP Image"
-            className="w-full object-cover rounded-[20px]"
+            className="w-full object-cover"
           />
          </div>
        </div>

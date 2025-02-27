@@ -53,7 +53,8 @@ const Launchph = () => {
       < div key={index}>
         <div className="mb-2 custoum_border p-[10px_0]"   onClick={() => toggleFAQ(index)}                          >
           <div className="flex items-center relative  border-[2px] border-[#414141] border-b-0 rounded-tr-[20px] rounded-tl-[20px]">
-            <span className="text-[14px] p-[15px] h-[100%] bg-[#96BF47] text-black font-semibold rounded-tl-[20px]">
+            <span className={`text-[14px] p-[15px] h-[100%]  text-black font-semibold rounded-tl-[20px] ${
+                activeIndex === index ? 'bg-[#96BF47] shadow-[inset_0_0_29px_#d8f999,0_0_34px_#b4ff23]' : 'bg-[#96BF47]'}`}>
               {item.no}
             </span>
             <button

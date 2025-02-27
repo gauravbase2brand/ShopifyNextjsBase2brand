@@ -67,7 +67,7 @@ const ERPSection = ({
               </div>
             ) : (
               <>
-                <div className="flex flex-col gap-[10px]">
+                <div className="flex flex-col gap-[10px] p-[10%_0] md:p-0">
                 <div className="px-4 py-2 w-fit bg-black border border-white rounded-full text-sm inline-block">
                 {phase}
                 </div>
