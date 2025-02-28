@@ -21,8 +21,8 @@ export default function Navbar() {
   return (
     <>
       <div className="left-0 right-0 fixed w-full h-[100px] bg-gradient-to-b from-black via-[#121212] to-transparent z-[1000] ">
-        <div className="container mx-aut0 w-full ">
-          <header className="flex justify-between items-center py-4">
+        <div className="container mx-aut0 w-full p-0">
+          <header className="flex justify-between items-center py-4 px-[15px] md:px-0">
             {/* Logo */}
             <Link href="/" className="cursor-pointer">
               <div className="flex items-center">
@@ -31,7 +31,7 @@ export default function Navbar() {
                   alt="BASE2BRAND"
                   width={140}
                   height={40}
-                  className="transition-all duration-500 transform scale-95 hover:scale-100"
+                  className="transition-all duration-500 transform scale-95 hover:scale-100 w-[220px]"
                 />
               </div>
             </Link>
@@ -41,13 +41,13 @@ export default function Navbar() {
               {navbarData.map((item) => (
                 <Link key={item.name} href={item.url}>
                   <div
-                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] text-sm font-medium transition-all duration-300 ${
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  text-sm font-medium ${
                       pathname === item.url
-                        ? "bg-#383535  border-2 border-dashed border-[#96BF47]"
-                        : " hover:text-[#96BF47]"
+                        ? "bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]"
+                        : " hover:text-[#96BF47]  border-2 border-dashed border-[#00000000]"
                     }`}
                   >
-                    <span className="text-[16PX]">{item.name}</span>
+                    <span className="text-[16px]">{item.name}</span>
                   </div>
                 </Link>
               ))}
@@ -87,7 +87,7 @@ export default function Navbar() {
                 /* Show cross icon when menu is open */
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-white hover:text-gray-300 transition-all duration-300"
+                  className="h-8 w-8 text-[#a2d148] hover:text-gray-300 transition-all duration-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -114,13 +114,13 @@ export default function Navbar() {
           <div className="absolute top-20 w-full flex flex-col items-center">
             <ul className="space-y-6 text-center w-full">
               {navbarData.map((item) => (
-                <li key={item.name} className="w-full">
+                <li key={item.name} className="w-full text-end mt-0">
                   <Link href={item.url} onClick={() => setIsOpen(false)}>
                     <div
-                      className={`block text-white text-xl font-medium py-3 px-8 w-[90%] mx-auto border border-gray-500 rounded-lg transition-all duration-300 ${
+                      className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300 ${
                         pathname === item.url
-                          ? "bg-primary text-black shadow-md"
-                          : "hover:bg-white hover:text-black"
+                          ? " text-[#a2d148] shadow-md"
+                          : ""
                       }`}
                     >
                       {item.name}
@@ -131,7 +131,7 @@ export default function Navbar() {
             </ul>
 
             {/* Call Button in Mobile Menu */}
-            <div className="mt-6">
+            <div className="mt-6 w-[88%] justify-end flex">
               <Link
                 href="tel:584584758"
                 className="flex items-center gap-3 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-black transition-all duration-300"

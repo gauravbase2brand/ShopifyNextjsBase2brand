@@ -72,7 +72,7 @@ export default function Home() {
       <div className="md:block hidden container h-[30vh] md:h-[80vh] overflow-hidden pt-[5%] pb-[5%]">
         <div className="flex justify-center items-center relative h-[100%] md:h-[53vh] ">
           <div className="w-[37%] mr-[10%]">
-            <Image src={imageio} alt  />
+            <Image src={imageio} alt=""  />
           </div>
 
           <div className="absolute w-[45%] bg-gray-100 ">
@@ -90,7 +90,7 @@ export default function Home() {
             </main>
           </div>
           <div className="w-[37%] ml-[10%]">
-            <Image src={imageio} alt />
+            <Image src={imageio} alt="" />
           </div>
         </div>
       </div>

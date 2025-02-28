@@ -57,12 +57,12 @@ const reviewsdata = [
 ];
 export default function Reviews() {
   const [slideitem, setSlideItem] = useState(1);
-  useCountUp({
-    ref: "counter",
-    enableScrollSpy: true,
-    scrollSpyDelay: 2000,
-    end: 0
-  });
+  // useCountUp({
+  //   ref: "counter",
+  //   enableScrollSpy: true,
+  //   scrollSpyDelay: 2000,
+  //   end: 0
+  // });
   return (
     <div>
       <div className="container mx-auto px-4">
@@ -94,7 +94,7 @@ export default function Reviews() {
                         alt="img"
                         width={1000}
                         height={500}
-                        className="w-[97%] md:w-[70%]"
+                        className="w-[85%] md:w-[70%]"
                       />
                     </div>
                     <div className="w-[100%] md:w-[60%] p-[10%_0] md:p-0">
@@ -105,7 +105,7 @@ export default function Reviews() {
                             width={1000}
                             height={500}
                             alt=""
-                            className="w-[30%] md:w-[15%] rotate-180"
+                            className="w-[22%] md:w-[15%] rotate-180"
                           />
                         </div>
                         <div>
@@ -196,7 +196,7 @@ export default function Reviews() {
               <div className="text-[#96BF47] md:text-[40px] text-[26px] leading-[35px] font-black md:leading-[50px]">
                 <CountUp end={150} enableScrollSpy />+
               </div>
-              <span className="text-[12px] text-[#b6b2b2]">Shopify Development</span>
+              <span className="text-[12px] text-[#b6b2b2] text-end">Shopify Development</span>
             </div>
             <Image src={line1} alt="hy" width={1000} height={500} className="absolute w-[90px] left-[-25%] md:left-[-25%] bottom-[3%]"/>
           </div>

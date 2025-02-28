@@ -94,7 +94,7 @@ const Faqs = () => {
 
   return (
     <div className="pt-4 pb-4">
-    <div className=" container text-center flex flex-col items-center pb-5">
+    <div className=" container text-center flex flex-col items-center md:pb-3">
           <div className="flex md:flex-row flex-col gap-0 md:gap-3">
             <h2 className="md:leading-[60px] ">
               Frequently Asked
@@ -105,9 +105,9 @@ const Faqs = () => {
     <div className="flex container md:flex-row flex-col">
       <div className="pt-4 md:w-[50%] flex flex-col">
         {faqItems.map((item, index) =>
-          <div className="p-[0px_2%]" key={item.id}>
+          <div className="md:p-[0px_2%]" key={item.id}>
             <div
-              className="mb-2 custoum_border p-[10px_0]"
+              className="md:mb-2 custoum_border p-[10px_0]"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[15px]">
@@ -146,7 +146,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="p-[0_11%_4%] pt-0 text-[13px] leading-[23px] bg-black rounded-b-lg">
+                  <div className="p-[0_11%_4%] pt-0  text-[14px] md:text-[13px] leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -157,9 +157,9 @@ const Faqs = () => {
       </div>
       <div className="md:pt-4 md:w-[50%] flex flex-col">
         {faqItems2.map((item, index) =>
-          <div className="p-[0px_2%]" key={item.id}>
+          <div className="md:p-[0px_2%]" key={item.id}>
             <div
-              className="mb-2 custoum_border p-[10px_0]"
+              className="md:mb-2 custoum_border p-[10px_0]"
               onClick={() => toggleFAQ2(index)}
             >
               <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[20px]">

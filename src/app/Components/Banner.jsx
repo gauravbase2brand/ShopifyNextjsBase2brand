@@ -7,7 +7,7 @@ import Button from "./UIUX/Button";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[100vh] md:h-[95vh] flex flex-col justify-center items-center text-white text-center overflow-hidden">
+    <div className="relative w-full h-[100vh] md:h-[100vh] flex flex-col justify-center items-center text-white text-center overflow-hidden">
       <div className="relative pt-[90px] w-full h-auto md:h-[95vh]">
         {/* Left Floating Image - FIXED POSITIONING */}
         <div className="absolute top-0 left-[-10px] md:left-[-50px] md:top-[30%] transform -translate-y-1/2">
@@ -32,7 +32,7 @@ const Banner = () => {
         </div>
 
         {/* Main Content */}
-        <div className="relative z-10">
+        <div className="relative z-10 h-[100%] flex flex-col items-center justify-center">
           <h1 className="md:text-[100px] xl:text-[130px] text-[80px]   font-bold leading-tight ">
             We are <br />
             <span className="relative inline-block px-4 py-2 bg-primary text-black text-[70px] xl:text-[170px] md:text-[150px] leading-[80px] md:leading-[150px] -rotate-2">

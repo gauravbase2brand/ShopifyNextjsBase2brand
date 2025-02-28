@@ -58,7 +58,7 @@ const Launchph = () => {
               {item.no}
             </span>
             <button
-              className=" text-left text-[22px] p-2 bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out"
+              className=" text-left text-[18px] p-2 bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out"
             >
               {item.question}
             </button>
@@ -74,7 +74,7 @@ const Launchph = () => {
               ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
               : "max-h-0"}`}
           >
-            <div className="p-[10px] text-[16px] leading-[25px] bg-black rounded-b-lg">
+            <div className="p-[10px] text-[14px] leading-[24xp] bg-black rounded-b-lg">
               {item.answer}
             </div>
           </div>
