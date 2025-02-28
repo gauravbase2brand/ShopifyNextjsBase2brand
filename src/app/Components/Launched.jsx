@@ -11,7 +11,11 @@ import Launchph from "./Launchph";
 import weekpopup from "../../../public/assets/week_popup.png";
 import weekpopup2 from "../../../public/assets/week_popup2.png";
 import Team from "./Team";
-
+import banner from "../../../public/assets/buildbanner.png";
+import arrow from "../../../public/assets/arrowfaq.png";
+import Buildfaq from "./Buildfaq";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Launched() {
   const [yscroll, setyscroll] = useState(0);
   const [currentweek, setcurrentweek] = useState("");
@@ -20,7 +24,6 @@ export default function Launched() {
   const [card3Scroll, setCard3Scroll] = useState(null);
   const [card4Scroll, setCard4Scroll] = useState(null);
   const [lastdiv, setlastdiv] = useState(0);
-  // Create refs for each card
   const card1Ref = useRef(null);
   const card2Ref = useRef(null);
   const card3Ref = useRef(null);
@@ -31,7 +34,7 @@ export default function Launched() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       setyscroll(scrollY);
-
+  
       if (card1Ref.current) {
         const rect1 = card1Ref.current.getBoundingClientRect();
         setCard1Scroll(scrollY + rect1.top);
@@ -52,29 +55,128 @@ export default function Launched() {
         const rect5 = lastdivRef.current.getBoundingClientRect();
         setlastdiv(scrollY + rect5.top);
       }
-            if (yscroll > card1Scroll && yscroll < card2Scroll) {
+      if (yscroll >= card1Scroll && yscroll < card2Scroll) {
         setcurrentweek("1st Week");
-      } else if (yscroll < card2Scroll && yscroll < card3Scroll) {
+      } else if (yscroll >= card2Scroll && yscroll < card3Scroll) {
         setcurrentweek("2nd Week");
-      } else if (yscroll < card3Scroll && yscroll < card4Scroll) {
+      } else if (yscroll >= card3Scroll && yscroll < card4Scroll) {
         setcurrentweek("3rd Week");
-      } else if (yscroll < card4Scroll && yscroll < lastdiv) {
+      } else if (yscroll >= card4Scroll && yscroll < lastdiv) {
         setcurrentweek("4th Week");
-      }
-       else {
-        setcurrentweek("1st Week");
+      } else {
+        setcurrentweek("1st Week"); 
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
+  }, [yscroll, card1Scroll, card2Scroll, card3Scroll, card4Scroll, lastdiv]);
   return (
     <div>
-      <div className="container" ref={card1Ref}>
+      {/* Bulid container */}
+      <div className="container pb-[5%]">
+        {/* Heading  */}
+        <div className=" container text-center flex flex-col items-center pb-5">
+          <div className=" gap-0 md:gap-3">
+            <h2 className="md:leading-[60px] text-[#989898]">
+              If You Can Imagine It,
+            </h2>
+            
+            <h2 className=" md:leading-[60px] ">You Can Build It</h2>
+          </div>
+        </div>
+        {/* Build*/}
+        <div className="border-[1px] border-[#3d3d3d] rounded-[20px]">
+          <div data-aos="fade-up">
+            <Image
+              src={banner}
+              width={1000}
+              height={500}
+              alt=""
+              className="w-[100%] md:h-[auto] rounded-[10px] h-[200px] md:object-contain object-cover"
+            />
+          </div>          
+          <div className="hidden flex-col child_custom md:flex">
+            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="600">
+              <div>
+              
+               <span className="text-[14px]">OPT /01</span>
+              </div>
+              <div className="w-[15%]">
+                <h4 className="text-[23px]">Go Liquid</h4>
+              </div>
+              
+                
+                <div className="w-[60%] leading-[24px]">
+                <span className="text-[14px]">
+                  Get the best of both worlds. Build your own one-of-a-kind
+                  store in no time with Liquid, then leave the rest to us.
+                </span>
+              </div>
+              <div>
+                <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
+                
+              </div>
+            </div>
+            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="700">
+              <div>
+                <span className="text-[14px]">OPT /02</span>
+              </div>
+              <div className="w-[15%]">
+                <h4 className="text-[23px]">Go headless</h4>
+              </div>
+              <div className="w-[60%] leading-[24px]">
+                <span className="text-[14px]">
+                Get full control. Tap into Shopify's APIs and developer tools to build
+                your own bespoke store, integrated with your preferred stack.
+                </span>
+              </div>
+              <div>
+                <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
+              </div>
+            </div>
+            <div className="flex border-b-[1px] border-[#3d3d3d] justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="800">
+              <div>
+                <span className="text-[14px]">OPT /03</span>
+              </div>
+              <div className="w-[15%]">
+                <h4 className="text-[23px]">Custom builds</h4>
+              </div>
+              <div className="w-[60%] leading-[24px]">
+                <span className="text-[14px]">
+                Get custom builds as per requirements 
+                </span>
+              </div>
+              <div>
+                <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
+              </div>
+            </div>
+            <div  ref={card1Ref} className="flex justify-center gap-[5%] p-[20px_0] items-center" data-aos="fade-up" data-aos-duration="900">
+              <div>
+                <span className="text-[14px]">OPT /04</span>
+              </div>
+              <div className="w-[15%]">
+                <h4 className="text-[23px]">Custom Integration</h4>
+              </div>
+              <div className="w-[60%] leading-[24px]">
+                <span className="text-[14px]">
+                Integrate with your Backoffice managements or any other platform
+                </span>
+              </div>
+              <div>
+                <Image src={arrow} alt="" width={1000} height={500} className="w-[100%]" />
+              </div>
+            </div>
+          </div>
+          <div className="md:hidden">
+            <Buildfaq/>
+          </div>
+        </div>
+      </div>
+      {/* Lunched 4 week*/}
+      <div className="container">
         {/* Heading */}
         <div className="hidden md:flex container text-center flex-col items-center pb-5">
           <div className="flex flex-row gap-0 md:gap-3">
@@ -105,7 +207,7 @@ export default function Launched() {
                   data-aos="fade-up"
                   data-aos-duration="600"
                 >
-                  <div className="flex justify-center">
+                  <div className="flex justify-center" ref={card2Ref}>
                     <div className="w-[90%]">
                       <div className="w-[100%] text-[#96BF47]">
                         <h3>Research & Propose</h3>
@@ -169,8 +271,8 @@ export default function Launched() {
                 <div
                   className={
                     yscroll > card1Scroll && yscroll <= lastdiv
-                      ? "sticky top-[50%] transition duration-[1900ms] "
-                      : "absolute flex transition duration-[1900ms] "
+                      ? "sticky top-[50%] transition duration-[1900ms] z-10 "
+                      : "absolute flex transition duration-[1900ms] z-10 "
                   }
                 >
                   <Image src={greendot} alt="" className="w-[30px]" />
@@ -216,7 +318,7 @@ export default function Launched() {
                 className="p-[5%] pt-[25%]"
                 data-aos="fade-up"
                 data-aos-duration="600"
-                ref={card2Ref}
+             
               >
                 <div className="flex justify-center">
                   <div className="w-[90%]">

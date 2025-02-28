@@ -132,7 +132,7 @@ growth areas, and stay ahead in a competitive market."
       <Slider />
       <Integration />
       <Reviews />
-      <Bulid />
+      {/* <Bulid /> */}
       <Launched />
       {/* <Team /> */}
       <Faqs />
