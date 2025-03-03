@@ -134,7 +134,7 @@ const imagesdatamobile = [
   rowfour9,
   rowfour10,
   // rowfour11,
-  rowfive1,
+  // rowfive1,
   rowfive2,
   rowfive3,
   rowfive4,

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import parimage1 from "../../../public/assets/partner-logo1.webp";
 import parimage2 from "../../../public/assets/partner-logo2.webp";
 import parimage3 from "../../../public/assets/partner-logo3.webp";
-import parimage4 from "../../../public/assets/partner-logo4.webp";
+import parimage4 from "../../../public/assets/partner-logo4.png";
 import litebg from "../../../public/assets/lite-bg.png"
 export default function BestPartners() {
     return (

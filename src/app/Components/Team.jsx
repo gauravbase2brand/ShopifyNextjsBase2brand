@@ -6,39 +6,55 @@ import "swiper/css/navigation";
 import "swiper/css";
 import manpreetsir from "../../../public/assets/manpreetsir.png";
 import arshsir from "../../../public/assets/arshsir.png";
-import surajsir from "../../../public/assets/surajsir.png";
+import deepaksir from "../../../public/assets/deepaksir.png";
+import rahulsir from "../../../public/assets/rahulsir.png";
+import omsir from "../../../public/assets/omsir.png";
+import mdsir from "../../../public/assets/mdsir.png";
+import rishavsir from "../../../public/assets/rishavsir.png";
+import saddamsir from "../../../public/assets/saddamsir.png";
+// import surajsir from "../../../public/assets/surajsir.png";
 import Image from "next/image";
 const teamdata = [
   {
     img: manpreetsir,
     membername: "Manpreet Singh",
-    memberposition: "Project Manager"
+    memberposition: "Technical Shopify Project Manager and CRO expert"
   },
   {
     img: arshsir,
     membername: "Arshpreet Singh",
-    memberposition: "Sr. Project Coordinator"
+    memberposition: "Shopify Theme Project Manager"
   },
   {
-    img: surajsir,
-    membername: "Suraj Parkash",
-    memberposition: "Quality Assurance"
+    img: deepaksir,
+    membername: "Deepak Chauhan",
+    memberposition: "Shopify App expert & MERN Stack developer"
   },
   {
-    img: manpreetsir,
-    membername: "Manpreet Singh",
-    memberposition: "Project Manager"
+    img: rahulsir,
+    membername: "Rahul Raj",
+    memberposition: "Shopify Theme Developer"
   },
   {
-    img: arshsir,
-    membername: "Arshpreet Singh",
-    memberposition: "Sr. Project Coordinator"
+    img: omsir,
+    membername: "Om Prakash",
+    memberposition: "Shopify Theme Expert"
   },
   {
-    img: surajsir,
-    membername: "Suraj Parkash",
-    memberposition: "Quality Assurance"
-  }
+    img: mdsir,
+    membername: "MD. Sahjad Ansari",
+    memberposition: "Shopify App expert & MERN Stack developer"
+  },
+  {
+    img:rishavsir,
+    membername :"Rishav Karn",
+    memberposition:"Shopify Theme developer"
+  },
+  {
+    img:saddamsir,
+    membername :"Saddam Hussain",
+    memberposition:"Shopify Theme/App Expert"
+  },
 ];
 export default function Team() {
   const [slideitem, setSlideItem] = useState(4);
@@ -100,7 +116,7 @@ export default function Team() {
                      </div>
                      <div className="p-[10px_0]">
                        <h5 className="md:text-[21px] text-[25px] leading-[35px] md:leading-[30px] font-light">{data.membername}</h5>      
-                       <p className="md:text-[13px] text-[17px] leading-[27px] md:leading-[24px] font-light m-0 text-[#A8A8A8]">{data.memberposition}</p>
+                       <p className="md:text-[13px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">{data.memberposition}</p>
                      </div>
                    </div>
                   </SwiperSlide>

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState,useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation"; // Detect active page
@@ -10,13 +10,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname(); // Get current route
 
-  const navbarData = [
-    { name: "CRM", url: "/" },
-    { name: "ERP", url: "/about" },
-    { name: "POS", url: "/projects" },
-    { name: "CUSTOM INTEGRATION", url: "/resume" },
-    { name: "OUR PRODUCTS", url: "/resume2" },
-  ];
+  const section1 =useRef();  
+  const section2 =useRef();
+  const section3 =useRef();
+  const section4 =useRef(); 
+  const scrollhandler =(secref) =>{
+    window.screenTop({top:secref.current.offsetTop,behavior:"smooth"})
+  }
 
   return (
     <>
@@ -38,19 +38,39 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex gap-3 backdrop-blur-md px-4 py-2 rounded-full shadow-md">
-              {navbarData.map((item) => (
-                <Link key={item.name} href={item.url}>
+              {/* {navbarData.map((item) => ( */}
+                {/* // <Link key={item.name} href={item.url}> */}
                   <div
-                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  text-sm font-medium ${
-                      pathname === item.url
-                        ? "bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]"
-                        : " hover:text-[#96BF47]  border-2 border-dashed border-[#00000000]"
-                    }`}
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]`}
                   >
-                    <span className="text-[16px]">{item.name}</span>
+                    <span className="text-[16px]">CRM</span>
                   </div>
-                </Link>
-              ))}
+                  <div
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium `}
+                    onClick={()=>{scrollhandler(section1)}}
+                  >
+                    <span className="text-[16px]">ERP</span>
+                  </div>
+                  <div
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium `}
+                    onClick={()=>{scrollhandler(section2)}}
+                  >
+                    <span className="text-[16px]">POS</span>
+                  </div>
+                  <div
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium `}
+                    onClick={()=>{scrollhandler(section3)}}
+                  >
+                    <span className="text-[16px]">CUSTOM INTEGRATION</span>
+                  </div>
+                  <div
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium  `}
+                    onClick={()=>{scrollhandler(section4)}}
+                  >
+                    <span className="text-[16px]">OUR PRODUCTS</span>
+                  </div>
+                {/* // </Link> */}
+              {/* ))} */}
             </nav>
 
             {/* Contact Section */}

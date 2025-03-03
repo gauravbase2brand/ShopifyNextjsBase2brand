@@ -68,7 +68,7 @@ const ERPSection = ({
             ) : (
               <>
                 <div className="flex flex-col gap-[10px] p-[10%_0] md:p-0">
-                <div className="px-4 py-2 w-fit bg-black border border-white rounded-full text-sm inline-block">
+                <div className="px-6 py-2 w-fit bg-black border border-white rounded-full text-sm inline-block">
                 {phase}
                 </div>
                 <h2 className="text-4xl font-bold">{TitleERP}</h2>
@@ -91,7 +91,7 @@ const ERPSection = ({
               <Image
                 src={CardImage}
                 alt="ERP Image"
-                className=" w-auto object-contain"
+                className=" w-[100%] object-contain md:h-[300px]"
               />
             )}
           </div>
