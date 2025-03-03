@@ -49,7 +49,7 @@ const Buildfaq = () => {
               {item.no}
             </span>
             <button
-              className=" text-left text-[22px] p-2 bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out"
+              className=" text-left text-[18px] p-2 bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out"
             >
               {item.question}
             </button>
@@ -65,7 +65,7 @@ const Buildfaq = () => {
               ? "max-h-40"
               : "max-h-0"}`}
           >
-            <div className="p-2 text-[16px] leading-[25px] bg-black rounded-b-lg">
+            <div className="p-2 text-[14px] leading-[24px] bg-black rounded-b-lg">
               {item.answer}
             </div>
           </div>

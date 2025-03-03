@@ -24,7 +24,7 @@ export default function Home() {
     // Animate Image Scaling on Scroll
     if (imageRef.current) {
       gsap.to(imageRef.current, {
-        scale: 3.2, // Scale image 3 times
+        scale: 4.5, // Scale image 3 times
         ease: "power1.out",
         scrollTrigger: {
           trigger: imageRef.current,
@@ -39,7 +39,7 @@ export default function Home() {
     // Animate GIF/Video Scaling on Scroll
     if (videoRef.current) {
       gsap.to(videoRef.current, {
-        scale: 2.5, // Scale video 2.5 times
+        scale: 1.5, // Scale video 2.5 times
         ease: "power1.out",
         scrollTrigger: {
           trigger: videoRef.current,
@@ -53,7 +53,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="">
        <div className="flex items-center pt-[4%] pb-[1%]">
               <div className="md:w-[15%] hidden md:block">
                   <Image src={lineimg1} alt="" width={1000} height={500} className="w-[100%]" />
@@ -69,10 +69,10 @@ export default function Home() {
               </div>
         </div>
         {/* for desktop */}
-      <div className="md:block hidden container h-[30vh] md:h-[80vh] overflow-hidden pt-[5%] pb-[5%]">
-        <div className="flex justify-center items-center relative h-[100%] md:h-[53vh] ">
+      <div className="md:block hidden container relative  h-[30vh] md:h-[80vh] overflow-hidden pt-[5%] pb-[5%]">
+        <div className="flex justify-center sticky top-[0] items-center  h-[100%] md:h-[53vh] ">
           <div className="w-[37%] mr-[10%]">
-            <Image src={imageio} alt  />
+            <Image src={imageio} alt=""  />
           </div>
 
           <div className="absolute w-[45%] bg-gray-100 ">
@@ -90,7 +90,7 @@ export default function Home() {
             </main>
           </div>
           <div className="w-[37%] ml-[10%]">
-            <Image src={imageio} alt />
+            <Image src={imageio} alt="" />
           </div>
         </div>
       </div>
@@ -104,6 +104,6 @@ export default function Home() {
           />
          </div>
        </div>
-    </>
+    </div>
   );
 }

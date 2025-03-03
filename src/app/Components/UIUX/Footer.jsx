@@ -46,27 +46,40 @@ export default function Footer() {
             </div>
             <div className="flex w-[50%] justify-end">
               <div className="flex w-[70%] items-center justify-center gap-2">
-                <Image
-                  src={facebook}
-                  alt="facebook"
-                  width={45}
-                  height={45}
-                  className="h-[45px] w-[45px] cursor-pointer"
-                />
-                <Image
-                  src={twiter}
-                  alt="twitter"
-                  width={45}
-                  height={45}
-                  className="h-[45px] w-[45px] cursor-pointer"
-                />
-                <Image
-                  src={instagram}
-                  alt="instagram"
-                  width={45}
-                  height={45}
-                  className="h-[45px] w-[45px] cursor-pointer"
-                />
+                <a
+                  href="https://www.facebook.com/TechBase2Brand/"
+                  target="_blank"
+                >
+                  <Image
+                    src={facebook}
+                    alt="facebook"
+                    width={45}
+                    height={45}
+                    className="h-[45px] w-[45px] cursor-pointer"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/techbase2brand/?hl=en"
+                  target="_blank"
+                >
+                  <Image
+                    src={instagram}
+                    alt="instagram"
+                    width={45}
+                    height={45}
+                    className="h-[45px] w-[45px] cursor-pointer"
+                  />
+                </a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2FtechBase2Brand" target="_blank">
+                  <Image
+                    src={twiter}
+                    alt="twiter"
+                    width={45}
+                    height={45}
+                    className="h-[45px] w-[45px] cursor-pointer"
+                  />
+                </a>
+                <a href="https://in.linkedin.com/company/techbase2brand" target="_blank">
                 <Image
                   src={linkedin}
                   alt="linkedin"
@@ -74,13 +87,15 @@ export default function Footer() {
                   height={45}
                   className="h-[45px] w-[45px] cursor-pointer"
                 />
-                <Image
+                </a>
+                {/* <Image
                   src={skype}
                   alt="skype"
                   width={45}
                   height={45}
                   className="h-[45px] w-[45px] cursor-pointer"
-                />
+                /> */}
+                <a href="https://www.youtube.com/channel/UCEHsjR1TFlEfsbcYQPlLW4Q" target="_blank">
                 <Image
                   src={youtube}
                   alt="youtube"
@@ -88,6 +103,7 @@ export default function Footer() {
                   height={45}
                   className="h-[45px] w-[45px] cursor-pointer"
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -271,7 +287,7 @@ export default function Footer() {
               >
                 <div className="p-[0_4%_4%]  w-[100%] pt-0 text-[13px] leading-[23px] bg-[#2e8a2e00] rounded-b-lg">
                   <div>
-                    <ul className="flex flex-col gap-[12px] mt-[15px]">
+                    <ul className="flex flex-col gap-[12px] mt-[5px]">
                       <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
                         CRM
                       </li>
@@ -325,7 +341,7 @@ export default function Footer() {
               >
                 <div className="p-[0_4%_4%]  w-[100%] pt-0 text-[13px] leading-[23px] bg-[#2e8a2e00] rounded-b-lg">
                   <div>
-                    <ul className="flex flex-col gap-[12px] mt-[15px]">
+                    <ul className="flex flex-col gap-[12px] mt-[5px]">
                       <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
                         About
                       </li>
@@ -345,134 +361,158 @@ export default function Footer() {
           <div className="flex w-[100%] justify-end pt-3 pb-3">
             <div className="flex w-[100%] flex-col items-center justify-around gap-4">
               <div className="flex w-[80%] justify-center gap-3">
-                <Image
-                  src={facebook}
-                  alt="facebook"
-                  width={45}
-                  height={45}
-                  className="h-[50px] w-[50px] cursor-pointer"
-                />
-                <Image
-                  src={twiter}
-                  alt="twitter"
-                  width={45}
-                  height={45}
-                  className="h-[50px] w-[50px] cursor-pointer"
-                />
-                <Image
-                  src={instagram}
-                  alt="instagram"
-                  width={45}
-                  height={45}
-                  className="h-[50px] w-[50px] cursor-pointer"
-                />
+              <a
+                  href="https://www.facebook.com/TechBase2Brand/"
+                  target="_blank"
+                >
+                  <Image
+                    src={facebook}
+                    alt="facebook"
+                    width={45}
+                    height={45}
+                    className="h-[45px] w-[45px] cursor-pointer"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/techbase2brand/?hl=en"
+                  target="_blank"
+                >
+                  <Image
+                    src={instagram}
+                    alt="instagram"
+                    width={45}
+                    height={45}
+                    className="h-[45px] w-[45px] cursor-pointer"
+                  />
+                </a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2FtechBase2Brand" target="_blank">
+                  <Image
+                    src={twiter}
+                    alt="twiter"
+                    width={45}
+                    height={45}
+                    className="h-[45px] w-[45px] cursor-pointer"
+                  />
+                </a>
+                <a href="https://in.linkedin.com/company/techbase2brand" target="_blank">
                 <Image
                   src={linkedin}
                   alt="linkedin"
                   width={45}
                   height={45}
-                  className="h-[50px] w-[50px] cursor-pointer"
+                  className="h-[45px] w-[45px] cursor-pointer"
                 />
-              </div>
-              <div className="flex w-[80%] justify-center gap-3">
-                <Image
+                </a>
+                {/* <Image
                   src={skype}
                   alt="skype"
                   width={45}
                   height={45}
-                  className="h-[50px] w-[50px] cursor-pointer"
-                />
+                  className="h-[45px] w-[45px] cursor-pointer"
+                /> */}
+                <a href="https://www.youtube.com/channel/UCEHsjR1TFlEfsbcYQPlLW4Q" target="_blank">
                 <Image
                   src={youtube}
                   alt="youtube"
                   width={45}
                   height={45}
-                  className="h-[50px] w-[50px] cursor-pointer"
+                  className="h-[45px] w-[45px] cursor-pointer"
                 />
+                </a>
               </div>
             </div>
           </div>
           {/* mail links and phone numbers */}
           <div className="flex flex-col gap-[15px] ps-[2.5%]">
-                <a
-                  target="_blank"
-                  href="mailto:hello@base2brand@gmail.com"
-                  className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
-                >
-                  <Image
-                    src={gmail}
-                    alt="gmail"
-                    width={35}
-                    height={35}
-                    className="w-[40px] h-[40px] object-contain"
-                  />
-                  hello@base2brand@gmail.com
-                </a>
-                <a
-                  target="_blank"
-                  href="tel:(+91) 90417-00209"
-                  className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
-                >
-                  <Image
-                    src={whatsapp}
-                    alt="whatsapp"
-                    width={35}
-                    height={35}
-                    className="w-[40px] h-[40px] object-contain"
-                  />
-                  (+91) 90417-00209
-                </a>
-                  <a
-                    target="_blank"
-                    href="tel:(+91) 98724-87850"
-                    className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
-                  >
-                    <Image
-                      src={india}
-                      alt="india"
-                      width={35}
-                      height={35}
-                      className="w-[40px] h-[40px] object-contain"
-                    />
-                    (+91) 98724-87850
-                  </a>
-                  <a
-                    target="_blank"
-                    href="tel:(+1) 72090-35933"
-                    className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
-                  >
-                    <Image
-                      src={usa}
-                      alt="usa"
-                      width={35}
-                      height={35}
-                      className="w-[40px] h-[40px] object-contain"
-                    />
-                    (+1) 72090-35933
-                  </a>
-                  <a
-                    target="_blank"
-                    href="tel:(+44) 74484-35973"
-                    className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
-                  >
-                    <Image
-                      src={uk}
-                      alt="uk"
-                      width={35}
-                      height={35}
-                      className="w-[40px] h-[40px] object-contain"
-                    />
-                    (+44) 74484-35973
-                  </a>
-              </div>
+            <a
+              target="_blank"
+              href="mailto:hello@base2brand@gmail.com"
+              className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
+            >
+              <Image
+                src={gmail}
+                alt="gmail"
+                width={35}
+                height={35}
+                className="w-[40px] h-[40px] object-contain"
+              />
+              hello@base2brand@gmail.com
+            </a>
+            <a
+              target="_blank"
+              href="tel:(+91) 90417-00209"
+              className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
+            >
+              <Image
+                src={whatsapp}
+                alt="whatsapp"
+                width={35}
+                height={35}
+                className="w-[40px] h-[40px] object-contain"
+              />
+              (+91) 90417-00209
+            </a>
+            <a
+              target="_blank"
+              href="tel:(+91) 98724-87850"
+              className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
+            >
+              <Image
+                src={india}
+                alt="india"
+                width={35}
+                height={35}
+                className="w-[40px] h-[40px] object-contain"
+              />
+              (+91) 98724-87850
+            </a>
+            <a
+              target="_blank"
+              href="tel:(+1) 72090-35933"
+              className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
+            >
+              <Image
+                src={usa}
+                alt="usa"
+                width={35}
+                height={35}
+                className="w-[40px] h-[40px] object-contain"
+              />
+              (+1) 72090-35933
+            </a>
+            <a
+              target="_blank"
+              href="tel:(+44) 74484-35973"
+              className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
+            >
+              <Image
+                src={uk}
+                alt="uk"
+                width={35}
+                height={35}
+                className="w-[40px] h-[40px] object-contain"
+              />
+              (+44) 74484-35973
+            </a>
+          </div>
         </div>
       </div>
       {/* copy right  container */}
       <div className="flex flex-col md:flex-row items-center p-[20px_0] md:justify-center border-t-[1px] border-[#484848]">
-         <div className="text-[16px] font-light text-[#BBBBBB] ">
-          ©2025 All rights reserved | <a href="https://base2brand.com/" target="_blank" className="text-[#fff]">Base2Brand</a> | 
-         </div>
-         <div className="text-[16px] font-light text-[#BBBBBB] ">Disclaimer | Privacy Policy | Terms of Service</div>
+        <div className="text-[16px] font-light text-[#BBBBBB] ">
+          ©2025 All rights reserved |{" "}
+          <a
+            href="https://base2brand.com/"
+            target="_blank"
+            className="text-[#fff]"
+          >
+            Base2Brand
+          </a>{" "}
+          |
+        </div>
+        <div className="text-[16px] font-light text-[#BBBBBB] ">
+          Disclaimer | Privacy Policy | Terms of Service
+        </div>
       </div>
     </div>
   );

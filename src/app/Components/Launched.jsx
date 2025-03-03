@@ -288,13 +288,13 @@ export default function Launched() {
                     (yscroll >= card4Scroll && yscroll <= lastdiv)
                       ? <div className="flex justify-center">
                           <Image src={weekpopup2} alt="" />
-                          <span className="absolute text-black ">
+                          <span className="absolute text-black font-bold tracking-[0.5px] pt-[1px]">
                             {currentweek}
                           </span>
                         </div>
                       : <div className="flex justify-center">
                           <Image src={weekpopup} alt="" />
-                          <span className="absolute text-black ">
+                          <span className="absolute text-black font-bold tracking-[0.5px] pt-[1px]">
                             {currentweek}{" "}
                           </span>
                         </div>}

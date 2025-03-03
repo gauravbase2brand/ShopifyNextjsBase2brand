@@ -6,10 +6,24 @@ import "swiper/css/navigation";
 import "swiper/css";
 import Image from "next/image";
 import Heading from "./UIUX/Heading";
+//1
 import upperlimg1 from "../../../public/assets/slider-images/upper-left-img1.webp";
 import upperrimg1 from "../../../public/assets/slider-images/upper-right-img1.webp";
 import ratingimg from "../../../public/assets/slider-images/rating-slider.webp";
 import titleimg1 from "../../../public/assets/slider-images/slidertitle1.webp";
+//2
+import upperlimg2 from "../../../public/assets/slider-images/upper-left-img2.webp";
+import upperrimg2 from "../../../public/assets/slider-images/upper-right-img2.webp";
+import titleimg2 from "../../../public/assets/slider-images/slidertitle2.webp";
+//3
+import upperlimg3 from "../../../public/assets/slider-images/upper-left-img3.webp";
+import upperrimg3 from "../../../public/assets/slider-images/upper-right-img3.webp";
+import titleimg3 from "../../../public/assets/slider-images/slidertitle3.webp";
+//4
+import upperlimg4 from "../../../public/assets/slider-images/upper-left-img4.webp";
+import upperrimg4 from "../../../public/assets/slider-images/upper-right-img4.webp";
+import titleimg4 from "../../../public/assets/slider-images/slidertitle4.webp";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -23,23 +37,23 @@ const sliderdata = [
   },
   {
     id: 12,
-    leftimg: upperlimg1,
-    rightimg: upperrimg1,
-    titleimg1: titleimg1,
+    leftimg: upperlimg2,
+    rightimg: upperrimg2,
+    titleimg1: titleimg2,
     rating_img: ratingimg
   },
   {
     id: 3,
-    leftimg: upperlimg1,
-    rightimg: upperrimg1,
-    titleimg1: titleimg1,
+    leftimg: upperlimg3,
+    rightimg: upperrimg3,
+    titleimg1: titleimg3,
     rating_img: ratingimg
   },
   {
     id: 4,
-    leftimg: upperlimg1,
-    rightimg: upperrimg1,
-    titleimg1: titleimg1,
+    leftimg: upperlimg4,
+    rightimg: upperrimg4,
+    titleimg1: titleimg4,
     rating_img: ratingimg
   },
   {
@@ -137,7 +151,7 @@ export default function Slider() {
                         alt=""
                         width={1000}
                         height={500}
-                        className="w-[40%] object-contain"
+                        className="w-[40%] object-contain h-[22px]"
                       />
                       <Image
                         src={item.rating_img}
