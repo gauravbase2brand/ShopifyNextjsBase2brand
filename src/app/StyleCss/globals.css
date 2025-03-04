@@ -1,7 +1,10 @@
 html {
   scroll-behavior: smooth
 }
-
+body
+{
+  scroll-behavior: smooth
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,7 +33,7 @@ html {
   --font-size-h1: 2.5rem;
   --font-size-h2: 50px;
   --font-size-h3: 1.75rem;
-  --font-size-p: 18px;
+  --font-size-p: 14px;
 
   /* Line Heights */
   --line-height-body: 1.6;
@@ -159,12 +162,27 @@ p {
   position: unset;
 }
 
+
+.custom_gradient_right
+{
+  position: absolute;
+  content: "";
+  background-image: radial-gradient(circle, #96BF474D, #000);
+  border-radius: 50%;
+  bottom: 0;
+  filter: blur(75px);
+  z-index: -1;
+}
+
 @media screen and (max-width:1024px) {
   .swiper-pagination {
     justify-content: center;
     align-items: end;
   }
-
+  .custom_gradient_right
+  {
+      display: none;
+  }
   .swiper-slide {
     margin-right: 0px;
     margin-left: 0px;
@@ -277,3 +295,6 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+
+

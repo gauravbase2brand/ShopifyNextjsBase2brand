@@ -80,7 +80,7 @@ export default function BannerSlider() {
           }
 
 .marquee-item {
-    min-width: 259px;
+    min-width: 235px;
     margin-right: 10px;
     transition: transform 0.3s ease-in-out;
     margin-top: -27px;

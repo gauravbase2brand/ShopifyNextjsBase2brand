@@ -75,7 +75,7 @@ export default function Navbar() {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3">
-              <button className="bg-white xl:p-[7px_14px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
+              <button className="bg-white xl:p-[6px_12px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
                 Contact us
               </button>
               <div className="flex items-center space-x-4">
@@ -84,8 +84,8 @@ export default function Navbar() {
                   <Image
                     src={callicon}
                     alt="Call Icon"
-                    width={35}
-                    height={35}
+                    width={41}
+                    height={41}
                   />
                 </Link>
               </div>

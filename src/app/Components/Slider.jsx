@@ -106,7 +106,7 @@ export default function Slider() {
         {/* Slider Body*/}
       </div>
       <div className="w-[100%] flex flex-col items-center md:w-[100%]  pb-[5%]">
-        <div className="w-[90%] md:w-[100%]">
+        <div className="w-[90%] md:w-[100%]"  data-aos="fade-up ">
           <Swiper
             loop={true}
             autoplay={{
@@ -124,8 +124,11 @@ export default function Slider() {
           >
             {sliderdata.map((item, index) =>
               <SwiperSlide key={index}>
-                <div className="p-[5%] md:p-0"  data-aos="zoom-in">
-                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]">
+                <div className="p-[2%] md:p-0 rounded-[20px]"  data-aos-duration={`${index+9}00`}>
+                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]" 
+                style={{
+                  background:"radial-gradient(circle, #000000fa 3%, #2b3617a3 100%)"
+                }}>
                   <div className="w-[100%]">
                     <div className="flex justify-around p-[20px] pb-0 rounded-[15px] bg-[#5C772A]">
                       <Image
@@ -177,7 +180,7 @@ export default function Slider() {
                         <h3 className="text-[23px] py-3.5 pb-0 font-medium">
                           +100%
                         </h3>
-                        <span className="text-[12px] text-[#fff]">
+                        <span className="text-[10px] md:text-[12px] text-[#fff]">
                           Conversion Rate
                         </span>
                       </div>
@@ -190,7 +193,7 @@ export default function Slider() {
                         <h3 className="text-[23px] py-3.5 pb-0 font-medium">
                           +130%
                         </h3>
-                        <span className="text-[12px] text-[#fff]">
+                        <span className="text-[10px] md:text-[12px] text-[#fff]">
                           Avg. Order Value
                         </span>
                       </div>
@@ -203,7 +206,7 @@ export default function Slider() {
                         <h3 className="text-[23px] py-3.5 pb-0 font-medium">
                           +230%
                         </h3>
-                        <span className="text-[12px] text-[#fff]">Revenue</span>
+                        <span className="text-[10px] md:text-[12px] text-[#fff]">Revenue</span>
                       </div>
                     </div>
                   </div>

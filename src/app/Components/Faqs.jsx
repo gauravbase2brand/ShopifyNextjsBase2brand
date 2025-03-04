@@ -93,7 +93,7 @@ const Faqs = () => {
   ];
 
   return (
-    <div className="pt-4 pb-4">
+    <div className="pt-4 pb-4 relative">
     <div className=" container text-center flex flex-col items-center md:pb-3">
           <div className="flex md:flex-row flex-col gap-0 md:gap-3">
             <h2 className="md:leading-[60px] ">
@@ -146,7 +146,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="p-[0_11%_4%] pt-0  text-[14px] md:text-[13px] leading-[23px] bg-black rounded-b-lg">
+                  <div className="p-[0_11%_4%] pt-0 bg-transparent  text-[14px] md:text-[13px] leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -155,6 +155,7 @@ const Faqs = () => {
           </div>
         )}
       </div>
+      <div className="custom_gradient_right w-[300px] h-[300px] left-[0%] top-[50%]"></div>
       <div className="md:pt-4 md:w-[50%] flex flex-col">
         {faqItems2.map((item, index) =>
           <div className="md:p-[0px_2%]" key={item.id}>
@@ -198,7 +199,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="p-[0_11%_4%] pt-0 text-[13px] leading-[23px] bg-black rounded-b-lg">
+                  <div className="p-[0_11%_4%] pt-0 text-[13px] bg-transparent leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -207,6 +208,7 @@ const Faqs = () => {
           </div>
         )}
       </div>
+      <div className="custom_gradient_right w-[600px] h-[500px] right-[0%] top-[-10%]"></div>
     </div>
     </div>
   );

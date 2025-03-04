@@ -42,6 +42,7 @@ import india from "../../../public/assets/india.png";
 import usa from "../../../public/assets/usa.png";
 import uk from "../../../public/assets/uk.png";
 import { FaChevronDown } from "react-icons/fa";
+import whatsappfixed from "../../../public/assets/whatsappfixed1.jpg"
 const page = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname(); 
@@ -73,7 +74,7 @@ const page = () => {
     <div>
         {/* Header Top component*/}
           <div> 
-            <div className="left-0 right-0 fixed w-full h-[100px] bg-gradient-to-b from-black via-[#121212] to-transparent z-[1000] ">
+            <div className="left-0 right-0 fixed w-full h-[100px] bg-gradient-to-b from-black via-[#050505e6] to-transparent z-[1000] ">
         <div className="container mx-aut0 w-full p-0">
           <header className="flex justify-between items-center py-4 px-[15px] md:px-0">
             {/* Logo */}
@@ -90,7 +91,7 @@ const page = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex gap-3 backdrop-blur-md px-4 py-2 rounded-full shadow-md">
+            <nav className="hidden lg:flex gap-3  px-4 py-2 rounded-full">
               {/* {navbarData.map((item) => ( */}
                 {/* // <Link key={item.name} href={item.url}> */}
                   <div
@@ -128,7 +129,7 @@ const page = () => {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3">
-              <button className="bg-white xl:p-[7px_14px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
+              <button className="bg-white xl:p-[6px_12px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
                 Contact us
               </button>
               <div className="flex items-center space-x-4">
@@ -137,8 +138,8 @@ const page = () => {
                   <Image
                     src={callicon}
                     alt="Call Icon"
-                    width={35}
-                    height={35}
+                    width={41}
+                    height={41}
                   />
                 </Link>
               </div>
@@ -240,7 +241,6 @@ const page = () => {
         {/* /Header */}
 
 
-
     {/* Mid Component */}     
     <div>
         
@@ -311,7 +311,10 @@ const page = () => {
             <ServicesWeProvide
             phase=" 04 "
             TitleERP="CRM"
-            Cardpara1="This phase helps you scale your solutions, uncover newgrowth areas, and stay ahead in a competitive market."
+            Cardpara1="We provide advanced CRM solutions to help businesses manage customer data efficiently.
+            Our CRM services enable personalized communication, automate marketing campaigns,
+            and improve customer retention. With data-driven insights, we ensure a seamless and
+            engaging customer experience for Shopify stores."
             CardPara2=""
             CardButton="Get Started"
             CardLink="/about"
@@ -324,8 +327,11 @@ const page = () => {
             <ServicesWeProvide
             phase=" 05 "
             TitleERP="POS"
-            Cardpara1="This phase helps you scale your solutions, uncover new
-            growth areas, and stay ahead in a competitive market."
+            Cardpara1="Our Shopify POS service offers businesses an integrated system to manage sales,
+             inventory, and customer interactions seamlessly. With features like real-time inventory
+             updates and secure transactions, our POS service enhances operational efficiency and
+             provides a unified experience across online and physical stores, boosting sales
+             and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
             CardLink="/about"
@@ -338,8 +344,10 @@ const page = () => {
             <ServicesWeProvide
             phase=" 06 "
             TitleERP="Our Products"
-            Cardpara1="This phase helps you scale your solutions, uncover new
-            growth areas, and stay ahead in a competitive market."
+            Cardpara1="AppCartify, our Shopify product, enables businesses to create custom mobile apps for
+seamless shopping experiences. Additionally, our Delivery App optimizes delivery
+operations with route planning and real-time tracking, improving efficiency
+and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
             CardLink="/about"
@@ -364,7 +372,8 @@ const page = () => {
 
 
         {/* Footer */}
-          <div>
+         <div className="relative">
+         <div className="sticky top-0">
             {/* Footer for desktop or tab */}
             <div className="container">
               <div className="hidden md:block">
@@ -848,8 +857,15 @@ const page = () => {
                 Disclaimer | Privacy Policy | Terms of Service
               </div>
             </div>
-          </div>
-        {/* Footer */}
+          </div> 
+         </div>
+        {/* Fo
+        .oter */}
+        <div className="fixed right-7 bottom-7">
+            <Link href="tel:(+91) 90417-00209">
+              <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />
+            </Link>
+        </div>
     </div>
   );
 };
