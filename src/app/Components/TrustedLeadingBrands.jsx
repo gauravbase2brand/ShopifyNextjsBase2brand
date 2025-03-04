@@ -176,6 +176,7 @@ export default function Brand() {
                     <div
                       className="w-[15%] flex items-center justify-center mb-[15px]"
                       key={index}
+                      data-aos="fade-up"
                     >
                       <Image src={data} alt="" className="w-[90%] h-[35px] object-contain" />
                     </div>
@@ -203,6 +204,7 @@ export default function Brand() {
             {imagesdatamobile.slice(0, visibleitems).map((data, index) =>
               <div
                 className="w-[50%] flex items-center justify-center mb-[15px]"
+                 data-aos="fade-up"
                 key={index}
               >
                 <Image src={data} alt="" className="w-[80%]" />
@@ -227,7 +229,7 @@ export default function Brand() {
                 </div>
               </div>}
         </div>
-        <div className="hidden md:flex absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#121212] to-[#000000]" />
+        <div className="hidden md:flex absolute bottom-0 left-0 w-full lg:h-[100px] h-[80px] bg-gradient-to-b from-black/0 via-[#050505c4] to-[#000000]" />
       </div>
 
       <div className="w-100 flex overflow-hidden flex-col justify-center gap-[10%] h-[250px] relative">

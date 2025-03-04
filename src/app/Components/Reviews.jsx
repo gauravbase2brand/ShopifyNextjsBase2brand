@@ -6,7 +6,7 @@ import Image from "next/image";
 import "swiper/css/navigation";
 import 'swiper/css/pagination';
 import "swiper/css";
-import clinetimg1 from "../../../public/assets/clientreviews.png";
+import clinetimg1 from "../../../public/assets/clientreviews1.jpg";
 import clientcom1 from "../../../public/assets/clinetcom1.png";
 import cotes from "../../../public/assets/reviewscotes.png";
 import rating from "../../../public/assets/slider-images/rating-slider.webp";
@@ -65,9 +65,10 @@ export default function Reviews() {
   // });
   return (
     <div>
-      <div className="container mx-auto px-4">
+       <div className="relative">
+         <div className="container mx-auto px-4">
         <div className="m-[0]">
-          <div className="pb-[5%]">
+          <div className="pb-[5%] ">
             <Swiper
               loop={true}
               // autoplay={{
@@ -88,13 +89,13 @@ export default function Reviews() {
               {reviewsdata.map((data, index) =>
                 <SwiperSlide key={index}>
                   <div className="flex flex-col justify-center md:flex-row">
-                    <div className="w-[100%] md:w-[40%] flex justify-center">
+                    <div className="w-[100%] md:w-[40%] flex justify-center ">
                       <Image
                         src={data.clientimg}
                         alt="img"
                         width={1000}
                         height={500}
-                        className="w-[85%] md:w-[70%]"
+                        className="w-[85%] md:w-[70%] rounded-[25px] z-20"
                       />
                     </div>
                     <div className="w-[100%] md:w-[60%] p-[10%_0] md:p-0">
@@ -141,16 +142,20 @@ export default function Reviews() {
                       </div>
                     </div>
                   </div>
+                  <div className="custom_gradient_right"></div>
                 </SwiperSlide>
               )}
             </Swiper>
           </div>
         </div>
-      </div>
+          </div>
+          <div className="custom_gradient_right w-[600px] h-[500px] right-[0%] top-[-5%]" />
+       </div>
       {/* Shopify service */}
-      <div className="overflow-hidden">
+       <div className="relative">
+       <div className="overflow-hidden">
         {/*  Shopify service Heading*/}
-        <div className=" container text-center flex flex-col items-center">
+        <div className=" container text-center flex flex-col items-center"  data-aos="fade-up">
           <div className="flex md:flex-row flex-col gap-0 md:gap-3">
             <h2 className="md:leading-[60px]">Boost Your Brand </h2>
             <h2 className="text-[#989898] md:leading-[60px] ">With Expert</h2>
@@ -163,7 +168,7 @@ export default function Reviews() {
           </p>
         </div>
         {/* Services Exp. etc */}
-        <div className="flex justify-center flex-col items-center pb-[5%]">
+        <div className="flex justify-center flex-col items-center pb-[5%]"  data-aos="fade-up">
           <div className="flex min-h-[110px] w-[90%] md:w-auto border-[#17360f] border-t-[1px] border-b-[1px] relative">
             <div className="flex flex-col md:p-0 p-[0_10px] w-[33%] md:min-w-[200px] md:ps-[20px]">
               <div className="text-[#96BF47] md:text-[40px] text-[26px] leading-[35px] font-black md:leading-[50px]">
@@ -201,7 +206,9 @@ export default function Reviews() {
             <Image src={line1} alt="hy" width={1000} height={500} className="absolute w-[90px] left-[-25%] md:left-[-25%] bottom-[3%]"/>
           </div>
         </div>
+        <div className="custom_gradient_right w-[600px] h-[500px] left-[30%] top-[0%]" />
       </div>
+       </div>
     </div>
   );
 }

@@ -55,7 +55,7 @@ export default function Integration() {
   return (
       <div className="">
         {/* Heading */}
-        <div className=" container text-center flex flex-col items-center">
+        <div className=" container text-center flex flex-col items-center"  data-aos="fade-up">
           <div className="flex md:flex-row flex-col gap-0 md:gap-3">
             <h2 className="md:leading-[60px]">Shopify Integrations</h2>
             <h2 className="text-[#989898] md:leading-[60px] "> for a Seamless</h2>
@@ -80,6 +80,8 @@ export default function Integration() {
               <div
                 className="lg:w-[31.5%] md:w-[48%] w-[97%] p-[2%] hover:scale-105 transition-transform duration-500 cursor-pointer border-[2px] border-[#3f5a0978] rounded-[20px]"
                 key={index}
+                data-aos="fade-up"
+                data-aos-duration={`${index+5}00`}
               >
                 <div className="flex p-[10px_0] md:p-0 justify-center md:justify-start">
                   <Image

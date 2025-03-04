@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Homebannerline from "../../../public/assets/icons/Homebannerline.svg";
-import homefirsrtbanner from "../../../public/assets/homebanner2.png";
-import homesecondbanner from "../../../public/assets/homebanner1.png";
+import homefirsrtbanner from "../../../public/assets/homerightimg.png";
+import homesecondbanner from "../../../public/assets/bannerleftimg.png";
 import Button from "./UIUX/Button";
 
 const Banner = () => {
@@ -10,9 +10,9 @@ const Banner = () => {
     <div className="relative w-full h-[100vh] md:h-[100vh] flex flex-col justify-center items-center text-white text-center overflow-hidden">
       <div className="relative pt-[90px] w-full h-auto md:h-[95vh]">
         {/* Left Floating Image - FIXED POSITIONING */}
-        <div className="absolute top-0 left-[-10px] md:left-[-50px] md:top-[30%] transform -translate-y-1/2">
+        <div className="absolute top-[-9%] left-[-20%] md:left-[-10%] md:top-[38%] transform -translate-y-1/2">
           <Image
-            className="w-[200px] md:w-[300px] h-auto object-scale-down animate-fly"
+            className="w-[53%] md:w-[55%] h-auto object-scale-down animate-fly"
             src={homefirsrtbanner}
             alt="homefirsrtbanner"
             width={1000}
@@ -21,9 +21,9 @@ const Banner = () => {
         </div>
 
         {/* Right Floating Image - FIXED POSITIONING */}
-        <div className="absolute top-[120%] right-[-10px] md:right-[-50px] md:top-[75%] transform -translate-y-1/2">
+        <div className="absolute top-[120%] flex justify-end right-[-20%] md:right-[-10%] md:top-[65%] transform -translate-y-1/2">
           <Image
-            className="w-[200px] md:w-[300px] h-auto object-scale-down animate-fly"
+            className="w-[53%] md:w-[55%] h-auto object-scale-down animate-fly"
             src={homesecondbanner}
             alt="homesecondbanner"
             width={1000}
