@@ -53,7 +53,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="">
+    <div className="relative">
        <div className="flex items-center pt-[4%] pb-[1%]">
               <div className="md:w-[15%] hidden md:block">
                   <Image src={lineimg1} alt="" width={1000} height={500} className="w-[100%]" />
@@ -104,6 +104,7 @@ export default function Home() {
           />
          </div>
        </div>
+       <div className="custom_gradient_right w-[90vw] h-[500px] left-[2%] top-[-45%]" />
     </div>
   );
 }

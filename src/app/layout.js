@@ -1,8 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./StyleCss/globals.css";
-
-;
-
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -19,15 +16,59 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-  //   <html lang="en" className={poppins.variable}>
-  //   <body className="antialiased">{children}</body>
-  // </html>
-  <html lang="en" className={`${poppins.variable} ${Mont.variable}`}>
-  <body className="antialiased">
-    {/* <Header/> */}
-    {children}
-    {/* <Footer/> */}
-    </body>
-</html>
+    <html lang="en">
+      <body className="antialiased">
+        {children}
+      </body>
+    </html>
   );
 }
+
+
+// "use client"
+// import { Poppins } from "next/font/google";
+// import "./StyleCss/globals.css";
+// import { useEffect } from "react";
+// import LocomotiveScroll from 'locomotive-scroll';
+
+// const poppins = Poppins({
+//   variable: "--font-poppins",
+//   subsets: ["latin"],
+//   weight: ["300", "400", "600", "700"],
+// });
+// const Mont = {
+//   variable: "--font-mont-heavy",
+//   className: "font-heading",
+// };
+
+
+
+// export default function RootLayout({ children }) {
+//   useEffect(() => {
+//     // Ensure the code only runs on the client-side
+//     if (typeof document !== 'undefined') {
+//       const scroll = new LocomotiveScroll({
+//         el: document.querySelector('[data-scroll-container]'),
+//         smooth: true, // Enable smooth scrolling
+//       });
+
+//       const target = document.querySelector('#js-target');
+//       if (target) {
+//         scroll.scrollTo(target);
+//       }
+
+//       // Cleanup function to disable LocomotiveScroll when the component is unmounted
+//       return () => {
+//         scroll.destroy();
+//       };
+//     }
+//   }, []);
+
+//   return (
+//     <html lang="en">
+//       <body className="antialiased" id="js-target" data-scroll-container>
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }

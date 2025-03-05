@@ -8,12 +8,12 @@ import parimage4 from "../../../public/assets/partner-logo4.png";
 import litebg from "../../../public/assets/lite-bg.png"
 export default function BestPartners() {
     return (
-        <div className='pt-5 pb-5'>
+        <div className='pt-5 pb-5 relative'>
             <div className='container pt-5 pb-5 flex flex-col md:flex-row'  data-aos="fade-up">
                 <div className="w-[100%] md:w-[50%] md:px-[4%] md:border-r-2 md:border-[#9c9999]">
                     {/* <Heading Heading2={"We Work With the"} Heading1={""} /> */}
-                    <h2 className='md:text-[50px] text-center md:text-right text-[#989898] md:leading-[65px]'>We Work With the</h2>
-                    <h2 className='md:text-[50px] text-center md:text-right md:leading-[65px]'>Best Partners</h2>
+                    <h2 className='text-center md:text-right text-[#989898] md:leading-[55px]'>We Work With the</h2>
+                    <h2 className='text-center md:text-right md:leading-[55px]'>Best Partners</h2>
                     <p className='text-gray-300 text-center md:text-right py-3 md:py-0'>
                         While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process
                         that will best help you meet your goals.
@@ -38,6 +38,7 @@ export default function BestPartners() {
                     </div>
                 </div>
             </div>
+          <div className="custom_gradient_right w-[600px] h-[500px] right-[10%] top-[-40%]" />
         </div>
     )
 }

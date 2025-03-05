@@ -1,9 +1,8 @@
-html {
-  scroll-behavior: smooth
-}
-body
+
+html
 {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  /* transition: all .5s; */
 }
 @tailwind base;
 @tailwind components;
@@ -31,8 +30,8 @@ body
   /* Default Font Sizes */
   --font-size-body: 20px;
   --font-size-h1: 2.5rem;
-  --font-size-h2: 50px;
-  --font-size-h3: 1.75rem;
+  --font-size-h2: 42px;
+  --font-size-h3: 37px;
   --font-size-p: 14px;
 
   /* Line Heights */
@@ -41,12 +40,15 @@ body
   --para-line-height: 24px;
   --font-line-height-h2: 85px;
 }
-
+/* .container 
+{
+  padding: 0 !important;
+} */
 @media (max-width: 1200px) {
   :root {
     --font-size-h1: 2.25rem;
-    --font-size-h2: 54px;
-    --font-size-h3: 1.5rem;
+    --font-size-h2: 40px;
+    --font-size-h3: 30;
     --font-size-body: 20px;
     --font-line-height-h2: 65px;
   }
@@ -55,8 +57,8 @@ body
 @media (max-width: 992px) {
   :root {
     --font-size-h1: 2rem;
-    --font-size-h2: 50px;
-    --font-size-h3: 1.4rem;
+    --font-size-h2: 36px;
+    --font-size-h3: 31;
     --font-size-body: 20px;
   }
 }
@@ -64,8 +66,8 @@ body
 @media (max-width: 768px) {
   :root {
     --font-size-h1: 1.75rem;
-    --font-size-h2: 42px;
-    --font-size-h3: 1.25rem;
+    --font-size-h2: 34px;
+    --font-size-h3: 29;
     --font-size-body: 20px;
     --font-line-height-h2: 55px;
   }
@@ -75,7 +77,7 @@ body
   :root {
     --font-size-h1: 1.5rem;
     --font-size-h2: 26px;
-    --font-size-h3: 1.125rem;
+    --font-size-h3: 24px;
     --font-size-body: 20px;
     --font-line-height-h2: 42px;
     --font-size-p: 14px;
@@ -121,6 +123,7 @@ p {
   color: var(--secondary);
   margin-bottom: 10px;
   font-weight: 500;
+  color: #bab7b7 !important;
 }
 
 .font-heading {
@@ -282,7 +285,51 @@ p {
 
 
 
+svg.text_show text
+{
+  text-transform: uppercase;
+    stroke: #96bf47;
+    font-size: 100px;
+    font-weight: 700;
+    stroke-width: 2;
+    animation: stroke 5s infinite alternate;
+}
+.hover_cus_scale
+{
+  transition: 0.5s;
+}
+.hover_cus_scale:hover
+{
+ transform: scale(1.07) !important;
+ cursor: pointer;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #96bf47;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
 
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #96bf47;
+  }
+  80%
+  {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #96bf47;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #96bf47;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

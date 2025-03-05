@@ -93,6 +93,7 @@ export default function Team() {
   }, []);
   return (
     <div>
+      {/* team section for mobile */}
       <div className="flex md:hidden  md:flex-row flex-col pb-[1%]">
         <div className="md:w-[40%] md:p-0 p-[7%_5%_1%] flex items-center">
           <div className="flex container text-start flex-col items-start pb-5">
@@ -148,18 +149,21 @@ export default function Team() {
       </div>
       {/* Team section for desktop */}
       <div className="container hidden md:block">
-          <div className="flex pb-[4%]">
-          <div className="flex  text-start flex-col items-start pb-5 w-[35%]">
-            <div className="flex flex-row md:flex-col gap-2 md:gap-0">
-              <h2 className="md:leading-[60px] text-[#989898]">Team</h2>
-              <h2 className=" md:leading-[60px] ">Members</h2>
-            </div>
-            <p className="text-start m-0 text-secondary w-full  ">
+      <div className="flex  text-start flex-col items-start pb-5 w-[100%]">
+          <div className="h-[150px] w-[100%] flex place-items-center">
+                <svg viewBox="0 0 1320 300" className="text_show">
+                    <text x="50%" y="50%" dy=".35em" textAnchor="middle">SHOPIFY EXPERTS</text>
+                </svg>
+          </div>
+            <p className="text-center text-[28px] mb-5 text-secondary w-full  ">
               The people who make it happen
             </p>
           </div>
-          <div className="flex w-[65%]">
-            {teamdata.slice(0, 2).map((data, index) =>
+          <div className="flex pb-[4%]">
+         
+          <div className="flex justify-center w-[100%]">
+             <div className="w-[65%] flex">
+             {teamdata.slice(0, 2).map((data, index) =>
               <div className="p-[5%] md:p-0 w-[50%] flex justify-center" key={index} data-aos="fade-up" data-aos-duration={`${index +10}00`}>
                 <div className="w-[80%]">
                   <div>
@@ -168,23 +172,23 @@ export default function Team() {
                       alt={data.membername}
                       width={1000}
                       height={500}
-                      className=""
+                      className="hover_cus_scale"
                     />
                   </div>
-                  <div className="p-[10px_0]">
-                    <h5 className="md:text-[21px] text-[25px] leading-[35px] md:leading-[30px] font-light">
-                      {data.membername}
+                  <div className="p-[10px_0] text-center">
+                    <h5 className="md:text-[16px] text-[25px] leading-[35px] md:leading-[25px] font-light">
+                    {data.memberposition}
                     </h5>
-                    <p className="md:text-[13px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
-                      {data.memberposition}
+                    <p className="md:text-[14px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                      {data.membername}
                     </p>
                   </div>
                 </div>
               </div>
             )}
+             </div>
           </div>
          </div>
-
         <div>
         <div className="flex flex-wrap justify-center w-[100%]">
             {teamdata.slice(2, teamdata.length).map((data, index) =>
@@ -196,15 +200,15 @@ export default function Team() {
                       alt={data.membername}
                       width={1000}
                       height={500}
-                      className=""
+                      className="hover_cus_scale"
                     />
                   </div>
                   <div className="p-[10px_0] text-center">
-                    <h5 className="md:text-[21px] text-[25px] leading-[35px] md:leading-[30px] font-light">
-                      {data.membername}
+                    <h5 className="md:text-[16px] text-[25px] leading-[35px] md:leading-[25px] font-light">
+                    {data.memberposition}
                     </h5>
-                    <p className="md:text-[13px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
-                      {data.memberposition}
+                    <p className="md:text-[14px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                      {data.membername}
                     </p>
                   </div>
                 </div>

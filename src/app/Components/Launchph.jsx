@@ -12,7 +12,7 @@ const Launchph = () => {
         useEffect(() => {
           AOS.init({ duration: 1000 });
         }, []);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFAQ = index => {
     setActiveIndex(activeIndex === index ? null : index);

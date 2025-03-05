@@ -8,6 +8,14 @@ import 'swiper/css/pagination';
 import "swiper/css";
 import clinetimg1 from "../../../public/assets/clientreviews1.jpg";
 import clientcom1 from "../../../public/assets/clinetcom1.png";
+import clinetimg2 from "../../../public/assets/clientreviews2.png";
+import clinetimg3 from "../../../public/assets/clientreviews3.png";
+import clinetimg4 from "../../../public/assets/clientreviews4.png";
+import clientcom2 from "../../../public/assets/slider-images/slidertitle1.webp";
+import clientcom3 from "../../../public/assets/slider-images/slidertitle2.webp";
+// import clientcom3 from "../../../public/assets/slider-images/slidertitle3.webp";
+import clientcom4 from "../../../public/assets/slider-images/slidertitle4.webp";
+
 import cotes from "../../../public/assets/reviewscotes.png";
 import rating from "../../../public/assets/slider-images/rating-slider.webp";
 import CountUp, { useCountUp } from "react-countup";
@@ -24,27 +32,27 @@ const reviewsdata = [
   },
   {
     id: 2,
-    clientimg: clinetimg1,
-    clientcompany: clientcom1,
+    clientimg: clinetimg2,
+    clientcompany: clientcom2,
     clientname: "– Jessica M.",
     clientcom:
-      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!"
+      "Working with this team was a game-changer! Our Shopify store now runs smoothly, with a stunning design and improved conversions. Sales have increased, and cart abandonment has dropped significantly!"
   },
   {
     id: 3,
-    clientimg: clinetimg1,
-    clientcompany: clientcom1,
+    clientimg: clinetimg3,
+    clientcompany: clientcom3,
     clientname: "– Jessica M.",
     clientcom:
-      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!"
+      "We saw an immediate impact after the Shopify store upgrade! Navigation is seamless, conversions are up, and cart abandonment has decreased. Our customers enjoy a smooth and effortless shopping experience now!"
   },
   {
     id: 4,
-    clientimg: clinetimg1,
-    clientcompany: clientcom1,
+    clientimg: clinetimg4,
+    clientcompany: clientcom4,
     clientname: "– Jessica M.",
     clientcom:
-      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!"
+      "The Shopify improvements made a world of difference! Our store now runs flawlessly with a user-friendly design. Sales have increased, and cart abandonment is down. Customers are enjoying a hassle-free shopping experience like never before!"
   },
   {
     id: 5,
