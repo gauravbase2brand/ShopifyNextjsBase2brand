@@ -78,7 +78,7 @@ export default function Integration() {
           <div className="container flex flex-wrap justify-around gap-y-[20px]">
             {intecardsdata.map((data, index) =>
               <div
-                className="lg:w-[31.5%] md:w-[48%] w-[97%] p-[2%] hover:scale-105 transition-transform duration-500 cursor-pointer border-[2px] border-[#3f5a0978] rounded-[20px]"
+                className="lg:w-[31.5%] md:w-[48%] w-[97%] p-[2%] hover_cus_scale cursor-pointer border-[2px] border-[#3f5a0978] rounded-[20px]"
                 key={index}
                 data-aos="fade-up"
                 data-aos-duration={`${index+5}00`}

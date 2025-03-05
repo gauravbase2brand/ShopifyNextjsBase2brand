@@ -12,7 +12,7 @@ const Faqs = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [activeIndex2, setActiveIndex2] = useState(null);
 
   const toggleFAQ = index => {
@@ -27,33 +27,33 @@ const Faqs = () => {
     {
       id: 1,
       no: "01",
-      question: "Q: What is a POS (point of sale)?",
+      question: "Q: How can your Shopify expert services help increase my store’s conversions?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "We optimize store design, improve user experience, and implement data-driven strategies to enhance customer engagement, boost conversions, and reduce cart abandonment, leading to higher sales and revenue.",
       img: launchimg1
     },
     {
       id: 2,
       no: "02",
-      question: "Q: What are the benefits of using a POS system?",
+      question: "Q: Do you offer custom Shopify store development?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "Yes, we build fully customized Shopify stores tailored to your brand’s needs, ensuring seamless navigation, mobile responsiveness, and an optimized checkout process for a superior shopping experience.",
       img: launchimg2
     },
     {
       id: 3,
       no: "03",
-      question: "Q: What features does this B2B ecommerce solution have?",
+      question: "Q: Can you help migrate my store to Shopify?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "Absolutely! We provide hassle-free migration services, ensuring all products, customer data, and orders are transferred securely while improving site functionality and performance.",
       img: launchimg3
     },
     {
       id: 4,
       no: "04",
-      question: "Q: Can I integrate my ERP with Shopify?",
+      question: "Q: Do you provide ongoing Shopify maintenance and support?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "Yes, we offer continuous support, updates, and troubleshooting to keep your Shopify store running smoothly, ensuring peak performance and a seamless shopping experience for customers.",
       img: launchimg4
     }
   ];
@@ -61,33 +61,33 @@ const Faqs = () => {
     {
       id: 5,
       no: "05",
-      question: "Q: Which industries use Shopify's B2B ecommerce platform?",
+      question: "Q: How do you reduce cart abandonment on Shopify stores?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "We implement strategies like optimized checkout processes, abandoned cart recovery emails, and performance improvements to encourage customers to complete their purchases, increasing overall sales.",
       img: launchimg1
     },
     {
       id: 6,
       no: "06",
-      question: "Q: Is B2B on Shopify included in my plan?",
+      question: "Q: How can your services improve my Shopify store's SEO?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "We conduct thorough SEO audits, optimize product pages, and implement on-page SEO strategies to help your Shopify store rank higher on search engines, driving organic traffic and increasing visibility.",
       img: launchimg2
     },
     {
       id: 7,
       no: "07",
-      question: "Q: What other features are coming?",
+      question: "Q: Can you help with Shopify app integrations? ",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "Yes, we assist in integrating third-party apps and tools to enhance your store’s functionality, whether it’s for marketing, inventory management, or customer engagement, ensuring a fully optimized store.",
       img: launchimg3
     },
     {
       id: 8,
       no: "08",
-      question: "Q: How does it work?",
+      question: "Q: How do you ensure my Shopify store’s security?",
       answer:
-        "A POS (Point of Sale) system processes in-person sales and integrates with your Shopify store. It helps manage transactions, inventory, and customer data across both online and offline channels, offering a unified sales experience.",
+        "We implement best practices for Shopify store security, including SSL certification, secure payment gateways, and regular backups, ensuring your store and customer data are safe from any vulnerabilities.",
       img: launchimg4
     }
   ];
@@ -122,7 +122,7 @@ const Faqs = () => {
                       {item.no}
                     </span>
                   </div>
-                  <button className="md:w-[80%] text-left text-[16px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
+                  <button className="md:w-[80%] text-left text-[15px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
                     {item.question}
                   </button>
                   <div
@@ -142,11 +142,11 @@ const Faqs = () => {
                 {/* ehth */}
                 <div
                   className={`overflow-hidden transition-max-height duration-200 ease-in-out ${activeIndex ===
-                  index
+                  index 
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="p-[0_11%_4%] pt-0 bg-transparent  text-[14px] md:text-[13px] leading-[23px] bg-black rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[11px] md:text-[13px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -175,7 +175,7 @@ const Faqs = () => {
                       {item.no}
                     </span>
                   </div>
-                  <button className=" md:w-[80%] text-left text-[16px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
+                  <button className=" md:w-[80%] text-left text-[15px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
                     {item.question}
                   </button>
                   <div
@@ -199,7 +199,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="p-[0_11%_4%] pt-0 text-[13px] bg-transparent leading-[23px] bg-black rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] p-[0%_2%_4%_4%] pt-0 md:text-[13px] text-[11px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>

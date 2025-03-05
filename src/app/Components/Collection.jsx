@@ -59,7 +59,7 @@ const page = () => {
         }
     };
     
-        const [activeIndex, setActiveIndex] = useState(null);
+        const [activeIndex, setActiveIndex] = useState(0);
         const [activeIndex2, setActiveIndex2] = useState(null);
       
         const toggleFAQ = index => {
@@ -75,10 +75,10 @@ const page = () => {
         {/* Header Top component*/}
           <div> 
             <div className="left-0 right-0 fixed w-full h-[100px] bg-gradient-to-b from-black via-[#050505e6] to-transparent z-[1000] ">
-        <div className="container mx-aut0 w-full p-0">
+        <div className="container mx-aut0 w-full">
           <header className="flex justify-between items-center py-4 px-[15px] md:px-0">
             {/* Logo */}
-            <Link href="/" className="cursor-pointer">
+            <Link href="https://base2brand.com" className="cursor-pointer">
               <div className="flex items-center">
                 <Image
                   src={base2brand}
@@ -129,11 +129,13 @@ const page = () => {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3">
-              <button className="bg-white xl:p-[6px_12px] p-[5px_10px] rounded-[25px] text-Dark shadow-md md:text-lg text-sm">
+              <Link href="/contact-us">
+              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm">
                 Contact us
               </button>
+              </Link>
               <div className="flex items-center space-x-4">
-                <span className="text-lg text-white">Let’s Talk</span>
+                {/* <span className="text-lg text-white">Let’s Talk</span> */}
                 <Link href="tel:584584758">
                   <Image
                     src={callicon}

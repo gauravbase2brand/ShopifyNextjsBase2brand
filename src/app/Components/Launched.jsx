@@ -317,7 +317,7 @@ export default function Launched() {
                           </div>
                         : <div className="flex justify-center">
                             <Image src={weekpopup} alt="" />
-                            <span className="absolute text-black font-bold tracking-[0.5px] pt-[1px]">
+                            <span className="absolute left-[12px] text-black font-bold tracking-[0.5px] pt-[1px]">
                               {" "} {currentweek}
                             </span>
                           </div>}

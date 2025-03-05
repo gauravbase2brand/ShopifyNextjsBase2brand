@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "swiper/css";
 import Image from "next/image";
 import Heading from "./UIUX/Heading";
@@ -33,35 +34,60 @@ const sliderdata = [
     leftimg: upperlimg1,
     rightimg: upperrimg1,
     titleimg1: titleimg1,
-    rating_img: ratingimg
+    rating_img: ratingimg,
+    sliderdis:
+      "We developed a high-performing Shopify store for Siena Home, optimizing design and functionality to enhance user experience, increase conversions, boost sales, and reduce cart abandonment for a seamless shopping journey.",
+    crovalue: "+100%",
+    aovvalue: "+130%",
+    revvalue: "+230%"
   },
   {
-    id: 12,
+    id: 2,
     leftimg: upperlimg2,
     rightimg: upperrimg2,
     titleimg1: titleimg2,
-    rating_img: ratingimg
+    rating_img: ratingimg,
+    sliderdis:
+      "We transformed Susana Monaco’s Shopify store with optimized design and seamless navigation, resulting in increased conversions, higher revenue, and a significant reduction in cart abandonment for better customer retention.",
+    crovalue: "+45%",
+    aovvalue: "+160%",
+    revvalue: "+280%"
   },
   {
     id: 3,
     leftimg: upperlimg3,
     rightimg: upperrimg3,
     titleimg1: titleimg3,
-    rating_img: ratingimg
+    rating_img: ratingimg,
+    sliderdis:
+      "Our expert Shopify solutions helped Dog For Dog improve store performance, leading to higher sales, better customer engagement, and reduced cart abandonment, ensuring a smooth and rewarding shopping experience for pet lovers.",
+    crovalue: "+200%",
+    aovvalue: "+160%",
+    revvalue: "+280%"
   },
   {
     id: 4,
     leftimg: upperlimg4,
     rightimg: upperrimg4,
     titleimg1: titleimg4,
-    rating_img: ratingimg
+    rating_img: ratingimg,
+    sliderdis:
+      "The Shopify improvements made a world of difference! Our store now runs flawlessly with a user-friendly design. Sales have increased, and cart abandonment is down. Customers are enjoying a hassle-free shopping experience !",
+    crovalue: "+100%",
+    aovvalue: "+130%",
+    revvalue: "+230%"
   },
   {
     id: 5,
     leftimg: upperlimg1,
     rightimg: upperrimg1,
     titleimg1: titleimg1,
-    rating_img: ratingimg
+    rating_img: ratingimg,
+    sliderdis:
+      "We developed a high-performing Shopify store for Siena Home, optimizing design and functionality to enhance user experience, increase conversions, boost sales, and reduce cart abandonment for a seamless shopping journey.",
+    crovalue: "+90%",
+    aovvalue: "+120%",
+    revvalue: "+180%"
   }
 ];
 export default function Slider() {
@@ -106,17 +132,16 @@ export default function Slider() {
         {/* Slider Body*/}
       </div>
       <div className="w-[100%] flex flex-col items-center md:w-[100%]  pb-[5%]">
-        <div className="w-[90%] md:w-[100%]"  data-aos="fade-up ">
+        <div className="w-[90%] md:w-[100%]" data-aos="fade-up ">
           <Swiper
             loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: false
+            // }}
             // pagination={{
             //   clickable: true
             // }}
-            pagination={false}
             speed={1000}
             // navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
@@ -124,93 +149,102 @@ export default function Slider() {
           >
             {sliderdata.map((item, index) =>
               <SwiperSlide key={index}>
-                <div className="p-[2%] md:p-0 rounded-[20px]"  data-aos-duration={`${index+9}00`}>
-                <div className="flex flex-col p-[25px] border-2 border-[#779442] rounded-[20px]" 
-                style={{
-                  background:"radial-gradient(circle, #000000fa 3%, #2b3617a3 100%)"
-                }}>
-                  <div className="w-[100%]">
-                    <div className="flex justify-around p-[20px] pb-0 rounded-[15px] bg-[#5C772A]">
-                      <Image
-                        src={item.leftimg}
-                        alt="Image"
-                        width={1000}
-                        height={1000}
-                        className="w-[65%]"
-                      />
-                      <Image
-                        src={item.rightimg}
-                        alt="Image"
-                        width={1000}
-                        height={1000}
-                        className="w-[25%]"
-                      />
+                <div
+                  className="p-[2%] md:p-0 rounded-[20px]"
+                  data-aos-duration={`${index + 9}00`}
+                >
+                  <div
+                    className="flex flex-col p-[25px] md:pb-[35px] border-2 border-[#779442] rounded-[20px]"
+                    style={{
+                      background:
+                        "radial-gradient(circle, #000000fa 3%, #2b3617a3 100%)"
+                    }}
+                  >
+                    <div className="w-[100%]">
+                      <div className="flex justify-around p-[20px] pb-0 rounded-[15px] bg-[#5C772A]">
+                        <Image
+                          src={item.leftimg}
+                          alt="Image"
+                          width={1000}
+                          height={1000}
+                          className="w-[65%]"
+                        />
+                        <Image
+                          src={item.rightimg}
+                          alt="Image"
+                          width={1000}
+                          height={1000}
+                          className="w-[25%]"
+                        />
+                      </div>
+                    </div>
+                    <div className="w-[100%]">
+                      <div className="flex py-[15px] gap-[10px]">
+                        <div className="w-[40%]">
+                          <Image
+                            src={item.titleimg1}
+                            alt=""
+                            width={1000}
+                            height={500}
+                            className="w-[100%] object-contain h-[30px]"
+                          />
+                        </div>
+                        <Image
+                          src={item.rating_img}
+                          alt=""
+                          width={1000}
+                          height={500}
+                          className="w-[30%] object-contain"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-[12px] leading-[21px] font-light">
+                          {item.sliderdis}
+                        </p>
+                      </div>
+                      <div className="flex justify-between">
+                        <div className="flex flex-col gap-[5px]">
+                          <div className="flex justify-start">
+                            <span className="bg-white p-[10px] px-2.5 py-1.5 text-xs text-black rounded-full ">
+                              CRO
+                            </span>
+                          </div>
+                          <h3 className="text-[23px] pb-0 font-medium">
+                            {item.crovalue}
+                          </h3>
+                          <span className="text-[10px] md:text-[12px] text-[#fff]">
+                            Conversion Rate
+                          </span>
+                        </div>
+                        <div className="flex flex-col gap-[5px]">
+                          <div className="flex justify-start">
+                            <span className="bg-white p-[10px] px-2.5 py-1.5 text-xs text-black rounded-full ">
+                              AOV
+                            </span>
+                          </div>
+                          <h3 className="text-[23px] pb-0 font-medium">
+                            {item.aovvalue}
+                          </h3>
+                          <span className="text-[10px] md:text-[12px] text-[#fff]">
+                            Avg. Order Value
+                          </span>
+                        </div>
+                        <div className="flex flex-col gap-[5px]">
+                          <div className="flex justify-start">
+                            <span className="bg-white p-[10px] px-2.5 py-1.5 text-xs text-black rounded-full ">
+                              REV
+                            </span>
+                          </div>
+                          <h3 className="text-[23px] pb-0 font-medium">
+                            {item.revvalue}
+                          </h3>
+                          <span className="text-[10px] md:text-[12px] text-[#fff]">
+                            Revenue
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="w-[100%]">
-                    <div className="flex py-[15px] gap-[10px]">
-                      <Image
-                        src={item.titleimg1}
-                        alt=""
-                        width={1000}
-                        height={500}
-                        className="w-[40%] object-contain h-[22px]"
-                      />
-                      <Image
-                        src={item.rating_img}
-                        alt=""
-                        width={1000}
-                        height={500}
-                        className="w-[30%] object-contain"
-                      />
-                    </div>
-                    <div>
-                      <p className="text-[14px] leading-[21px] font-light">
-                        We launched The Good Bug’s first Shopify store, driving
-                        brand growth. The results were remarkable.
-                      </p>
-                    </div>
-                    <div className="flex justify-between">
-                      <div>
-                        <div className="flex justify-start">
-                          <span className="bg-white p-[10px] px-2.5 py-1.5 text-xs text-black rounded-full ">
-                            CRO
-                          </span>
-                        </div>
-                        <h3 className="text-[23px] py-3.5 pb-0 font-medium">
-                          +100%
-                        </h3>
-                        <span className="text-[10px] md:text-[12px] text-[#fff]">
-                          Conversion Rate
-                        </span>
-                      </div>
-                      <div>
-                        <div className="flex justify-start">
-                          <span className="bg-white p-[10px] px-2.5 py-1.5 text-xs text-black rounded-full ">
-                            AOV
-                          </span>
-                        </div>
-                        <h3 className="text-[23px] py-3.5 pb-0 font-medium">
-                          +130%
-                        </h3>
-                        <span className="text-[10px] md:text-[12px] text-[#fff]">
-                          Avg. Order Value
-                        </span>
-                      </div>
-                      <div>
-                        <div className="flex justify-start">
-                          <span className="bg-white p-[10px] px-2.5 py-1.5 text-xs text-black rounded-full ">
-                            REV
-                          </span>
-                        </div>
-                        <h3 className="text-[23px] py-3.5 pb-0 font-medium">
-                          +230%
-                        </h3>
-                        <span className="text-[10px] md:text-[12px] text-[#fff]">Revenue</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 </div>
                 {/* </div> */}
               </SwiperSlide>

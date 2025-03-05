@@ -162,7 +162,7 @@ export default function Brand() {
                 className=" lg:p-10 p-4 hidden md:block border-[#8b8787] relative overflow-hidden rounded-tl-[50px] rounded-tr-[50px]"
                 style={{
                   background:
-                    "radial-gradient(circle, #4d514a54  3%, #63950a63 100%)",
+                    "radial-gradient(circle, #02020254  3%, #63950a63 100%)",
                   // borderRadius: "60px 60px ",
                   borderWidth: "1px 1px 0px 1px",
                   borderStyle: "solid",
