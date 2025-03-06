@@ -32,7 +32,7 @@ html
   --font-size-h1: 2.5rem;
   --font-size-h2: 42px;
   --font-size-h3: 37px;
-  --font-size-p: 14px;
+  --font-size-p: 15px;
 
   /* Line Heights */
   --line-height-body: 1.6;
@@ -123,7 +123,7 @@ p {
   color: var(--secondary);
   margin-bottom: 10px;
   font-weight: 500;
-  color: #bab7b7 !important;
+  color: #dad7d7 !important;
 }
 
 .font-heading {
@@ -176,7 +176,20 @@ p {
   filter: blur(75px);
   z-index: -1;
 }
-
+.padding_hover_child 
+{
+  transition: all 1.1s;
+}
+.padding_hover_parent:hover .padding_hover_child 
+{
+  padding-left: 80%;
+ 
+}
+.padding_hover_parent:hover .padding_hover_child img
+{
+  box-shadow: inset 0 0 29px #d8f999, 0 0 34px #b4ff23;
+  border-radius: 50%;
+}
 @media screen and (max-width:1024px) {
   .swiper-pagination {
     justify-content: center;
@@ -300,7 +313,7 @@ svg.text_show text
 }
 .hover_cus_scale:hover
 {
- transform: scale(1.07) !important;
+ transform: scale(1.05) !important;
  cursor: pointer;
 }
 @keyframes stroke {
@@ -343,5 +356,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+.hover_card_p
+{
+  font-size: 15px;
+  font-weight: 400;
+}
 
+.hover_con_outer
+{
+  display: none;
+  transition: all .5s;
+}
+.hover_con_btn:hover~.hover_con_outer
+{
+display: block;
 
+}
+.hover_con_outer:hover
+{
+  display: block;
+}

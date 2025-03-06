@@ -232,7 +232,7 @@ export default function Launched() {
                       <div className="w-[90%]">
                         <div className="w-[100%] text-[#96BF47]">
                           <h3>Research & Propose</h3>
-                          <p className="text-[14px] text-[#ddd]">
+                          <p className=" text-[#ddd]">
                             In Week 1, we’ll focus on understanding your goals
                             and challenges through targeted research. We’ll
                             analyze market trends, competitors, and key data to
@@ -263,7 +263,7 @@ export default function Launched() {
                       <div className="w-[90%]">
                         <div className="w-[100%] text-[#96BF47]">
                           <h3>Write & Revise</h3>
-                          <p className="text-[14px] text-[#ddd]">
+                          <p className=" text-[#ddd]">
                             During Week 3, we’ll focus on crafting and refining
                             the content or deliverables based on the design and
                             strategy. Whether it's copy, technical
@@ -346,7 +346,7 @@ export default function Launched() {
                     <div className="w-[90%]">
                       <div className="w-[100%] text-[#96BF47] text-right">
                         <h3>Design & Build</h3>
-                        <p className="text-[14px] text-[#ddd]">
+                        <p className=" text-[#ddd]">
                           In Week 2, we’ll take the strategy from Week 1 and
                           start turning it into reality. Our team will design
                           creative solutions and build the necessary frameworks,
@@ -379,7 +379,7 @@ export default function Launched() {
                     <div className="w-[90%]">
                       <div className="w-[100%] text-right ">
                         <h3 className=" text-[#96BF47]">Testing & Launch</h3>
-                        <p className="text-[14px] text-[#ddd]">
+                        <p className=" text-[#ddd]">
                           In the final week, we’ll thoroughly test all elements
                           to ensure everything functions perfectly. This
                           includes quality checks, troubleshooting, and refining

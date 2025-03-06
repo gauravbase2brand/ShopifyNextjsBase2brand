@@ -85,6 +85,11 @@ export default function Home() {
                     alt="GSAP Image"
                     className="w-full object-cover rounded-[20px]"
                   />
+                  {/* <video className="w-full  rounded-[20px]" autoPlay>
+                    <source src="../../../public/assets/video/website video compressed.mp4" type="mp.4"/>
+                  </video> */}
+                  {/* <source src="../../../public/video/website video compressed.mp4" type="video/mp4" /> */}
+
                 </div>
               </div>
             </main>

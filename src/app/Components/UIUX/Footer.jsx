@@ -122,7 +122,7 @@ export default function Footer() {
               <div className="flex flex-col gap-[15px] ps-[2.5%]">
                 <a
                   target="_blank"
-                  href="mailto:hello@base2brand@gmail.com"
+                  href="mailto:tech@base2brand.com"
                   className="text-[14px] font-thin flex items-center gap-[10px]"
                 >
                   <Image
@@ -132,7 +132,7 @@ export default function Footer() {
                     height={35}
                     className="w-[35px] h-[35px] object-contain"
                   />
-                  hello@base2brand@gmail.com
+                  tech@base2brand.com
                 </a>
                 <a
                   target="_blank"
@@ -426,7 +426,7 @@ export default function Footer() {
           <div className="flex flex-col gap-[15px] ps-[2.5%]">
             <a
               target="_blank"
-              href="mailto:hello@base2brand@gmail.com"
+              href="mailto:tech@base2brand.com"
               className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
             >
               <Image
@@ -436,7 +436,7 @@ export default function Footer() {
                 height={35}
                 className="w-[40px] h-[40px] object-contain"
               />
-              hello@base2brand@gmail.com
+              tech@base2brand.com
             </a>
             <a
               target="_blank"

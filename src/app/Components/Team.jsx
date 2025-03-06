@@ -33,7 +33,7 @@ const teamdata = [
   },
   {
     img: mdsir,
-    membername: "MD. Sahjad Ansari",
+    membername: "Md. Sahjad Ansari",
     memberposition: "Shopify App expert & MERN Stack developer"
   },
   {
@@ -176,10 +176,10 @@ export default function Team() {
                     />
                   </div>
                   <div className="p-[10px_0] text-center">
-                    <h5 className="md:text-[16px] text-[25px] leading-[35px] md:leading-[25px] font-light">
+                    <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
                     {data.memberposition}
                     </h5>
-                    <p className="md:text-[14px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
                       {data.membername}
                     </p>
                   </div>
@@ -204,10 +204,10 @@ export default function Team() {
                     />
                   </div>
                   <div className="p-[10px_0] text-center">
-                    <h5 className="md:text-[16px] text-[25px] leading-[35px] md:leading-[25px] font-light">
+                    <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
                     {data.memberposition}
                     </h5>
-                    <p className="md:text-[14px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
                       {data.membername}
                     </p>
                   </div>

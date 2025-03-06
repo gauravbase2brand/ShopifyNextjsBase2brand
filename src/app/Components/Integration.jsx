@@ -78,12 +78,12 @@ export default function Integration() {
           <div className="container flex flex-wrap justify-around gap-y-[20px]">
             {intecardsdata.map((data, index) =>
               <div
-                className="lg:w-[31.5%] md:w-[48%] w-[97%] p-[2%] hover_cus_scale cursor-pointer border-[2px] border-[#3f5a0978] rounded-[20px]"
+                className="lg:w-[31.5%] padding_hover_parent md:w-[48%] w-[97%] p-[2%] hover_cus_scale cursor-pointer border-[2px] border-[#3f5a0978] rounded-[20px]"
                 key={index}
                 data-aos="fade-up"
                 data-aos-duration={`${index+5}00`}
               >
-                <div className="flex p-[10px_0] md:p-0 justify-center md:justify-start">
+                <div className="flex p-[10px_0] md:p-0 justify-center padding_hover_child md:justify-start ">
                   <Image
                     src={data.inteimg}
                     alt=""
@@ -98,15 +98,15 @@ export default function Integration() {
                   </h3>
                 </div>
                 <div className="min-h-[120px] flex md:items-start items-center">
-                  <p className="font-[#ddd] md:text-start text-center text-[13px] leading-[24px] m-0">
+                  <p className="font-[#ddd] md:text-start text-center leading-[24px] m-0">
                     {data.intedes}
                   </p>
                 </div>
-                <div className="flex">
+                {/* <div className="flex">
                   <span className="text-[#96BF47] w-[100%] text-[15px] cursor-pointer md:text-start text-center">
                     Read More
                   </span>
-                </div>
+                </div> */}
               </div>
             )}
           </div>

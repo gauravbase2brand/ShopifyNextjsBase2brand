@@ -72,6 +72,107 @@ export default function Navbar() {
                 {/* // </Link> */}
               {/* ))} */}
             </nav>
+             
+
+              {/* On hover contact us  */}
+              <ul className="dropdown-menu dropdown-menu-right ph_align_drop">
+                  <li className="mega-menu">
+                    <Link href="">
+                      <div className="menuInner b2b-blue-bg">
+                        <div className="phoneMenuIcon">
+                          
+                        </div>
+                        <h4 className="b2b-title-text text-white">
+                          Let&apos;s Connect with Base2brand Team
+                        </h4>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu">
+                    <div className="menuInner border-bottom pt-3">
+                      <div className="phoneMenuIcon" />
+                      <h4 className="b2b-title-text text-white text-uppercase">
+                        for sales inquiry
+                      </h4>
+                    </div>
+                  </li>
+                  <li className="mega-menu">
+                    <Link href="tel:+919872487850">
+                      <div className="menuInner align-items-center">
+                        <div className="phoneMenuIcon">
+                          
+                        </div>
+                        <h3 className="b2b-sub-text-gk text-white">
+                          +91 (987) 248 7850
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu">
+                    <Link href="mailto:hello@base2brand.com">
+                      <div className="menuInner align-items-center">
+                        <div className="phoneMenuIcon">
+                          
+                        </div>
+                        <h3 className="b2b-sub-text-gk text-white">
+                          hello@base2brand.com
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu">
+                    <div className="menuInner border-bottom pt-3">
+                      <div className="phoneMenuIcon" />
+                      <h4 className="b2b-title-text text-white text-uppercase">
+                        for quick connect :
+                      </h4>
+                    </div>
+                  </li>
+                  <li className="mega-menu">
+                    <Link href="https://wa.me/919041700209">
+                      <div className="menuInner align-items-center">
+                        <div className="phoneMenuIcon">
+                          
+                        </div>
+                        <h3 className="b2b-sub-text-gk text-white">
+                          +91 (904) 1700209
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
+                  {/* <li className='mega-menu'>
+            
+              <div className="menuInner border-bottom pt-3">
+                <div className='phoneMenuIcon'></div>
+                  <h3 className='b2b-title-text text-white text-uppercase'>others</h3>
+              </div>
+            
+            </li> */}
+                  <li className="mega-menu">
+                    <Link href="tel:+17209035933">
+                      <div className="menuInner align-items-center">
+                        <div className="phoneMenuIcon">
+                          
+                        </div>
+                        <h3 className="b2b-sub-text-gk text-white">
+                          +1 (720) 9035933
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu">
+                    <Link href="tel:+0047448435973">
+                      <div className="menuInner align-items-center">
+                        <div className="phoneMenuIcon">
+                          
+                        </div>
+                        <h3 className="b2b-sub-text-gk text-white">
+                          + (0044) 7448435973
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3">

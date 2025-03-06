@@ -46,7 +46,7 @@ export default function Bulid() {
               
                 
                 <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[17px]">
                   Get the best of both worlds. Build your own one-of-a-kind
                   store in no time with Liquid, then leave the rest to us.
                 </span>
@@ -64,7 +64,7 @@ export default function Bulid() {
                 <h4 className="text-[23px]">Go headless</h4>
               </div>
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[17px]">
                 Get full control. Tap into Shopify's APIs and developer tools to build
                 your own bespoke store, integrated with your preferred stack.
                 </span>
@@ -81,7 +81,7 @@ export default function Bulid() {
                 <h4 className="text-[23px]">Custom builds</h4>
               </div>
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[17px]">
                 Get custom builds as per requirements 
                 </span>
               </div>
@@ -97,7 +97,7 @@ export default function Bulid() {
                 <h4 className="text-[23px]">Custom Integration</h4>
               </div>
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[17px]">
                 Integrate with your Backoffice managements or any other platform
                 </span>
               </div>

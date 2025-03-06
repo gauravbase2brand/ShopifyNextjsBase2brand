@@ -24,7 +24,21 @@ import titleimg3 from "../../../public/assets/slider-images/slidertitle3.webp";
 import upperlimg4 from "../../../public/assets/slider-images/upper-left-img4.webp";
 import upperrimg4 from "../../../public/assets/slider-images/upper-right-img4.webp";
 import titleimg4 from "../../../public/assets/slider-images/slidertitle4.webp";
-
+//5
+import upperlimg5 from "../../../public/assets/slider-images/upperleft-img5.png";
+import upperrimg5 from "../../../public/assets/slider-images/upperright-img5.png";
+import titleimg5 from "../../../public/assets/icons/rowthird4.svg";
+import upperlimg6 from "../../../public/assets/slider-images/upperleft-img6.png";
+import upperrimg6 from "../../../public/assets/slider-images/upperright-img6.png";
+import titleimg6 from "../../../public/assets/icons/row14.svg";
+//4
+import upperlimg7 from "../../../public/assets/slider-images/upperleft-img7.png";
+import upperrimg7 from "../../../public/assets/slider-images/upperright-img7.png";
+import titleimg7 from "../../../public/assets/icons/rowthird1.svg";
+//4
+import upperlimg8 from "../../../public/assets/slider-images/upperleft-img8.png";
+import upperrimg8 from "../../../public/assets/slider-images/upperright-img8.png";
+import titleimg8 from "../../../public/assets/icons/brandlogo1.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -79,16 +93,52 @@ const sliderdata = [
   },
   {
     id: 5,
-    leftimg: upperlimg1,
-    rightimg: upperrimg1,
-    titleimg1: titleimg1,
+    leftimg: upperlimg5,
+    rightimg: upperrimg5,
+    titleimg1: titleimg5,
     rating_img: ratingimg,
     sliderdis:
-      "We developed a high-performing Shopify store for Siena Home, optimizing design and functionality to enhance user experience, increase conversions, boost sales, and reduce cart abandonment for a seamless shopping journey.",
+      "We built a high-performing Shopify store for OzPro Building Supplies, optimizing design and functionality to improve user experience, drive conversions, and boost sales. Our solutions ensured a seamless purchasing process.",
     crovalue: "+90%",
     aovvalue: "+120%",
     revvalue: "+180%"
-  }
+  },
+  {
+    id: 6,
+    leftimg: upperlimg6,
+    rightimg: upperrimg6,
+    titleimg1: titleimg6,
+    rating_img: ratingimg,
+    sliderdis:
+      "Our expert Shopify solutions helped Dog is Human enhance store performance, leading to higher sales, better customer engagement, and a smoother shopping experience for pet owners.We significantly reduced cart abandonment and improved conversions.",
+    crovalue: "+80%",
+    aovvalue: "+110%",
+    revvalue: "+150%"
+  },
+  {
+    id: 7,
+    leftimg: upperlimg7,
+    rightimg: upperrimg7,
+    titleimg1: titleimg7,
+    rating_img: ratingimg,
+    sliderdis:
+      "We transformed Plant Club’s Shopify store with a user-friendly design and seamless navigation, making plant shopping more engaging and enjoyable. Our optimizations increased conversions, improved customer retention, and minimized cart abandonment for a thriving online experience.",
+    crovalue: "+70%",
+    aovvalue: "+130%",
+    revvalue: "+170%"
+  },
+  {
+    id: 8,
+    leftimg: upperlimg8,
+    rightimg: upperrimg8,
+    titleimg1: titleimg8,
+    rating_img: ratingimg,
+    sliderdis:
+      "We optimized Cotton Print Club’s Shopify store with an intuitive design and enhanced functionality, and boosting customer engagement. Our refinements led to higher sales and a reduced cart abandonment rate, ensuring a seamless shopping journey.",
+    crovalue: "+60%",
+    aovvalue: "+90%",
+    revvalue: "+140%"
+  },
 ];
 export default function Slider() {
   useEffect(() => {
@@ -135,10 +185,10 @@ export default function Slider() {
         <div className="w-[90%] md:w-[100%]" data-aos="fade-up ">
           <Swiper
             loop={true}
-            // autoplay={{
-            //   delay: 2500,
-            //   disableOnInteraction: false
-            // }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false
+            }}
             // pagination={{
             //   clickable: true
             // }}
@@ -198,7 +248,7 @@ export default function Slider() {
                         />
                       </div>
                       <div>
-                        <p className="text-[12px] leading-[21px] font-light">
+                        <p className="text-[14px] leading-[20px] font-light">
                           {item.sliderdis}
                         </p>
                       </div>

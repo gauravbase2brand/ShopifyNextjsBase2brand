@@ -146,7 +146,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="md:p-[0_11%_4%] text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[11px] md:text-[13px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[11px] md:text-[14px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -199,7 +199,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="md:p-[0_11%_4%] p-[0%_2%_4%_4%] pt-0 md:text-[13px] text-[11px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] p-[0%_2%_4%_4%] pt-0 md:text-[14px] text-[11px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>

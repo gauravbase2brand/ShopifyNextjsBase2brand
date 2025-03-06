@@ -47,7 +47,8 @@ import rowfive4 from "../../../public/assets/icons/rowfive4.svg";
 import rowfive5 from "../../../public/assets/icons/rowfive5.svg";
 import rowfive6 from "../../../public/assets/icons/rowfive6.svg";
 import rowfive7 from "../../../public/assets/icons/rowfive7.svg";
-
+import rowfive8 from "../../../public/assets/icons/rowfive8.png";
+import rowfive9 from "../../../public/assets/icons/rowfive9.png";
 import startitle from "../../../public/assets/icons/star-title.svg";
 import shopifylogo from "../../../public/assets/shopifylogo.webp";
 import downarrow from "../../../public/assets/downarrow.png";
@@ -95,11 +96,10 @@ const fifthRowBrands = [
 
 const lbannerfirstband = [
   "WE ARE SHOPIFY EXPERT",
-  "WE ARE SHOPIFY EXPERT",
-  "WE ARE SHOPIFY EXPERT",
-  "WE ARE SHOPIFY EXPERT",
-  "WE ARE SHOPIFY EXPERT",
-  "WE ARE SHOPIFY EXPERT"
+  "BUILD A SHOPIFY STORE THAT SELLS",
+  "SEAMLESS SHOPPING, HIGHER CONVERSIONS",
+  "YOUR STORE, YOUR VISION, OUR EXPERTISE",
+  "SMART SHOPIFY SOLUTIONS FOR MORE SALES",
 ];
 const imagesdatamobile = [
   brandlogo1,
@@ -121,12 +121,12 @@ const imagesdatamobile = [
   rowthird3,
   rowthird4,
   rowthird5,  //20th image
-  rowthird6,
+  // rowthird6,
   rowthird7,
   rowfour1,
   // rowfour2,
-  rowfour3,
-  rowfour4,
+  // rowfour3,
+  // rowfour4,
   rowfour5,
   rowthird6,
   rowfour7,
@@ -140,7 +140,10 @@ const imagesdatamobile = [
   rowfive4,
   rowfive5,
   rowfive6,
-  rowfive7
+  rowfive7,
+  rowfive8,
+  rowfive9,
+
 ];
 export default function Brand() {
   const [visibleitems, setvisibleitems] = useState(20);
@@ -281,7 +284,7 @@ export default function Brand() {
             {lbannerfirstband.map((title, index) =>
               <div
                 key={index}
-                className="flex ps-4 pe-4 text-black items-center gap-2"
+                className="flex ps-4 pe-4 text-black items-center gap-2 "
               >
                 <Image
                   src={startitle}

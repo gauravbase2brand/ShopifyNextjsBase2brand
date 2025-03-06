@@ -13,55 +13,102 @@ import clinetimg3 from "../../../public/assets/clientreviews3.png";
 import clinetimg4 from "../../../public/assets/clientreviews4.png";
 import clientcom2 from "../../../public/assets/slider-images/slidertitle1.webp";
 import clientcom3 from "../../../public/assets/slider-images/slidertitle2.webp";
+
+
+import clinetimg5 from "../../../public/assets/slider-images/cotton-print-club.png";
+import clinetimg6 from "../../../public/assets/slider-images/pant.png";
+import clinetimg7 from "../../../public/assets/slider-images/dog_.png";
+import clinetimg8 from "../../../public/assets/slider-images/oz__.png";
+
+
+import clientcom5 from "../../../public/assets/icons/brandlogo1.svg";
+import clientcom6 from "../../../public/assets/icons/rowthird1.svg";
+import clientcom7 from "../../../public/assets/icons/row14.svg";
+import clientcom8 from "../../../public/assets/icons/rowthird4.svg";
 // import clientcom3 from "../../../public/assets/slider-images/slidertitle3.webp";
 import clientcom4 from "../../../public/assets/slider-images/slidertitle4.webp";
 
 import cotes from "../../../public/assets/reviewscotes.png";
-import rating from "../../../public/assets/slider-images/rating-slider.webp";
+
 import CountUp, { useCountUp } from "react-countup";
 import line1 from "../../../public/assets/expline1.png";
 import line2 from "../../../public/assets/expline2.png";
+import rating4 from "../../../public/assets/fourstar.png";
+import rating3 from "../../../public/assets/threestar.png";
+import rating from "../../../public/assets/slider-images/rating-slider.webp";
 const reviewsdata = [
   {
     id: 1,
     clientimg: clinetimg1,
     clientcompany: clientcom1,
-    clientname: "– Jessica M.",
+    clientname: "– Tamoor",
     clientcom:
-      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!"
+      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!",
+      ratingstar:rating
   },
   {
     id: 2,
     clientimg: clinetimg2,
     clientcompany: clientcom2,
-    clientname: "– Jessica M.",
+    clientname: "– Shuan.",
     clientcom:
-      "Working with this team was a game-changer! Our Shopify store now runs smoothly, with a stunning design and improved conversions. Sales have increased, and cart abandonment has dropped significantly!"
+      "Working with this team was a game-changer! Our Shopify store now runs smoothly, with a stunning design and improved conversions. Sales have increased, and cart abandonment has dropped significantly!",
+      ratingstar:rating4
   },
   {
     id: 3,
     clientimg: clinetimg3,
     clientcompany: clientcom3,
-    clientname: "– Jessica M.",
+    clientname: "– Lily",
     clientcom:
-      "We saw an immediate impact after the Shopify store upgrade! Navigation is seamless, conversions are up, and cart abandonment has decreased. Our customers enjoy a smooth and effortless shopping experience now!"
+      "We saw an immediate impact after the Shopify store upgrade! Navigation is seamless, conversions are up, and cart abandonment has decreased. Our customers enjoy a smooth and effortless shopping experience now!",
+      ratingstar:rating
   },
   {
     id: 4,
     clientimg: clinetimg4,
     clientcompany: clientcom4,
-    clientname: "– Jessica M.",
+    clientname: "– Scott",
     clientcom:
-      "The Shopify improvements made a world of difference! Our store now runs flawlessly with a user-friendly design. Sales have increased, and cart abandonment is down. Customers are enjoying a hassle-free shopping experience like never before!"
+      "The Shopify improvements made a world of difference! Our store now runs flawlessly with a user-friendly design. Sales have increased, and cart abandonment is down. Customers are enjoying a hassle-free shopping experience like never before!",
+      ratingstar:rating4
   },
   {
     id: 5,
-    clientimg: clinetimg1,
-    clientcompany: clientcom1,
-    clientname: "– Jessica M.",
+    clientimg: clinetimg5,
+    clientcompany: clientcom5,
+    clientname: "– Palak",
     clientcom:
-      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!"
-  }
+      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!",
+      ratingstar:rating3
+  },
+  {
+    id: 6,
+    clientimg: clinetimg6,
+    clientcompany: clientcom6,
+    clientname: "– Ayesha",
+    clientcom:
+      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!",
+      ratingstar:rating
+  },
+  {
+    id: 7,
+    clientimg: clinetimg7,
+    clientcompany: clientcom7,
+    clientname: "– Tim",
+    clientcom:
+      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!",
+      ratingstar:rating
+  },
+  {
+    id: 8,
+    clientimg: clinetimg8,
+    clientcompany: clientcom8,
+    clientname: "– Fadi",
+    clientcom:
+      "Working with this team has been an incredible experience! From the moment we started, they took the time to understand our needs and goals, and the results speak for themselves. The creativity, attention to detail, and commitment to delivering high-quality work exceeded our expectations. I highly recommend them to anyone looking for top-tier service and results!",
+      ratingstar:rating4
+  },
 ];
 export default function Reviews() {
   const [slideitem, setSlideItem] = useState(1);
@@ -128,7 +175,7 @@ export default function Reviews() {
                         </div>
                       </div>
                       <div className="md:pe-[10%]">
-                        <p className="text-[14px] p-[20px_0_0] md:w-[80%]">
+                        <p className=" p-[20px_0_0] md:w-[80%]">
                           {data.clientcom}
                         </p>
                       </div>
@@ -140,7 +187,7 @@ export default function Reviews() {
                         </div>
                         <div>
                           <Image
-                            src={rating}
+                            src={data.ratingstar}
                             alt=""
                             width={1000}
                             height={500}

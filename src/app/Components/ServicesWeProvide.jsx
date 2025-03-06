@@ -65,13 +65,13 @@ const ERPSection = ({
               </div>
             ) : (
               <>
-                <div className="flex flex-col gap-[15px] p-[10%_0] md:p-[0_7%]" >
+                <div className="flex flex-col gap-[15px] p-[10%_0] md:p-[0_7%] h-[100%] justify-start" >
                 <div className="px-6 py-2 w-fit bg-black border border-white rounded-full text-sm inline-block">
                 {phase}
                 </div>
                 <h3 className="font-bold leading-normal">{TitleERP}</h3>
-                <p className="text-gray-300 text-[13px] m-0">{Cardpara1}</p>
-                <p className="text-gray-300 text-[13px] m-0">{CardPara2}</p>
+                <p className="text-gray-300  m-0">{Cardpara1}</p>
+                <p className="text-gray-300  m-0">{CardPara2}</p>
                 <Button GButton={CardButton} Glink={CardLink} />
                 </div>
               </>
@@ -80,7 +80,7 @@ const ERPSection = ({
 
           {/* Right Image Section */}
           <div
-            className="flex justify-center items-center h-full  md:rounded-tr-[20px] rounded-br-[20px] md:rounded-br-[20px] rounded-bl-[20px] md:rounded-bl-[0px] p-4"
+            className="flex slider_card_slider justify-center items-center h-full  md:rounded-tr-[20px] rounded-br-[20px] md:rounded-br-[20px] rounded-bl-[20px] md:rounded-bl-[0px] p-4"
             style={{ backgroundColor: Cardbg || "white" }}
           >
             {isLoading ? (
@@ -89,7 +89,7 @@ const ERPSection = ({
               <Image
                 src={CardImage}
                 alt="ERP Image"
-                className=" w-[100%] object-contain md:h-[300px]"
+                className=" w-[100%] object-contain md:h-[320px]"
               />
             )}
           </div>
