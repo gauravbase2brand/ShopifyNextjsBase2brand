@@ -2,6 +2,7 @@ import React from 'react'
 import Collsection from "./Components/Collection.jsx"
 
 function page() {
+  
   // const baseURL = "https://base2brand.com/increff";
   // const wwwURL = "https://base2brand.com/increff";
   // let canonical = "";
