@@ -1,6 +1,6 @@
 
 "use client";
-import { useState,useRef } from "react";
+import { useState,useRef,useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation"; // Detect active page
@@ -17,7 +17,7 @@ import cardimage from "../../../public/assets/slider-cardimg1.svg"
 import cardimage3 from "../../../public/assets/cardimage3.webp"
 import cardimage4 from "../../../public/assets/slider-cardimg3.svg"
 import cardimage5 from "../../../public/assets/cardimage5.webp"
-import cardimage6 from "../../../public/assets/slider-cardimg4.svg"
+import cardimage6 from "../../../public/assets/cardimage6.png"
 import BestPartners from "./BestPartners";
 import Slider from "./Slider";
 import Integration from "./Integration";
@@ -45,14 +45,41 @@ import customer from "../../../public/assets/customericon.svg";
 
 import { FaChevronDown } from "react-icons/fa";
 import whatsappfixed from "../../../public/assets/whatsappfixed1.jpg"
+import Upperslider from "./Upperslider";
 const page = () => {
-  const [activebg,setactivebg] =useState('nav1')
-    const [isOpen, setIsOpen] = useState(false);
-    const pathname = usePathname(); 
-    const section1 =useRef(null);  
-    const section2 =useRef(null);
-    const section3 =useRef(null);
-    const section4 =useRef(null); 
+  const [scrolly, setScrollY] = useState(0);
+   const [card1Scroll, setCard1Scroll] = useState(null);
+  const [card2Scroll, setCard2Scroll] = useState(null);
+  const [activebg,setactivebg] =useState('')
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); 
+  const section1 =useRef(null);  
+  const section2 =useRef(null);
+  const section3 =useRef(null);
+  const section4 =useRef(null); 
+  const section5 =useRef(null); 
+  const section6 =useRef(null); 
+    useEffect(() => {
+      const handleScroll3 = () => {
+        const scrollyy = window.scrollY;
+        setScrollY(scrollyy);
+      };
+      if (section1.current) {
+        const rect1 = section1.current.getBoundingClientRect();
+        setCard1Scroll(scrollY + rect1.top);
+      }
+      if (section6.current) {
+        const rect2 = section6.current.getBoundingClientRect();
+        setCard2Scroll(scrollY + rect2.top);
+      }
+      window.addEventListener("scroll", handleScroll3);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll3);
+      };
+    }, [])
+
+ 
     const scrollhandler = (secRef) => {
         if (secRef?.current) {
             const elementPosition = secRef.current.getBoundingClientRect().top; 
@@ -76,6 +103,8 @@ const page = () => {
           setActiveIndex2(activeIndex2 === index ? null : index);
           setActiveIndex(null);
         };
+     
+          
   return (
     <div>
         {/* Header Top component*/}
@@ -91,7 +120,7 @@ const page = () => {
                   alt="BASE2BRAND"
                   width={140}
                   height={40}
-                  className="transition-all w-auto duration-500 transform scale-95  lg:w-[299px]"
+                  className="transition-all w-[70%] duration-500 transform scale-95  lg:w-[299px]"
                 />
               </div>
             </Link>
@@ -102,16 +131,24 @@ const page = () => {
                 {/* // <Link key={item.name} href={item.url}> */}
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium ${
-                      activebg === "nav1"?
+                      activebg === "nav1" && (scrolly >= card1Scroll && scrolly <=card2Scroll)?
                       "bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]":
                       ""
                     }`}
-                    onClick={() => {
-                      setbgnavbar("nav1");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
+                    onClick={() => { setbgnavbar("nav1") ;scrollhandler(section1)}}
                   >
-                    <span className="text-[16px]">CRM</span>
+                    <span className="text-[16px]">ERP</span>
+                  </div> 
+                  <div
+                    className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
+                      ${activebg === "api"?
+                        " bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]":
+                        ""
+                      }
+                      `}
+                      onClick={() => { setbgnavbar("api") ;scrollhandler(section2)}}
+                  >
+                    <span className="text-[16px]"> SPI</span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
@@ -120,18 +157,18 @@ const page = () => {
                         ""
                       }
                       `}
-                    onClick={()=>{scrollhandler(section1);setbgnavbar("nav2")}}
+                      onClick={() => { setbgnavbar("nav2") ;scrollhandler(section3)}}
                   >
-                    <span className="text-[16px]">ERP</span>
+                    <span className="text-[16px]">CUSTOM INTEGRATION </span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium ${activebg === "nav4"?
                         " bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]":
                         ""
                       } `}
-                    onClick={()=>{scrollhandler(section2);setbgnavbar("nav4")}}
+                    onClick={()=>{scrollhandler(section4);setbgnavbar("nav4")}}
                   >
-                    <span className="text-[16px]">POS</span>
+                    <span className="text-[16px]"> CRM</span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium 
@@ -140,18 +177,18 @@ const page = () => {
                         ""
                       }
                       `}
-                    onClick={()=>{scrollhandler(section3);setbgnavbar("nav5")}}
+                    onClick={()=>{scrollhandler(section5);setbgnavbar("nav5")}}
                   >
-                    <span className="text-[16px]">CUSTOM INTEGRATION</span>
+                    <span className="text-[16px]">POS</span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium 
-                       ${activebg === "nav6"?
+                       ${ activebg === "nav6" && scrolly < card2Scroll?
                         " bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]":
                         ""
                       }
                       `}
-                    onClick={()=>{scrollhandler(section4);setbgnavbar("nav6")}}
+                    onClick={()=>{scrollhandler(section6);setbgnavbar("nav6")}}
                   >
                     <span className="text-[16px]">OUR PRODUCTS</span>
                   </div>
@@ -161,7 +198,7 @@ const page = () => {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3 ">
-              <Link href="/contact-us">
+              <Link href="https://base2brand.com/contact-us">
               <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]">
                 Contact us
               </button>
@@ -196,8 +233,8 @@ const page = () => {
                       <div className="phoneMenuIcon" > 
                       {/* <Image src={india} alt="" width={1000} height={500} /> */}
                       </div>
-                      <h4 className="hover_card_h4 text-white text-uppercase">
-                        for sales inquiry
+                      <h4 className="hover_card_h4 text-[17px] text-white text-uppercase">
+                      FOR SALES INQUIRY
                       </h4>
                     </div>
                   </li>
@@ -228,8 +265,8 @@ const page = () => {
                   <li className="mega-menu p-[5px_20px]">
                     <div className="menuInner border-bottom pt-3">
                       <div className="phoneMenuIcon" />
-                      <h4 className="hover_card_h4 text-white text-uppercase">
-                        for quick connect :
+                      <h4 className="hover_card_h4 text-[17px] text-white text-uppercase">
+                      FOR QUICK CONNECT:
                       </h4>
                     </div>
                   </li>
@@ -322,31 +359,37 @@ const page = () => {
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" >CRM</span>
+                    <span className="text-[16px]" onClick={()=>scrollhandler(section1)} > ERP</span>
                   </div>
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section1)}>ERP</span>
-                  </div>
-                  <div
-                    className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md `}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section2)}>POS</span>
-                  </div>
-                  <div
-                    className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md `}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section3)} >CUSTOM INTEGRATION</span>
+                    <span className="text-[16px]" onClick={()=>scrollhandler(section2)} >SPI</span>
                   </div>
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>{scrollhandler(section4)}}>OUR PRODUCTS</span>
+                    <span className="text-[16px]" onClick={()=>scrollhandler(section3)}>CUSTOM INTEGRATION</span>
+                  </div>
+                  <div
+                    className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md `}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-[16px]" onClick={()=>scrollhandler(section4)}>CRM</span>
+                  </div>
+                  <div
+                    className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md `}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-[16px]" onClick={()=>scrollhandler(section5)} >POS</span>
+                  </div>
+                  <div
+                    className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-[16px]" onClick={()=>{scrollhandler(section6)}}>OUR PRODUCTS</span>
                   </div>
                   {/* </Link> */}
                 </li>
@@ -370,7 +413,9 @@ const page = () => {
         {/* /Header */}
 
 
-    {/* Mid Component */}     
+    {/* ::::::::::::::::::::::::::::::::::::::::::::::
+    ::::::::::::::::::Mid Component ::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::: */}     
     <div>
         
             <div className="bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat ">
@@ -378,6 +423,7 @@ const page = () => {
             <BannerSlider />
             </div>
             <ScrollVideo />
+            {/* <Upperslider/> */}
             <Heading 
               Heading1="Trusted Shopify"
               Heading2="Partner Agency"
@@ -406,19 +452,19 @@ const page = () => {
               project management."
               CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
               CardButton="Get Started"
-              CardLink="/about"
+              CardLink="https://base2brand.com/erp-integration"
               CardImage={fiestsliderimage}
             />
             </div>
 
-            <div className=" sticky top-[100px]  ">
+            <div className=" sticky top-[100px]" ref={section2}>
             <ServicesWeProvide
             phase=" 02 "
             TitleERP="Shopify API Integration"
             Cardpara1="Shopify API integration is key for businesses looking to streamline e-commerce operations. It connects Shopify with external systems, enabling smooth data synchronization, efficient workflows, and personalized customer experiences. This powerful integration enhances operational efficiency and helps businesses improve their online presence across platforms."
             CardPara2=""
             CardButton="Get Started  "
-            CardLink="/about"
+            CardLink="https://base2brand.com/erp-integration"
             CardImage={cardimage}
             Cardbg="#5C772A"
             />
@@ -431,12 +477,12 @@ const page = () => {
             Cardpara1="Custom apps and integrations let you add unique features to your Shopify store. Built specifically for your store, they allow customization of your admin, access to store data via Shopify APIs, and integration with other platforms using the Storefront API."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="/about"
+            CardLink="https://base2brand.com/erp-integration"
             CardImage={cardimage3}
             />
             </div>
 
-            <div className=" sticky top-[100px] ">
+            <div className=" sticky top-[100px] " ref={section4}>
             <ServicesWeProvide
             phase=" 04 "
             TitleERP="CRM"
@@ -446,13 +492,13 @@ const page = () => {
             engaging customer experience for Shopify stores."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="/about"
+            CardLink="https://base2brand.com/erp-integration"
             CardImage={cardimage4}
             Cardbg="#5C772A"
             />
             </div>
 
-            <div className=" sticky top-[100px]" ref={section2}>
+            <div className=" sticky top-[100px]" ref={section5}>
             <ServicesWeProvide
             phase=" 05 "
             TitleERP="POS"
@@ -463,13 +509,13 @@ const page = () => {
              and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="/about"
+            CardLink="https://base2brand.com/erp-integration"
             CardImage={cardimage5}
             />
             </div>
           
 
-            <div className=" sticky top-[100px]"  ref={section4}>
+            <div className=" sticky top-[100px]"  ref={section6}>
             <ServicesWeProvide
             phase=" 06 "
             TitleERP="Our Products"
@@ -479,7 +525,7 @@ operations with route planning and real-time tracking, improving efficiency
 and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="/about"
+            CardLink="https://base2brand.com/erp-integration"
             CardImage={cardimage6}
             Cardbg="#5C772A"
             />
@@ -500,7 +546,9 @@ and customer satisfaction."
     </div>
 
 
-        {/* Footer */}
+        {/* ::::::::::::::::::::::::::::::::::::::::::::::
+    ::::::::::::::::::Footer ::::::::::::::::::
+    ::::::::::::::::::::::::::::::::::::::::::::  */}
          <div className="relative">
          <div className="sticky top-0">
             {/* Footer for desktop or tab */}
@@ -611,20 +659,23 @@ and customer satisfaction."
                     </div>
                   </div>
                   <div className="flex justify-start gap-[20%] lg:w-[35%] w-[100%] ps-[2.5%] lg:ps-0">
-                    <div className="md:w-[40%]">
+                    <div className="md:w-[50%]">
                       <span className="text-[18px] font-semibold">Services</span>
                       <ul className="flex flex-col gap-[12px] mt-[15px]">
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
-                          CRM
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        ERP
                         </li>
                         <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                          ERP
+                          SPI
                         </li>
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section2)}>
-                          POS
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        CUSTOM INTEGRATION
                         </li>
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section3)}>
-                          Custom Integration
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        CRM
+                        </li>
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        POS
                         </li>
                         <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                           Our Products
@@ -756,19 +807,22 @@ and customer satisfaction."
                       <div className="p-[0_4%_4%]  w-[100%] pt-0 text-[13px] leading-[23px] bg-[#2e8a2e00] rounded-b-lg">
                         <div>
                           <ul className="flex flex-col gap-[12px] mt-[5px]">
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" >
-                              CRM
+                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                             ERP
+                            </li>
+                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                             SPI
                             </li>
                             <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer"  onClick={()=>scrollhandler(section1)}>
-                              ERP
+                            CUSTOM INTEGRATION
                             </li>
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section2)}>
-                              POS
+                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                            CRM
                             </li>
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
-                              Custom Integration
+                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                            POS
                             </li>
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
+                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                               Our Products
                             </li>
                           </ul>
@@ -778,53 +832,7 @@ and customer satisfaction."
                   </div>
                 </div>
                 {/* dropdown list 2 */}
-                <div
-                  className="mb-2 custoum_border p-[10px_0]"
-                  onClick={() => toggleFAQ2(0)}
-                >
-                  <div className="flex flex-col items-start border-[1px] border-[#414141] rounded-[15px] bg-[#2e8a2e45]">
-                    <div className="flex relative w-[100%] justify-start">
-                      <button className="md:w-[80%] text-left text-[16px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
-                        Other Links
-                      </button>
-                      <div
-                        className={`w-[12%] absolute right-[0] h-[100%] rounded-tr-[15px] top-0 flex items-center justify-center border-l-[1px] ${activeIndex2 ===
-                        0
-                          ? "border-b-[1px] bg-[#96BF47] border-[#96BF47] rounded-bl-[15px] shadow-[inset_0_0_29px_#d8f999,0_0_34px_#b4ff23]"
-                          : "border-b-0 bg-none border-[#414141] rounded-br-[0]"}`}
-                      >
-                        <FaChevronDown
-                          className={`transform transition-transform duration-200 ${activeIndex2 ===
-                          0
-                            ? "rotate-180"
-                            : "rotate-0"}`}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className={`overflow-hidden w-[100%] transition-all duration-200 ease-in-out ${activeIndex2 ===
-                      0
-                        ? "max-h-[500px] rounded-br-[20px] rounded-bl-[20px]"
-                        : "max-h-0"}`}
-                    >
-                      <div className="p-[0_4%_4%]  w-[100%] pt-0 text-[13px] leading-[23px] bg-[#2e8a2e00] rounded-b-lg">
-                        <div>
-                          <ul className="flex flex-col gap-[12px] mt-[5px]">
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
-                              About
-                            </li>
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
-                              Our Team
-                            </li>
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer">
-                              Blogs
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
                 {/* links */}
                 <div className="flex w-[100%] justify-end pt-3 pb-3">
                   <div className="flex w-[100%] flex-col items-center justify-around gap-4">
@@ -979,7 +987,7 @@ and customer satisfaction."
                 |
               </div>
               <div className="text-[16px] font-light text-[#BBBBBB] ">
-                Disclaimer | Privacy Policy | Terms of Service
+              <Link href="https://base2brand.com/disclaimer">Disclaimer |</Link> <Link href="https://base2brand.com/privacy-policy">Privacy Policy | </Link> <Link href="https://base2brand.com/terms-of-service"> Terms of Service</Link>
               </div>
             </div>
           </div> 
@@ -994,5 +1002,6 @@ and customer satisfaction."
     </div>
   );
 };
+
 
 export default page;

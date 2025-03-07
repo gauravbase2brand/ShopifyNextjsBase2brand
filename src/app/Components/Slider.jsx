@@ -110,7 +110,7 @@ const sliderdata = [
     titleimg1: titleimg6,
     rating_img: ratingimg,
     sliderdis:
-      "Our expert Shopify solutions helped Dog is Human enhance store performance, leading to higher sales, better customer engagement, and a smoother shopping experience for pet owners.We significantly reduced cart abandonment and improved conversions.",
+      "Our Shopify solutions boosted Dog is Human’s store performance, increasing sales, enhancing customer engagement, and reducing cart abandonment while improving conversions for a smoother shopping experience for pet owners.",
     crovalue: "+80%",
     aovvalue: "+110%",
     revvalue: "+150%"
@@ -122,7 +122,7 @@ const sliderdata = [
     titleimg1: titleimg7,
     rating_img: ratingimg,
     sliderdis:
-      "We transformed Plant Club’s Shopify store with a user-friendly design and seamless navigation, making plant shopping more engaging and enjoyable. Our optimizations increased conversions, improved customer retention, and minimized cart abandonment for a thriving online experience.",
+      "We enhanced Plant Club’s Shopify store with a user-friendly design and seamless navigation, boosting conversions, improving customer retention, and reducing cart abandonment for a better shopping experience.",
     crovalue: "+70%",
     aovvalue: "+130%",
     revvalue: "+170%"
@@ -134,7 +134,7 @@ const sliderdata = [
     titleimg1: titleimg8,
     rating_img: ratingimg,
     sliderdis:
-      "We optimized Cotton Print Club’s Shopify store with an intuitive design and enhanced functionality, and boosting customer engagement. Our refinements led to higher sales and a reduced cart abandonment rate, ensuring a seamless shopping journey.",
+      "We optimized Cotton Print Club’s Shopify store with a user-friendly design and improved functionality, boosting customer engagement, increasing sales, and reducing cart abandonment for a seamless experience.",
     crovalue: "+60%",
     aovvalue: "+90%",
     revvalue: "+140%"

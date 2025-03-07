@@ -24,26 +24,26 @@ const Launchph = () => {
       question: "Research & Propose",
       answer:
         "In Week 1, we’ll focus on understanding your goals and challenges through targeted research. We’ll analyze market trends, competitors, and key data to craft a tailored strategy. By the end of the week, you’ll have a clear, actionable plan aligned with your objectives.",
-      img:launchimg1
+      img:launchimg4
     },
     {
       no: "2nd Week",
       question: "Design & Build",
       answer: "In Week 2, we’ll take the strategy from Week 1 and start turning it into reality. Our team will design creative solutions and build the necessary frameworks, whether it’s a website, campaign, or product. We’ll focus on seamless execution, ensuring that everything is aligned with your vision and objectives, setting the stage for success.",
-      img:launchimg2
+      img:launchimg3
     },
     {
       no: "3rd Week",
       question: "Write & Revise",
       answer: "During Week 3, we’ll focus on crafting and refining the content or deliverables based on the design and strategy. Whether it's copy, technical documentation, or marketing materials, we’ll ensure everything is clear, engaging, and on brand. Through collaboration and feedback, we'll make revisions to perfect the final output, ensuring it meets your expectations.",
-      img:launchimg3
+      img:launchimg2
     },
     {
       no: "4th Week",
       question: "Testing & Launch",
       answer:
         "In the final week, we’ll thoroughly test all elements to ensure everything functions perfectly. This includes quality checks, troubleshooting, and refining based on feedback. Once everything is optimized, we’ll launch the project, making it live and ready for your audience. Our goal is to ensure a smooth, successful launch with no issues.",
-        img:launchimg4
+        img:launchimg1
     }
   ];
 

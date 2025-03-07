@@ -41,16 +41,17 @@ const teamdata = [
     membername: "Rahul Raj",
     memberposition: "Shopify Theme Developer"
   },
-  {
-    img: omsir,
-    membername: "Om Prakash",
-    memberposition: "Shopify Theme Expert"
-  },
+
 
   {
     img: rishavsir,
     membername: "Rishav Karn",
     memberposition: "Shopify Theme developer"
+  },
+  {
+    img: omsir,
+    membername: "Om Parkash",
+    memberposition: "Shopify Theme Expert & Next Js Developer "
   },
   {
     img: saddamsir,
@@ -137,7 +138,7 @@ export default function Team() {
                     <h5 className="md:text-[21px] text-[25px] leading-[35px] md:leading-[30px] font-light">
                       {data.membername}
                     </h5>
-                    <p className="md:text-[13px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                    <p className="md:text-[13px] text-[17px] leading-[27px] md:leading-[20px] font-medium m-0 !text-[#96bf47] ">
                       {data.memberposition}
                     </p>
                   </div>
@@ -179,7 +180,7 @@ export default function Team() {
                     <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
                     {data.memberposition}
                     </h5>
-                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                    <p className="!text-[#96bf47] md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-medium ">
                       {data.membername}
                     </p>
                   </div>
@@ -207,7 +208,7 @@ export default function Team() {
                     <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
                     {data.memberposition}
                     </h5>
-                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-light m-0 text-[#A8A8A8]">
+                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px]  m-0 font-medium !text-[#96bf47]">
                       {data.membername}
                     </p>
                   </div>

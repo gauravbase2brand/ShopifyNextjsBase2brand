@@ -7,6 +7,8 @@ import inteimg4 from "../../../public/assets/icons/inteicon4.svg";
 import inteimg5 from "../../../public/assets/icons/inteicon5.svg";
 import inteimg6 from "../../../public/assets/icons/inteicon6.svg";
 import backgroundimg from "../../../public/assets/intebgback.png";
+import aroow from "../../../public/assets/icons/arrowintegration.svg"
+import Link from "next/link";
 const intecardsdata = [
   {
     id: 1,
@@ -102,11 +104,13 @@ export default function Integration() {
                     {data.intedes}
                   </p>
                 </div>
-                {/* <div className="flex">
-                  <span className="text-[#96BF47] w-[100%] text-[15px] cursor-pointer md:text-start text-center">
-                    Read More
+                <div className="flex md:justify-end justify-center">
+                  <Link href="https://base2brand.com/contact-us" className="flex">
+                  <span className="w-[30px] integration_btn pt-3">
+                    <Image src={aroow} alt="" width={1000} height={500} />
                   </span>
-                </div> */}
+                  </Link>
+                </div>
               </div>
             )}
           </div>

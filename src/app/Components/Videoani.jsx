@@ -4,13 +4,14 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import video1 from "../../../public/assets/animation.gif";
+import video1 from "../../../public/assets/animation3.gif";
 import imageio from "../../../public/assets/gsapaio.png";
 import shexp from "../../../public/assets/shopifyexperts.png";
 import shepartners from "../../../public/assets/shopifypartners.png";
 import sheplus from "../../../public/assets/shopifyplus.png";
 import lineimg1 from "../../../public/assets/talkimg2.png";
 import lineimg2 from "../../../public/assets/talkimg1.png";
+import imageio2 from "../../../public/assets/upperslider2.png";
 // Ensure GSAP works only on the client side
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -95,7 +96,7 @@ export default function Home() {
             </main>
           </div>
           <div className="w-[37%] ml-[10%]">
-            <Image src={imageio} alt="" />
+            <Image src={imageio2} alt="" />
           </div>
         </div>
       </div>

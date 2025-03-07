@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import launchimg1 from "../../../public/assets/launchimg4.png";
+import launchimg1 from "../../../public/assets/luncged1.png";
 import launchimg2 from "../../../public/assets/launchimg2.png";
 import launchimg3 from "../../../public/assets/launchimg3.png";
-import launchimg4 from "../../../public/assets/launchimg1.png";
+import launchimg4 from "../../../public/assets/launched4.png";
 import launchline from "../../../public/assets/Line 27.png";
 import greendot from "../../../public/assets/greendot.png";
 import Launchph from "./Launchph";

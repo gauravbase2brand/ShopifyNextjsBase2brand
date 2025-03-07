@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import dashboardImage from "../../../public/assets/dashbordimage.webp";
+import dashboardImage from "../../../public/assets/dashbordimage1.png";
 import Directory from "../../../public/assets/icons/Directory.svg";
 import Partner from "../../../public/assets/icons/Partner.svg";
 import ShopifyCertifiedPartner from "../../../public/assets/Shopify-Certified-Partner.png";
