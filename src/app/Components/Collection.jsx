@@ -48,8 +48,9 @@ import whatsappfixed from "../../../public/assets/whatsappfixed1.jpg"
 import Upperslider from "./Upperslider";
 const page = () => {
   const [scrolly, setScrollY] = useState(0);
-   const [card1Scroll, setCard1Scroll] = useState(null);
+  const [card1Scroll, setCard1Scroll] = useState(null);
   const [card2Scroll, setCard2Scroll] = useState(null);
+  const [letstak,setletstalk] = useState('')
   const [activebg,setactivebg] =useState('')
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname(); 
@@ -111,7 +112,7 @@ const page = () => {
           <div> 
             <div className="left-0 right-0 fixed w-[100vw] h-[100px] bg-gradient-to-b from-black via-[#050505e6] to-transparent z-[1000] ">
         <div className="ps-4 pe-4 m-0 w-[100vw] p-0">
-          <header className="flex justify-between items-center relative py-4 px-[15px] md:px-4">
+          <header className="flex justify-between items-center relative py-4 md:px-4">
             {/* Logo */}
             <Link href="https://base2brand.com" className="cursor-pointer">
               <div className="flex items-center">
@@ -397,16 +398,127 @@ const page = () => {
             </ul>
 
             {/* Call Button in Mobile Menu */}
-            <div className="mt-6 w-[88%] justify-end flex">
-              <Link
-                href="tel:584584758"
-                className="flex items-center gap-3 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-black transition-all duration-300"
-              >
+          <div className="flex justify-end w-[90%]">
+          <div className="mt-6 w-max-content justify-end flex items-center gap-3 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-black transition-all duration-300" onClick={()=>setletstalk(!letstak)}>
                 <Image src={callicon} alt="Call Icon" width={30} height={30} />
                 <span className="text-lg">Let’s Talk</span>
-              </Link>
             </div>
           </div>
+          </div>
+          <div className={`absolute top-[60px] p-[20px] transition-[0.7s] ${
+            !letstak ?
+            "left-[-100%] transition-[0.7s] " :
+            "left-[0]"
+          }`}>
+               <ul className="bg-black  rounded-[5px] pb-[20px]">
+                  <li className="mega-menu bg-[#96bf47] p-[10px_15px]">
+                    <Link href="">
+                      <div className="flex gap-[10px] items-center">
+                        <div className="phoneMenuIcon">
+                          {/* <Image src={customer} alt="" width={1000} height={500} className="w-[30px]" /> */}
+                        </div>
+                        <h4 className="text-[17px] leading-[24px]  text-[#000] font-semibold relative">
+                          Let&apos;s Connect with Base2brand <br />  Team
+                          <span className="absolute right-0 bottom-0" onClick={()=>setletstalk(!letstak)}>    
+                               <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 className="h-8 w-8 text-[#000] hover:text-gray-300 transition-all duration-300"
+                                 fill="none"
+                                 viewBox="0 0 24 24"
+                                 stroke="currentColor"
+                                 strokeWidth="2"
+                               >
+                                 <path
+                                   strokeLinecap="round"
+                                   strokeLinejoin="round"
+                                   d="M6 18L18 6M6 6l12 12"
+                                 />
+                               </svg>
+                            </span>
+                        </h4>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <div className="menuInner border-bottom pt-3">
+                      <div className="phoneMenuIcon" > 
+                      {/* <Image src={india} alt="" width={1000} height={500} /> */}
+                      </div>
+                      <h4 className="hover_card_h4 text-[17px] text-white text-uppercase">
+                      FOR SALES INQUIRY
+                      </h4>
+                    </div>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <Link href="tel:+919872487850">
+                      <div className="flex gap-[10px] items-center">
+                        <div className="phoneMenuIcon">
+                        <Image src={india} alt="" width={1000} height={500}  className="w-[30px]"/>
+                        </div>
+                        <p className="hover_card_p text-white m-0">
+                          +91 (987) 248 7850
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <Link href="mailto:tech@base2brand.com">
+                      <div className="flex gap-[10px] items-center">
+                        <div className="phoneMenuIcon">
+                        <Image src={gmail} alt="" width={1000} height={500}  className="w-[30px]"/>
+                        </div>
+                        <p className="hover_card_p text-white m-0">
+                          tech@base2brand.com
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <div className="menuInner border-bottom pt-3">
+                      <div className="phoneMenuIcon" />
+                      <h4 className="hover_card_h4 text-[17px] text-white text-uppercase">
+                      FOR QUICK CONNECT:
+                      </h4>
+                    </div>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <Link href="https://wa.me/919041700209">
+                      <div className="flex gap-[10px] items-center">
+                        <div className="phoneMenuIcon">
+                        <Image src={whatsapp} alt="" width={1000} height={500}  className="w-[30px]"/>
+                        </div>
+                        <p className="hover_card_p text-white">
+                          +91 (904) 1700209
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <Link href="tel:+17209035933">
+                      <div className="flex gap-[10px] items-center">
+                        <div className="phoneMenuIcon">
+                        <Image src={usa} alt="" width={1000} height={500}  className="w-[30px]"/>
+                        </div>
+                        <p className="hover_card_p text-white">
+                          +1 (720) 9035933
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className="mega-menu p-[5px_20px]">
+                    <Link href="tel:+0047448435973">
+                      <div className="flex gap-[10px] items-center">
+                        <div className="phoneMenuIcon">
+                        <Image src={uk} alt="" width={1000} height={500}  className="w-[30px]"/> 
+                        </div>
+                        <p className="hover_card_p text-white">
+                          + (0044) 7448435973
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+            </ul>
+             </div>
            </nav>
             )}
           </div>
@@ -995,7 +1107,7 @@ and customer satisfaction."
         {/* Fo
         .oter */}
         <div className="fixed z-[999] right-7 bottom-7">
-            <Link href="tel:(+91) 90417-00209">
+            <Link href="https://wa.me/90417-00209">
               <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />
             </Link>
         </div>

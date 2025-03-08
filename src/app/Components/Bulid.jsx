@@ -1,6 +1,6 @@
 "use client"
 import React,{useEffect} from "react";
-import banner from "../../../public/assets/buildbanner.png";
+import banner from "../../../public/assets/buildbanner.jpg"
 import Image from "next/image";
 import arrow from "../../../public/assets/arrowfaq.png";
 import Buildfaq from "./Buildfaq";

@@ -41,7 +41,7 @@ export default function BestPartners() {
                         </div>
                        
                         <div className="i w-[50%] flex justify-center">
-                        <a href="">
+                        <a href="" className='w-[100%] flex justify-center items-center'>
                           <Image src={parimage4} width={1000} height={500} alt="" className='w-[70%] object-contain' />
                         </a>
                         </div>

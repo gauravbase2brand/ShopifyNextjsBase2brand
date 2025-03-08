@@ -3,10 +3,10 @@ import React, { useState,useEffect } from "react";
 import AOS from "aos";
 import { FaChevronDown } from 'react-icons/fa';
 import "aos/dist/aos.css";
-import launchimg1 from "../../../public/assets/launchimg1.png";
+import launchimg1 from "../../../public/assets/launched4.png";
 import launchimg2 from "../../../public/assets/launchimg2.png";
 import launchimg3 from "../../../public/assets/launchimg3.png";
-import launchimg4 from "../../../public/assets/launchimg4.png";
+import launchimg4 from "../../../public/assets/luncged1.png";
 import Image from "next/image";
 const Launchph = () => {
         useEffect(() => {

@@ -11,7 +11,7 @@ import Launchph from "./Launchph";
 import weekpopup from "../../../public/assets/week_popup.png";
 import weekpopup2 from "../../../public/assets/week_popup2.png";
 import Team from "./Team";
-import banner from "../../../public/assets/buildbanner.png";
+import banner from "../../../public/assets/buildbanner.jpg";
 import arrow from "../../../public/assets/arrowfaq.png";
 import Buildfaq from "./Buildfaq";
 import AOS from "aos";
