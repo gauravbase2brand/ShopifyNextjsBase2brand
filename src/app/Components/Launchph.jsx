@@ -50,7 +50,7 @@ const Launchph = () => {
   return (
     <div className="pt-4">
       {faqItems.map((item, index) =>
-      < div key={index}>
+      < div key={index} className="pb-5">
         <div className="mb-2 custoum_border p-[10px_0]"   onClick={() => toggleFAQ(index)}                          >
           <div className="flex items-center relative  border-[2px] border-[#414141] border-b-0 rounded-tr-[20px] rounded-tl-[20px]">
             <span className={`text-[14px] p-[15px] h-[100%]  text-black font-semibold rounded-tl-[20px] ${

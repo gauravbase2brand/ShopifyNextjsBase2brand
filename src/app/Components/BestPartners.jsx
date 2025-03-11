@@ -23,27 +23,27 @@ export default function BestPartners() {
                 <div className="w-[100%] md:w-[50%] md:px-[4%] flex flex-col justify-center gap-[10%]">
                     <div className='flex w-[100%] h-[100px] md:h-auto mb-2'>
                         <div className="i w-[50%] flex justify-center">
-                            <a href="https://www.theindiecollab.com/" className='w-[100%] flex justify-center' target='_blank'>
+                            {/* <a href="https://www.theindiecollab.com/" className='w-[100%] flex justify-center' target='_blank'> */}
                             <Image src={parimage1} width={1000} height={500} alt="" className='w-[70%] object-contain' />
-                            </a>
+                            {/* </a> */}
                         </div>
                         <div className="i w-[50%] flex justify-center">
-                        <a href="https://www.saasintegrator.com/" className='w-[100%] flex justify-center' target='_blank'>
+                        {/* <a href="https://www.saasintegrator.com/" className='w-[100%] flex justify-center' target='_blank'> */}
                         <Image src={parimage2} width={1000} height={500} alt="" className='w-[70%] object-contain' />
-                        </a>
+                        {/* </a> */}
                         </div>
                     </div>
                     <div className='flex w-[100%] h-[100px] md:h-auto'>
                         <div className="i w-[50%] flex justify-center">
-                          <a href="https://imsdigitalai.com/" className='w-[100%] flex justify-center' target='_blank'>
+                          {/* <a href="https://imsdigitalai.com/" className='w-[100%] flex justify-center' target='_blank'> */}
                             <Image src={parimage3} width={1000} height={500} alt="" className='w-[70%] object-contain' />
-                         </a>
+                         {/* </a> */}
                         </div>
                        
                         <div className="i w-[50%] flex justify-center">
-                        <a href="" className='w-[100%] flex justify-center items-center'>
+                        {/* <a href</div>="" className='w-[100%] flex justify-center items-center'> */}
                           <Image src={parimage4} width={1000} height={500} alt="" className='w-[70%] object-contain' />
-                        </a>
+                        {/* </a> */}
                         </div>
                     </div>
                 </div>

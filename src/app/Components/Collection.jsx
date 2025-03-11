@@ -108,7 +108,9 @@ const page = () => {
           
   return (
     <div>
-        {/* Header Top component*/}
+        {/*::::::::::::::::::::::::::::::::::::::::::::::
+           ::::::::::::::::::Header ::::::::::::::
+           ::::::::::::::::::::::::::::::::::::::::::::*/}
           <div> 
             <div className="left-0 right-0 fixed w-[100vw] h-[100px] bg-gradient-to-b from-black via-[#050505e6] to-transparent z-[1000] ">
         <div className="ps-4 pe-4 m-0 w-[100vw] p-0">
@@ -149,7 +151,7 @@ const page = () => {
                       `}
                       onClick={() => { setbgnavbar("api") ;scrollhandler(section2)}}
                   >
-                    <span className="text-[16px]"> SPI</span>
+                    <span className="text-[16px]"> SAI</span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
@@ -366,7 +368,7 @@ const page = () => {
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section2)} >SPI</span>
+                    <span className="text-[16px]" onClick={()=>scrollhandler(section2)} >SAI</span>
                   </div>
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
@@ -522,13 +524,10 @@ const page = () => {
            </nav>
             )}
           </div>
-        {/* /Header */}
-
-
-    {/* ::::::::::::::::::::::::::::::::::::::::::::::
-    ::::::::::::::::::Mid Component ::::::::::::::::::
-    :::::::::::::::::::::::::::::::::::::::::::: */}     
-    <div>
+           {/* ::::::::::::::::::::::::::::::::::::::::::::::
+               ::::::::::::::::::Mid Component ::::::::::::::::::
+               :::::::::::::::::::::::::::::::::::::::::::: */}     
+           <div>
         
             <div className="bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat ">
             <Banner />
@@ -655,13 +654,11 @@ and customer satisfaction."
             <Faqs />
             <Talk />
        {/* /Mid Component End*/}
-    </div>
-
-
-        {/* ::::::::::::::::::::::::::::::::::::::::::::::
-    ::::::::::::::::::Footer ::::::::::::::::::
-    ::::::::::::::::::::::::::::::::::::::::::::  */}
-         <div className="relative">
+           </div>
+        {/* :::::::::::::::::::::::::::::::::::::::::::::::
+              ::::::::::::::::::Footer ::::::::::::::::::
+            :::::::::::::::::::::::::::::::::::::::::::::::  */}
+           <div className="relative">
          <div className="sticky top-0">
             {/* Footer for desktop or tab */}
             <div className="container">
@@ -778,7 +775,7 @@ and customer satisfaction."
                         ERP
                         </li>
                         <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                          SPI
+                          SAI
                         </li>
                         <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                         CUSTOM INTEGRATION
@@ -923,7 +920,7 @@ and customer satisfaction."
                              ERP
                             </li>
                             <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                             SPI
+                             SAI
                             </li>
                             <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer"  onClick={()=>scrollhandler(section1)}>
                             CUSTOM INTEGRATION
@@ -1103,9 +1100,10 @@ and customer satisfaction."
               </div>
             </div>
           </div> 
-         </div>
-        {/* Fo
-        .oter */}
+           </div>
+        {/*  :::::::::::::::::::::::::::::::::::::::::::::::
+              ::::::::::::::::::WHtasApp Link ::::::::::::::::::
+            ::::::::::::::::::::::::::::::::::::::::::::::: */}
         <div className="fixed z-[999] right-7 bottom-7">
             <Link href="https://wa.me/90417-00209">
               <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />

@@ -34,7 +34,6 @@ import CountUp, { useCountUp } from "react-countup";
 import line1 from "../../../public/assets/expline1.png";
 import line2 from "../../../public/assets/expline2.png";
 import rating4 from "../../../public/assets/fourstar.png";
-import rating3 from "../../../public/assets/threestar.png";
 import rating from "../../../public/assets/slider-images/rating-slider.webp";
 const reviewsdata = [
   {
@@ -80,7 +79,7 @@ const reviewsdata = [
     clientname: "– Palak",
     clientcom:
       "Base2Brand’s work on our Shopify store was exceptional. They optimized the design and functionality, which led to better customer engagement and increased sales. Our cart abandonment rate is much lower, and the overall shopping experience has greatly improved.",
-      ratingstar:rating3
+      ratingstar:rating4
   },
   {
     id: 6,
@@ -144,7 +143,7 @@ export default function Reviews() {
               {reviewsdata.map((data, index) =>
                 <SwiperSlide key={index}>
                   <div className="flex flex-col justify-center md:flex-row">
-                    <div className="w-[100%] md:w-[40%] flex justify-center ">
+                    <div className="w-[100%] md:w-[40%] hidden md:flex justify-center ">
                       <Image
                         src={data.clientimg}
                         alt="img"

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
+import 'swiper/css/pagination';
 import "swiper/css";
 import manpreetsir from "../../../public/assets/manpreetsir.png";
 import arshsir from "../../../public/assets/arshsir.png";
@@ -114,10 +115,10 @@ export default function Team() {
               delay: 1500,
               disableOnInteraction: false
             }}
-            // pagination={{
-            //   clickable: true
-            // }}
-            pagination={false}
+            pagination={{
+              clickable: true,
+              type:"bullets"
+            }}
             speed={1000}
             modules={[Autoplay, Pagination, Navigation]}
             slidesPerView={slideitem}
