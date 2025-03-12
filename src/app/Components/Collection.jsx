@@ -3,7 +3,6 @@
 import { useState,useRef,useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation"; // Detect active page
 import base2brand from "../../../public/assets/newlogo1.svg";
 import callicon from "../../../public/assets/icons/Group 1707480214.webp";
 import Banner from "./Banner";
@@ -41,7 +40,7 @@ import whatsapp from "../../../public/assets/whatsapp.png";
 import india from "../../../public/assets/india.png";
 import usa from "../../../public/assets/usa.png";
 import uk from "../../../public/assets/uk.png";
-import customer from "../../../public/assets/customericon.svg";
+import { useRouter } from 'next/router'
 
 import { FaChevronDown } from "react-icons/fa";
 import whatsappfixed from "../../../public/assets/whatsappfixed1.jpg"
@@ -53,7 +52,7 @@ const page = () => {
   const [letstak,setletstalk] = useState('')
   const [activebg,setactivebg] =useState('')
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); 
+ 
   const section1 =useRef(null);  
   const section2 =useRef(null);
   const section3 =useRef(null);
@@ -78,6 +77,7 @@ const page = () => {
       return () => {
         window.removeEventListener("scroll", handleScroll3);
       };
+
     }, [])
 
  
@@ -116,7 +116,7 @@ const page = () => {
         <div className="ps-4 pe-4 m-0 w-[100vw] p-0">
           <header className="flex justify-between items-center relative py-4 md:px-4">
             {/* Logo */}
-            <Link href="https://base2brand.com" className="cursor-pointer">
+            <a href="https://base2brand.com" className="cursor-pointer">
               <div className="flex items-center">
                 <Image
                   src={base2brand}
@@ -126,7 +126,7 @@ const page = () => {
                   className="transition-all w-[70%] duration-500 transform scale-95  lg:w-[299px]"
                 />
               </div>
-            </Link>
+            </a>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex gap-3  px-4 py-2 rounded-full">
@@ -142,7 +142,7 @@ const page = () => {
                   >
                     <span className="text-[16px]">ERP</span>
                   </div> 
-                  <div
+                  {/* <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
                       ${activebg === "api"?
                         " bg-[#3b3b3b]  border-2 border-dashed border-[#96BF47]":
@@ -152,7 +152,7 @@ const page = () => {
                       onClick={() => { setbgnavbar("api") ;scrollhandler(section2)}}
                   >
                     <span className="text-[16px]"> SAI</span>
-                  </div>
+                  </div> */}
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
                       ${activebg === "nav2"?
@@ -201,11 +201,11 @@ const page = () => {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3 ">
-              <Link href="https://base2brand.com/contact-us">
-              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]">
+              <a href="https://base2brand.com/contact-us">
+              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]" >
                 Contact us
               </button>
-              </Link>
+              </a>
               <div className="flex hover_con_btn items-center space-x-4">
                 {/* <span className="text-lg text-white">Let’s Talk</span> */}
                 {/* <Link > */}
@@ -364,12 +364,12 @@ const page = () => {
                   >
                     <span className="text-[16px]" onClick={()=>scrollhandler(section1)} > ERP</span>
                   </div>
-                  <div
+                  {/* <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
                     <span className="text-[16px]" onClick={()=>scrollhandler(section2)} >SAI</span>
-                  </div>
+                  </div> */}
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
@@ -774,9 +774,9 @@ and customer satisfaction."
                         <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                         ERP
                         </li>
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        {/* <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                           SAI
-                        </li>
+                        </li> */}
                         <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                         CUSTOM INTEGRATION
                         </li>
@@ -919,9 +919,9 @@ and customer satisfaction."
                             <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                              ERP
                             </li>
-                            <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                            {/* <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
                              SAI
-                            </li>
+                            </li> */}
                             <li className="font-light text-[16px] text-[#BBBBBB] cursor-pointer"  onClick={()=>scrollhandler(section1)}>
                             CUSTOM INTEGRATION
                             </li>

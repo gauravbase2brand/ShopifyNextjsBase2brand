@@ -14,13 +14,14 @@ import mdsir from "../../../public/assets/mdsir.png";
 import rishavsir from "../../../public/assets/rishavsir.png";
 import saddamsir from "../../../public/assets/saddamsir.png";
 import sanjeevsir from "../../../public/assets/sanjeevsirimg.png";
-import lakhwindersir from "../../../public/assets/lakhwindersir.png"
+import lakhwindersir from "../../../public/assets/lakhwindersir.png";
+import sandeepsir from "../../../public/assets/sandeepsir.png"
 import Image from "next/image";
 const teamdata = [
   {
     img: manpreetsir,
     membername: "Manpreet Singh",
-    memberposition: "Technical Shopify Project Manager and CRO expert"
+    memberposition: "Technical Shopify Project Manager and CRO Expert"
   },
   {
     img: arshsir,
@@ -30,12 +31,12 @@ const teamdata = [
   {
     img: deepaksir,
     membername: "Deepak Chauhan",
-    memberposition: "Shopify App expert & MERN Stack developer"
+    memberposition: "Shopify App expert & MERN Stack Developer"
   },
   {
     img: mdsir,
     membername: "Md. Sahjad Ansari",
-    memberposition: "Shopify App expert & MERN Stack developer"
+    memberposition: "Shopify App Expert & MERN Stack Developer"
   },
   {
     img: rahulsir,
@@ -47,7 +48,7 @@ const teamdata = [
   {
     img: rishavsir,
     membername: "Rishav Karn",
-    memberposition: "Shopify Theme developer"
+    memberposition: "Shopify Theme Developer"
   },
   {
     img: omsir,
@@ -62,12 +63,17 @@ const teamdata = [
   {
     img:sanjeevsir,
      membername: "Sanjeev",
-    memberposition: "Shopify Theme expert"
+    memberposition: "Shopify Theme Expert"
   },
   {
     img:lakhwindersir,
      membername: "Lakhwinder",
-    memberposition: "Shopify Theme expert"
+    memberposition: "Shopify Theme Expert"
+  },
+  {
+    img:sandeepsir,
+         membername: "Sandeep Singh",
+    memberposition: "Shopify Theme Expert"
   }
 ];
 export default function Team() {

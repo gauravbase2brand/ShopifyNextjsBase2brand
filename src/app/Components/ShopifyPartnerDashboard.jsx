@@ -66,11 +66,13 @@ const ShopifyPartnerDashboard = () => {
               />
             </div>
             <div data-aos="fade-up">
+              <a href="https://www.shopify.com/partners/directory/partner/base2brand4" target="_blank">
               <Image
                 src={dashboardImage}
                 alt="Shopify Partner Dashboard Illustration"
                 className="w-full  xl:h-[700px] lg:h-[455px] object-contain"
               />
+              </a>
             </div>
           </div>
         </div>

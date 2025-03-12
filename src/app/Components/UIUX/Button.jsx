@@ -5,7 +5,7 @@ const Button = ({ GButton , Glink }) => {
   return (
     <>
       <div className="mt-30">
-        <Link
+        <a
           href={Glink}
           className="px-5 shadow-[inset_3px_3px_14px_0px_#ffffff8c] py-[10px] text-black font-semibold rounded-full  text-lg capitalize
             ,0_0_40px_rgba(180,255,35,0.6)] 
@@ -14,7 +14,7 @@ const Button = ({ GButton , Glink }) => {
                bg-[#96bf47]"
         >
           {GButton}
-        </Link>
+        </a>
       </div>
     </>
   );

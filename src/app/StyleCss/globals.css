@@ -180,11 +180,11 @@ p {
 {
   transition: all 1.1s;
 }
-.padding_hover_parent:hover .padding_hover_child 
+/* .padding_hover_parent:hover .padding_hover_child 
 {
   padding-left: 80%;
  
-}
+} */
 .padding_hover_parent:hover .padding_hover_child img
 {
   box-shadow: inset 0 0 29px #d8f999, 0 0 34px #b4ff23;

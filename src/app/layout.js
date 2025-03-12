@@ -17,6 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="canonical" href="https://base2brand.com/hire-shopify-developer-india" />
+      </head>
       <body className="antialiased">
         {children}
       </body>

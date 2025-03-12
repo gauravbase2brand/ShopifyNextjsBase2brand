@@ -298,7 +298,7 @@ export default function Brand() {
             )}
           </Marquee>
         </div>
-        <div className="absolute inset-0 flex items-center justify-center z-[1]">
+        <div className="absolute inset-0 flex items-center justify-center md:top-0 top-[20%] z-[1]">
           <Image
             src={shopifylogo}
             width={1000}
