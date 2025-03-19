@@ -121,12 +121,13 @@ const page = () => {
           <header className="flex justify-between items-center relative py-4 md:px-4">
             {/* Logo */}
             {/* <a href="https://base2brand.com" className="cursor-pointer"> */}
-              <div className="flex items-center" onClick={() => changeRoute('/')}>
+              <div className="flex items-center" >
                 <Image
                   src={base2brand}
                   alt="BASE2BRAND"
                   width={140}
                   height={40}
+                  onClick={() => window.open("https://base2brand.com", "_blank")} 
                   className="transition-all w-[70%] duration-500 transform scale-95  lg:w-[299px]"
                 />
               </div>
