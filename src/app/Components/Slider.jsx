@@ -185,10 +185,10 @@ export default function Slider() {
         <div className="w-[90%] md:w-[100%]" data-aos="fade-up ">
           <Swiper
             loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: false
+            // }}
             // pagination={{
             //   clickable: true
             // }}

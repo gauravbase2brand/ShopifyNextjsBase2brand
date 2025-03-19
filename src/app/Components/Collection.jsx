@@ -145,7 +145,7 @@ const page = () => {
                     }`}
                     onClick={() => { setbgnavbar("nav1") ;scrollhandler(section1)}}
                   >
-                    <span className="text-[16px]">ERP</span>
+                    <span className="text-[16px]  text-poppins">ERP</span>
                   </div> 
                   {/* <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
@@ -207,7 +207,7 @@ const page = () => {
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3 ">
               {/* <a href="https://base2brand.com/contact-us"> */}
-              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]"  onClick={() => changeRoute('/contact-us')}>
+              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-medium shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]"  onClick={() => changeRoute('/contact-us')}>
                 Contact us
               </button>
               {/* </a> */}
@@ -568,7 +568,7 @@ const page = () => {
               project management."
               CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
               CardButton="Get Started"
-              CardLink="https://base2brand.com/erp-integration"
+              CardLink="https://wa.me/90417-00209"
               CardImage={fiestsliderimage}
             />
             </div>
@@ -580,7 +580,7 @@ const page = () => {
             Cardpara1="Shopify API integration is key for businesses looking to streamline e-commerce operations. It connects Shopify with external systems, enabling smooth data synchronization, efficient workflows, and personalized customer experiences. This powerful integration enhances operational efficiency and helps businesses improve their online presence across platforms."
             CardPara2=""
             CardButton="Get Started  "
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage}
             Cardbg="#5C772A"
             />
@@ -593,7 +593,7 @@ const page = () => {
             Cardpara1="Custom apps and integrations let you add unique features to your Shopify store. Built specifically for your store, they allow customization of your admin, access to store data via Shopify APIs, and integration with other platforms using the Storefront API."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage3}
             />
             </div>
@@ -608,7 +608,7 @@ const page = () => {
             engaging customer experience for Shopify stores."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage4}
             Cardbg="#5C772A"
             />
@@ -625,7 +625,7 @@ const page = () => {
              and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage5}
             />
             </div>
@@ -641,7 +641,7 @@ operations with route planning and real-time tracking, improving efficiency
 and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage6}
             Cardbg="#5C772A"
             />
