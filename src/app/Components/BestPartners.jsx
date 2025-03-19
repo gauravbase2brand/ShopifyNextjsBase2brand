@@ -29,7 +29,7 @@ export default function BestPartners() {
                         </div>
                         <div className="i w-[50%] flex justify-center">
                         {/* <a href="https://www.saasintegrator.com/" className='w-[100%] flex justify-center' target='_blank'> */}
-                        <Image src={parimage2} width={1000} height={500} alt="" className='w-[70%] object-contain' />
+                        <Image src={parimage2} width={1000} height={500} alt="" className='w-[90%] object-contain' />
                         {/* </a> */}
                         </div>
                     </div>

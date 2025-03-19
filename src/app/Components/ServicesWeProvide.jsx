@@ -69,9 +69,9 @@ const ERPSection = ({
                 <div className="px-6 py-2 w-fit bg-black border border-white rounded-full text-sm inline-block">
                 {phase}
                 </div>
-                <h3 className="font-bold leading-normal">{TitleERP}</h3>
-                <p className="text-gray-300  m-0">{Cardpara1}</p>
-                <p className="text-gray-300  m-0">{CardPara2}</p>
+                <h3 className="leading-normal font-medium">{TitleERP}</h3>
+                <p className="text-gray-300 font-normal  m-0">{Cardpara1}</p>
+                <p className="text-gray-300 font-normal  m-0">{CardPara2}</p>
                 <Button GButton={CardButton} Glink={CardLink} />
                 </div>
               </>

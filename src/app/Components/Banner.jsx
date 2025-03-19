@@ -35,7 +35,7 @@ const Banner = () => {
         <div className="relative gap-[30px] md:gap-[5%] z-10 h-[100%] flex flex-col items-center justify-center">
           <h1 className="md:text-[80px] xl:text-[110px] text-[80px]   font-bold leading-tight ">
             We are <br />
-            <span className="relative inline-block px-4 py-2 bg-primary p-[0_5%] text-black text-[70px] xl:text-[140px] md:text-[120px] leading-[80px] md:leading-[150px] -rotate-2">
+            <span className="relative inline-block pt-[20px] px-4 py-2 bg-primary p-[0_5%] text-black text-[70px] xl:text-[140px] md:text-[120px] leading-[80px] md:leading-[110px] -rotate-3">
               SHOPIFY
             </span>
             <br />

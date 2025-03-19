@@ -65,7 +65,7 @@ export default function Integration() {
           <h2 className="text-[#989898] md:leading-[60px]">
             Shopping Experience
           </h2>
-          <p className="text-center pt-3 pb-3 text-secondary w-full sm:w-1/2 lg:w-[70%] md:w-9/12 mx-auto">
+          <p className="text-center pb-3 text-secondary w-full sm:w-1/2 lg:w-[70%] md:w-9/12 mx-auto">
             Upgrade your store's functionality with cutting-edge integrations
             designed to captivate shoppers and drive conversions.
           </p>
@@ -95,12 +95,12 @@ export default function Integration() {
                   />
                 </div>
                 <div className="min-h-[75px] md:min-h-[94px] md:justify-start justify-center flex items-center pt-2 pb-2">
-                  <h3 className="text-[28px] text-center md:text-start md:m-0 m-[0px_10px]  leading-[35px] font-black">
+                  <h3 className="text-[28px] text-center md:text-start md:m-0 m-[0px_10px]  leading-[35px] font-medium">
                     {data.intetitle}
                   </h3>
                 </div>
                 <div className="min-h-[120px] flex md:items-start items-center">
-                  <p className="font-[#ddd] md:text-start text-center leading-[24px] m-0">
+                  <p className="font-[#ddd] md:text-start font-normal text-center leading-[24px] m-0">
                     {data.intedes}
                   </p>
                 </div>

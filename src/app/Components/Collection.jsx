@@ -40,11 +40,11 @@ import whatsapp from "../../../public/assets/whatsapp.png";
 import india from "../../../public/assets/india.png";
 import usa from "../../../public/assets/usa.png";
 import uk from "../../../public/assets/uk.png";
-import { useRouter } from 'next/router'
-
+import { useRouter } from 'next/navigation';
 import { FaChevronDown } from "react-icons/fa";
 import whatsappfixed from "../../../public/assets/whatsappfixed1.jpg"
 import Upperslider from "./Upperslider";
+import ImageSlider from "./Imageslider";
 const page = () => {
   const [scrolly, setScrollY] = useState(0);
   const [card1Scroll, setCard1Scroll] = useState(null);
@@ -104,8 +104,12 @@ const page = () => {
           setActiveIndex2(activeIndex2 === index ? null : index);
           setActiveIndex(null);
         };
-     
-          
+        const router = useRouter();
+        const changeRoute = (path) => {
+          router.push(path); 
+          console.log("workign path",path)
+        };
+      
   return (
     <div>
         {/*::::::::::::::::::::::::::::::::::::::::::::::
@@ -116,8 +120,8 @@ const page = () => {
         <div className="ps-4 pe-4 m-0 w-[100vw] p-0">
           <header className="flex justify-between items-center relative py-4 md:px-4">
             {/* Logo */}
-            <a href="https://base2brand.com" className="cursor-pointer">
-              <div className="flex items-center">
+            {/* <a href="https://base2brand.com" className="cursor-pointer"> */}
+              <div className="flex items-center" onClick={() => changeRoute('/')}>
                 <Image
                   src={base2brand}
                   alt="BASE2BRAND"
@@ -126,7 +130,7 @@ const page = () => {
                   className="transition-all w-[70%] duration-500 transform scale-95  lg:w-[299px]"
                 />
               </div>
-            </a>
+            {/* </a> */}
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex gap-3  px-4 py-2 rounded-full">
@@ -201,11 +205,11 @@ const page = () => {
 
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3 ">
-              <a href="https://base2brand.com/contact-us">
-              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]" >
+              {/* <a href="https://base2brand.com/contact-us"> */}
+              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]"  onClick={() => changeRoute('/contact-us')}>
                 Contact us
               </button>
-              </a>
+              {/* </a> */}
               <div className="flex hover_con_btn items-center space-x-4">
                 {/* <span className="text-lg text-white">Let’s Talk</span> */}
                 {/* <Link > */}
@@ -529,12 +533,12 @@ const page = () => {
                :::::::::::::::::::::::::::::::::::::::::::: */}     
            <div>
         
-            <div className="bg-[url('/assets/bannersvg.svg')] bg-cover bg-center bg-no-repeat ">
-            <Banner />
-            <BannerSlider />
+            <div className="bg-[url('/assets/newmainbanner.png')] bg-cover bg-center bg-no-repeat ">
+             <Banner />
+             <BannerSlider />
             </div>
-            <ScrollVideo />
-            {/* <Upperslider/> */}
+            {/* <ScrollVideo /> */}
+            <ImageSlider/>
             <Heading 
               Heading1="Trusted Shopify"
               Heading2="Partner Agency"

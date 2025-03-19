@@ -26,13 +26,13 @@ const ShopifyPartnerDashboard = () => {
                 <Image
                   src={Partner}
                   alt="Shopify Partner Dashboard Illustration"
-                  className="xl:h-[700px] lg:h-[455px] h-auto"
+                  className="xl:h-[550px] lg:h-[455px] h-auto"
                   data-aos="fade-up"
                 />
                 <Image
                   src={Directory}
                   alt="Shopify Partner Dashboard Illustration"
-                  className="xl:h-[700px] lg:h-[455px] h-auto"
+                  className="xl:h-[550px] lg:h-[455px] h-auto"
                   data-aos="fade-up"
                 />
               </div>
@@ -70,7 +70,7 @@ const ShopifyPartnerDashboard = () => {
               <Image
                 src={dashboardImage}
                 alt="Shopify Partner Dashboard Illustration"
-                className="w-full  xl:h-[700px] lg:h-[455px] object-contain"
+                className="w-full  xl:h-[550px] lg:h-[455px] object-contain"
               />
               </a>
             </div>

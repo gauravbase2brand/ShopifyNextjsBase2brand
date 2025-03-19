@@ -5,11 +5,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation"; // Detect active page
 import base2brand from "../../../../public/assets/newlogo1.svg";
 import callicon from "../../../../public/assets/icons/Group 1707480214.webp";
-
+import { useRouter } from 'next/router';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname(); // Get current route
-
+  const router = useRouter();
   const section1 =useRef();  
   const section2 =useRef();
   const section3 =useRef();
@@ -17,6 +17,9 @@ export default function Navbar() {
   const scrollhandler =(secref) =>{
     window.screenTop({top:secref.current.offsetTop,behavior:"smooth"})
   }
+  const changeRoute = (path) => {
+    router.push(path); // Navigate to the specified path
+  };
 
   return (
     <>
@@ -24,8 +27,8 @@ export default function Navbar() {
         <div className="container mx-aut0 w-full p-0">
           <header className="flex justify-between items-center py-4 px-[15px] md:px-0">
             {/* Logo */}
-            <Link href="/" className="cursor-pointer">
-              <div className="flex items-center">
+            {/* <Link href="/" className="cursor-pointer"> */}
+              <div className="flex items-center" onClick={() => changeRoute('/')}>
                 <Image
                   src={base2brand}
                   alt="BASE2BRAND"
@@ -34,7 +37,7 @@ export default function Navbar() {
                   className="transition-all duration-500 transform scale-95 hover:scale-100 w-[220px]"
                 />
               </div>
-            </Link>
+            {/* </Link> */}
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex gap-3 backdrop-blur-md px-4 py-2 rounded-full shadow-md">

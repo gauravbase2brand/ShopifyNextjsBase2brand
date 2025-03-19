@@ -8,6 +8,7 @@ import launchimg2 from "../../../public/assets/launchimg2.png";
 import launchimg3 from "../../../public/assets/launchimg3.png";
 import launchimg4 from "../../../public/assets/launchimg4.png";
 import Image from "next/image";
+import faqbg from "../../../public/assets/faq-bg2.png"
 const Faqs = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -110,7 +111,14 @@ const Faqs = () => {
               className="md:mb-2 custoum_border p-[10px_0]"
               onClick={() => toggleFAQ(index)}
             >
-              <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[15px]">
+              <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[15px]" 
+              style={{
+                backgroundImage: `url(${faqbg.src})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              >
                 <div className="flex relative w-[100%] justify-start">
                   <div className="flex items-start h-[100%] rounded-tl-[15px]">
                     <span
@@ -146,7 +154,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="md:p-[0_11%_4%] text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[11px] md:text-[14px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[12px] md:text-[14px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -163,7 +171,14 @@ const Faqs = () => {
               className="md:mb-2 custoum_border p-[10px_0]"
               onClick={() => toggleFAQ2(index)}
             >
-              <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[20px]">
+              <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[20px]" 
+            style={{
+              backgroundImage: `url(${faqbg.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+              >
                 <div className="flex relative w-[100%] justify-start">
                   <div className="flex items-start h-[100%] rounded-tl-[20px]">
                     <span
@@ -199,7 +214,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="md:p-[0_11%_4%] p-[0%_2%_4%_4%] pt-0 md:text-[14px] text-[11px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] p-[0%_2%_4%_4%] pt-0 md:text-[14px] text-[12px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>

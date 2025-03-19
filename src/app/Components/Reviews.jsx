@@ -211,11 +211,11 @@ export default function Reviews() {
         {/*  Shopify service Heading*/}
         <div className=" container text-center flex flex-col items-center"  data-aos="fade-up">
           <div className="flex md:flex-row flex-col gap-0 md:gap-3">
-            <h2 className="md:leading-[60px]">Boost Your Brand </h2>
-            <h2 className="text-[#989898] md:leading-[60px] ">With Expert</h2>
+            <h2 className="">Boost Your Brand </h2>
+            <h2 className="text-[#989898] ">With Expert</h2>
           </div>
-          <h2 className="text-[#989898] md:leading-[60px]">Shopify Services</h2>
-          <p className="text-center pt-3 pb-3 text-secondary w-full sm:w-1/2 lg:w-[70%] md:w-9/12 mx-auto">
+          <h2 className="text-[#989898]">Shopify Services</h2>
+          <p className="text-center  pb-3 text-secondary w-full sm:w-1/2 lg:w-[70%] md:w-9/12 mx-auto">
             Ready to create or elevate your Shopify store? Our experienced team
             specializes in custom themes, performance optimization, and
             enhancing user experience to help your business thrive.
@@ -223,7 +223,7 @@ export default function Reviews() {
         </div>
         {/* Services Exp. etc */}
         <div className="flex justify-center flex-col items-center pb-[5%]"  data-aos="fade-up">
-          <div className="flex min-h-[110px] w-[90%] md:w-auto border-[#17360f] border-t-[1px] border-b-[1px] relative">
+          <div className="flex min-h-[110px] w-[90%] md:w-[50%] border-[#17360f] border-t-[1px] border-b-[1px] relative">
             <div className="flex flex-col md:p-0 p-[0_10px] w-[33%] md:min-w-[200px] md:ps-[20px]">
               <div className="text-[#96BF47] md:text-[40px] text-[26px] leading-[35px] font-black md:leading-[50px]">
                 <CountUp end={20} enableScrollSpy />+
@@ -244,7 +244,7 @@ export default function Reviews() {
             </div>
             <Image src={line2} alt="hy" width={1000} height={500} className="absolute w-[90px] right-[-8%] md:right-[-11%] top-[-14%]"/>
           </div>
-          <div className="flex min-h-[110px] w-[70%] md:w-auto border-[#17360f] border-b-[1px] relative">
+          <div className="flex min-h-[110px] w-[70%] md:w-[40%] border-[#17360f] border-b-[1px] relative">
             <div className="flex flex-col md:p-0 p-[0_10px] w-[50%] justify-end md:pb-2 md:min-w-[200px] md:ms-[60px] md:ps-[20px] border-[#17360f] md:border-s-[1px] border-e-[1px]">
               <div className="text-[#96BF47] md:text-[40px] text-[26px] leading-[35px] font-black md:leading-[50px]">
                 <CountUp end={100} enableScrollSpy />+

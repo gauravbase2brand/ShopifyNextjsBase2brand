@@ -112,10 +112,10 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row lg:gap-0 gap-[20px]">
             <div className="lg:w-[65%] w-[100%]">
               <div className="pt-2 pb-3 ps-[2.5%]">
-                <h3 className="text-[24px] font-light leading-[34px]">
+                <h3 className="text-[24px] font-normal leading-[34px]">
                   Have a project in mind?
                 </h3>
-                <h3 className="text-[24px] font-light leading-[34px]">
+                <h3 className="text-[24px] font-normal leading-[34px]">
                   let’s get to work.
                 </h3>
               </div>
