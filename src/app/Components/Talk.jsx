@@ -22,7 +22,9 @@ export default function Talk() {
       <div className="pt-[4%] relative h-[100px] flex flex-col justify-center">
         <hr className="border-[#95b950c4] " />
         <div className="absolute w-[100%] flex justify-center items-center">
-         <Button Glink={"https://base2brand.com/contact-us"} GButton={"Get Started Now"} />
+          <a href="https://wa.me/90417-00209"target="_blank" >
+           <Button GButton={"Get Started Now"} />
+         </a>
         </div>
       </div>
       <div className="custom_gradient_right w-[600px] h-[500px] left-[30%] top-[-10%]"></div>

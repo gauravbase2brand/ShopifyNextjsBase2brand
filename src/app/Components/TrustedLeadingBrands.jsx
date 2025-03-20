@@ -253,7 +253,7 @@ export default function Brand() {
             {lbannerfirstband.map((title, index) =>
               <div
                 key={index}
-                className="flex ps-4 pe-4 text-black items-center gap-2"
+                className="flex ps-4 pe-4 text-black items-center gap-2 font-poppins "
               >
                 <Image
                   src={startitle}
@@ -268,7 +268,7 @@ export default function Brand() {
           </Marquee>
         </div>
         <div
-          className="bg-white absolute rotate-[354deg] z-[1] py-[15px] px-0"
+          className="bg-white  absolute rotate-[354deg] z-[1] py-[15px] px-0"
           style={{
             padding: "15px 0px"
           }}
@@ -284,7 +284,7 @@ export default function Brand() {
             {lbannerfirstband.map((title, index) =>
               <div
                 key={index}
-                className="flex ps-4 pe-4 text-black items-center gap-2 "
+                className="flex ps-4 pe-4 text-black items-center gap-2 font-poppins "
               >
                 <Image
                   src={startitle}

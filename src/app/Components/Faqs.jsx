@@ -125,12 +125,12 @@ const Faqs = () => {
                       className={`text-[14px] p-[7px_12px] h-[100%] border-r-[1px] rounded-br-[15px] border-b-[1px]  font-semibold rounded-tl-[15px] ${activeIndex ===
                       index
                         ? "bg-[#96BF47] text-[#fff] border-[#96BF47] shadow-[inset_0_0_29px_#d8f999,0_0_34px_#b4ff23]"
-                        : "bg-[#000000] text-[#96BF47] border-[#414141]"}`}
+                        : "bg-[#00000000] text-[#96BF47] border-[#414141]"}`}
                     >
                       {item.no}
                     </span>
                   </div>
-                  <button className="md:w-[80%] text-left text-[15px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
+                  <button className="md:w-[80%] font-poppins text-left text-[15px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
                     {item.question}
                   </button>
                   <div
@@ -154,7 +154,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="md:p-[0_11%_4%] text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[12px] md:text-[14px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] font-poppins text-[#bab7b7]  p-[0%_2%_4%_4%] pt-0 bg-transparent  text-[12px] md:text-[14px] leading-[20px] md:leading-[23px] bg-black rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>
@@ -190,7 +190,7 @@ const Faqs = () => {
                       {item.no}
                     </span>
                   </div>
-                  <button className=" md:w-[80%] text-left text-[15px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
+                  <button className=" md:w-[80%] font-poppins text-left text-[15px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
                     {item.question}
                   </button>
                   <div
@@ -214,7 +214,7 @@ const Faqs = () => {
                     ? "max-h-60 rounded-br-[20px] rounded-bl-[20px]"
                     : "max-h-0"}`}
                 >
-                  <div className="md:p-[0_11%_4%] p-[0%_2%_4%_4%] pt-0 md:text-[14px] text-[12px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
+                  <div className="md:p-[0_11%_4%] font-poppins p-[0%_2%_4%_4%] pt-0 md:text-[14px] text-[12px] bg-transparent leading-[20px] md:leading-[23px] bg-black text-[#bab7b7] rounded-b-lg">
                     {item.answer}
                   </div>
                 </div>

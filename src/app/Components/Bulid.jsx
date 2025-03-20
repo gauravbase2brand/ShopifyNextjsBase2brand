@@ -17,7 +17,7 @@ export default function Bulid() {
         <div className=" container text-center flex flex-col items-center pb-5">
           <div className=" gap-0 md:gap-3">
             <h2 className="md:leading-[60px] text-[#989898]">
-              If You Can Imagine It,
+              If You Can Imagine It, 
             </h2>
             
             <h2 className=" md:leading-[60px] ">You Can Build It</h2>
