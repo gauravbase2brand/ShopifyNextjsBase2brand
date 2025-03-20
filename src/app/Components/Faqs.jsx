@@ -171,7 +171,8 @@ const Faqs = () => {
               className="md:mb-2 custoum_border p-[10px_0]"
               onClick={() => toggleFAQ2(index)}
             >
-              <div className="flex flex-col items-start   border-[1px] border-[#414141]  rounded-[20px]" 
+              <div className="flex flex-col items-star
+              t   border-[1px] border-[#414141]  rounded-[20px]" 
             style={{
               backgroundImage: `url(${faqbg.src})`,
               backgroundSize: "cover",
