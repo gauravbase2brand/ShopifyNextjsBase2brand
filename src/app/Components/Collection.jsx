@@ -127,7 +127,7 @@ const page = () => {
                   alt="BASE2BRAND"
                   width={140}
                   height={40}
-                  onClick={() => window.open("https://base2brand.com", "_blank")} 
+                  onClick={() => {window.location.href = "https://base2brand.com";}}
                   className="transition-all w-[70%] duration-500 transform scale-95  lg:w-[299px]"
                 />
               </div>
@@ -145,7 +145,7 @@ const page = () => {
                     }`}
                     onClick={() => { setbgnavbar("nav1") ;scrollhandler(section1)}}
                   >
-                    <span className="text-[16px]">ERP</span>
+                    <span className="text-[16px]  font-poppins">ERP</span>
                   </div> 
                   {/* <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47]  cursor-pointer  text-sm font-medium 
@@ -167,7 +167,7 @@ const page = () => {
                       `}
                       onClick={() => { setbgnavbar("nav2") ;scrollhandler(section3)}}
                   >
-                    <span className="text-[16px]">CUSTOM INTEGRATION </span>
+                    <span className="text-[16px] font-poppins">CUSTOM INTEGRATION </span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium ${activebg === "nav4"?
@@ -176,7 +176,7 @@ const page = () => {
                       } `}
                     onClick={()=>{scrollhandler(section4);setbgnavbar("nav4")}}
                   >
-                    <span className="text-[16px]"> CRM</span>
+                    <span className="text-[16px] font-poppins"> CRM</span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium 
@@ -187,7 +187,7 @@ const page = () => {
                       `}
                     onClick={()=>{scrollhandler(section5);setbgnavbar("nav5")}}
                   >
-                    <span className="text-[16px]">POS</span>
+                    <span className="text-[16px] font-poppins">POS</span>
                   </div>
                   <div
                     className={`px-[16px] py-[8px] rounded-full text-[#96BF47] cursor-pointer  text-sm font-medium 
@@ -198,7 +198,7 @@ const page = () => {
                       `}
                     onClick={()=>{scrollhandler(section6);setbgnavbar("nav6")}}
                   >
-                    <span className="text-[16px]">OUR PRODUCTS</span>
+                    <span className="text-[16px] font-poppins">OUR PRODUCTS</span>
                   </div>
                 {/* // </Link>  */}
               {/* ))} */}
@@ -207,7 +207,7 @@ const page = () => {
             {/* Contact Section */}
             <div className="hidden lg:flex gap-6 mr-3 ">
               {/* <a href="https://base2brand.com/contact-us"> */}
-              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] rounded-[25px] text-black font-semibold shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]"  onClick={() => changeRoute('/contact-us')}>
+              <button className="bg-white xl:p-[10px_20px] p-[5px_10px] font-poppins rounded-[25px] text-black font-medium shadow-md md:text-[16px] text-sm hover:bg-[#96bf47]" onClick={() => {window.location.href = "https://base2brand.com/contact-us";}}>
                 Contact us
               </button>
               {/* </a> */}
@@ -367,7 +367,7 @@ const page = () => {
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section1)} > ERP</span>
+                    <span className="text-[16px] font-poppins" onClick={()=>scrollhandler(section1)} > ERP</span>
                   </div>
                   {/* <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
@@ -379,25 +379,25 @@ const page = () => {
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section3)}>CUSTOM INTEGRATION</span>
+                    <span className="text-[16px] font-poppins" onClick={()=>scrollhandler(section3)}>CUSTOM INTEGRATION</span>
                   </div>
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md `}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section4)}>CRM</span>
+                    <span className="text-[16px] font-poppins" onClick={()=>scrollhandler(section4)}>CRM</span>
                   </div>
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md `}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>scrollhandler(section5)} >POS</span>
+                    <span className="text-[16px] font-poppins" onClick={()=>scrollhandler(section5)} >POS</span>
                   </div>
                   <div
                     className={`block bg-[#0000000] text-[#a2d148] text-xl font-medium py-3 px-1 w-[90%] mx-auto  transition-all duration-300  shadow-md`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="text-[16px]" onClick={()=>{scrollhandler(section6)}}>OUR PRODUCTS</span>
+                    <span className="text-[16px] font-poppins" onClick={()=>{scrollhandler(section6)}}>OUR PRODUCTS</span>
                   </div>
                   {/* </Link> */}
                 </li>
@@ -408,7 +408,7 @@ const page = () => {
           <div className="flex justify-end w-[90%]">
           <div className="mt-6 w-max-content justify-end flex items-center gap-3 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-black transition-all duration-300" onClick={()=>setletstalk(!letstak)}>
                 <Image src={callicon} alt="Call Icon" width={30} height={30} />
-                <span className="text-lg">Let’s Talk</span>
+                <span className="text-lg font-poppins">Let’s Talk</span>
             </div>
           </div>
           </div>
@@ -568,7 +568,7 @@ const page = () => {
               project management."
               CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
               CardButton="Get Started"
-              CardLink="https://base2brand.com/erp-integration"
+              CardLink="https://wa.me/90417-00209"
               CardImage={fiestsliderimage}
             />
             </div>
@@ -580,7 +580,7 @@ const page = () => {
             Cardpara1="Shopify API integration is key for businesses looking to streamline e-commerce operations. It connects Shopify with external systems, enabling smooth data synchronization, efficient workflows, and personalized customer experiences. This powerful integration enhances operational efficiency and helps businesses improve their online presence across platforms."
             CardPara2=""
             CardButton="Get Started  "
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage}
             Cardbg="#5C772A"
             />
@@ -593,7 +593,7 @@ const page = () => {
             Cardpara1="Custom apps and integrations let you add unique features to your Shopify store. Built specifically for your store, they allow customization of your admin, access to store data via Shopify APIs, and integration with other platforms using the Storefront API."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage3}
             />
             </div>
@@ -608,7 +608,7 @@ const page = () => {
             engaging customer experience for Shopify stores."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage4}
             Cardbg="#5C772A"
             />
@@ -625,7 +625,7 @@ const page = () => {
              and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage5}
             />
             </div>
@@ -636,12 +636,12 @@ const page = () => {
             phase=" 06 "
             TitleERP="Our Products"
             Cardpara1="AppCartify, our Shopify product, enables businesses to create custom mobile apps for
-seamless shopping experiences. Additionally, our Delivery App optimizes delivery
-operations with route planning and real-time tracking, improving efficiency
-and customer satisfaction."
+             seamless shopping experiences. Additionally, our Delivery App optimizes delivery
+             operations with route planning and real-time tracking, improving efficiency
+              and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://base2brand.com/erp-integration"
+            CardLink="https://wa.me/90417-00209"
             CardImage={cardimage6}
             Cardbg="#5C772A"
             />
@@ -686,12 +686,12 @@ and customer satisfaction."
                 <div className="flex flex-col lg:flex-row lg:gap-0 gap-[20px]">
                   <div className="lg:w-[65%] w-[100%]">
                     <div className="pt-2 pb-3 ps-[2.5%]">
-                      <h3 className="text-[24px] font-light leading-[34px]">
+                      <p className="text-[24px] font-light leading-[34px] m-0">
                         Have a project in mind?
-                      </h3>
-                      <h3 className="text-[24px] font-light leading-[34px]">
+                      </p>
+                      <p className="text-[24px] font-light leading-[34px] m-0">
                         let’s get to work.
-                      </h3>
+                      </p>
                     </div>
                     <div className="flex flex-col gap-[15px] ps-[2.5%]">
                       
@@ -1110,9 +1110,9 @@ and customer satisfaction."
               ::::::::::::::::::WHtasApp Link ::::::::::::::::::
             ::::::::::::::::::::::::::::::::::::::::::::::: */}
         <div className="fixed z-[999] right-7 bottom-7">
-            <Link href="https://wa.me/90417-00209">
+            <a href="https://wa.me/90417-00209" target="_blank">
               <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />
-            </Link>
+            </a>
         </div>
     </div>
   );

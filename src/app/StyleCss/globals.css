@@ -17,14 +17,9 @@ html
   --primary-dark: #a3cc0f;
   --secondary-dark: #c66900;
   --ternary-dark: #2d7a3e;
-
-  /* Font Variables */
-  /* --font-body: 'Poppins', sans-serif;  */
-
-
   --font-body: var(--font-poppins);
   /* --font-heading-bold: "Mont Heavy DEMO", sans-serif; */
-  --font-mont-heavy: "Mont Heavy DEMO", sans-serif;
+  --font-mont-heavy: "Mont Heavy DEMO";
   /* For bold or heavy headings */
 
   /* Default Font Sizes */
@@ -91,7 +86,7 @@ html
 }
 
 body {
-  font-family: var(--font-body), "Poppins";
+  font-family: var(--font-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   background-color: var(--Dark);
@@ -114,10 +109,11 @@ h2 {
 
 h3 {
   font-size: var(--font-size-h3);
+  font-family: var(--font-mont-heavy);
 }
 
 p {
-  font-family: var(--font-body),"Poppins" ;
+  font-family: var(--font-poppins) ;
   font-size: var(--font-size-p);
   line-height: var(--para-line-height);
   color: var(--secondary);

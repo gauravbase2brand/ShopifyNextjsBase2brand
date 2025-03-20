@@ -84,7 +84,7 @@ export default function Launched() {
         <div className=" container text-center flex flex-col items-center pb-5">
           <div className=" gap-0 md:gap-3">
             <h2 className="md:leading-[60px] text-[#989898]">
-              If You Can Imagine It,
+              If You Can Imagine It, 
             </h2>
 
             <h2 className=" md:leading-[60px] ">You Can Build It</h2>
@@ -111,11 +111,11 @@ export default function Launched() {
                 <span className="text-[14px]">OPT /01</span>
               </div>
               <div className="w-[15%]">
-                <h4 className="text-[23px]">Go Liquid</h4>
+                <h4 className="text-[23px] font-poppins">Go Liquid</h4>
               </div>
 
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[14px] font-poppins ">
                   Get the best of both worlds. Build your own one-of-a-kind
                   store in no time with Liquid, then leave the rest to us.
                 </span>
@@ -133,10 +133,10 @@ export default function Launched() {
                 <span className="text-[14px]">OPT /02</span>
               </div>
               <div className="w-[15%]">
-                <h4 className="text-[23px]">Go headless</h4>
+                <h4 className="text-[23px] font-poppins">Go headless</h4>
               </div>
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[14px] font-poppins ">
                   Get full control. Tap into Shopify's APIs and developer tools
                   to build your own bespoke store, integrated with your
                   preferred stack.
@@ -155,10 +155,10 @@ export default function Launched() {
                 <span className="text-[14px]">OPT /03</span>
               </div>
               <div className="w-[15%]">
-                <h4 className="text-[23px]">Custom builds</h4>
+                <h4 className="text-[23px] font-poppins">Custom builds</h4>
               </div>
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[14px] font-poppins ">
                   Get custom builds as per requirements
                 </span>
               </div>
@@ -176,10 +176,10 @@ export default function Launched() {
                 <span className="text-[14px]">OPT /04</span>
               </div>
               <div className="w-[15%]">
-                <h4 className="text-[23px]">Custom Integration</h4>
+                <h4 className="text-[23px] font-poppins">Custom Integration</h4>
               </div>
               <div className="w-[60%] leading-[24px]">
-                <span className="text-[14px]">
+                <span className="text-[14px] font-poppins ">
                   Integrate with your Backoffice managements or any other
                   platform
                 </span>

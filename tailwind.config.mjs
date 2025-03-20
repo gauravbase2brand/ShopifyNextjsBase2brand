@@ -17,7 +17,7 @@ export default {
 
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)", "sans-serif"],
+        poppins: ["var(--font-poppins)", "poppins"],
         // heading: ['Mont Heavy DEMO', 'sans-serif'],
         Mont: ["var(--font-mont-heavy)", "sans-serif"], // Uses Custom Font
       },  

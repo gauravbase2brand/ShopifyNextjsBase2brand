@@ -185,10 +185,10 @@ export default function Slider() {
         <div className="w-[90%] md:w-[100%]" data-aos="fade-up ">
           <Swiper
             loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: false
+            // }}
             // pagination={{
             //   clickable: true
             // }}
@@ -229,14 +229,14 @@ export default function Slider() {
                       </div>
                     </div>
                     <div className="w-[100%]">
-                      <div className="flex py-[15px] gap-[10px]">
+                      <div className="flex py-[15px] gap-[10px] ">
                         <div className="w-[40%]">
                           <Image
                             src={item.titleimg1}
                             alt=""
                             width={1000}
                             height={500}
-                            className="w-[100%] object-contain h-[30px]"
+                            className=" object-contain h-[30px] w-fit"
                           />
                         </div>
                         <Image
@@ -259,9 +259,9 @@ export default function Slider() {
                               CRO
                             </span>
                           </div>
-                          <h3 className="text-[23px] pb-0 font-medium">
+                          <p className="text-[23px] pb-0 font-medium m-0">
                             {item.crovalue}
-                          </h3>
+                          </p>
                           <span className="text-[10px] md:text-[12px] text-[#fff]">
                             Conversion Rate
                           </span>
@@ -272,9 +272,9 @@ export default function Slider() {
                               AOV
                             </span>
                           </div>
-                          <h3 className="text-[23px] pb-0 font-medium">
+                          <p className="text-[23px] pb-0 font-medium m-0">
                             {item.aovvalue}
-                          </h3>
+                          </p>
                           <span className="text-[10px] md:text-[12px] text-[#fff]">
                             Avg. Order Value
                           </span>
@@ -285,9 +285,9 @@ export default function Slider() {
                               REV
                             </span>
                           </div>
-                          <h3 className="text-[23px] pb-0 font-medium">
+                          <p className="text-[23px] pb-0 font-medium m-0">
                             {item.revvalue}
-                          </h3>
+                          </p>
                           <span className="text-[10px] md:text-[12px] text-[#fff]">
                             Revenue
                           </span>

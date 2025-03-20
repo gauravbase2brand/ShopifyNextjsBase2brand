@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
 import "swiper/css";
 import manpreetsir from "../../../public/assets/manpreetsir.png";
 import arshsir from "../../../public/assets/arshsir.png";
@@ -15,13 +15,13 @@ import rishavsir from "../../../public/assets/rishavsir.png";
 import saddamsir from "../../../public/assets/saddamsir.png";
 import sanjeevsir from "../../../public/assets/sanjeevsirimg.png";
 import lakhwindersir from "../../../public/assets/lakhwindersir.png";
-import sandeepsir from "../../../public/assets/sandeepsir.png"
+import sandeepsir from "../../../public/assets/sandeepsir.png";
 import Image from "next/image";
 const teamdata = [
   {
     img: manpreetsir,
     membername: "Manpreet Singh",
-    memberposition: "Technical Shopify Project Manager and CRO Expert"
+    memberposition: "Technical Shopify Project Manager & CRO Expert"
   },
   {
     img: arshsir,
@@ -44,7 +44,6 @@ const teamdata = [
     memberposition: "Shopify Theme Developer"
   },
 
-
   {
     img: rishavsir,
     membername: "Rishav Karn",
@@ -61,18 +60,18 @@ const teamdata = [
     memberposition: "Shopify Theme/App Expert"
   },
   {
-    img:sanjeevsir,
-     membername: "Sanjeev",
+    img: sanjeevsir,
+    membername: "Sanjeev",
     memberposition: "Shopify Theme Expert"
   },
   {
-    img:lakhwindersir,
-     membername: "Lakhwinder",
+    img: lakhwindersir,
+    membername: "Lakhwinder",
     memberposition: "Shopify Theme Expert"
   },
   {
-    img:sandeepsir,
-         membername: "Sandeep Singh",
+    img: sandeepsir,
+    membername: "Sandeep Singh",
     memberposition: "Shopify Theme Expert"
   }
 ];
@@ -123,7 +122,7 @@ export default function Team() {
             }}
             pagination={{
               clickable: true,
-              type:"bullets"
+              type: "bullets"
             }}
             speed={1000}
             modules={[Autoplay, Pagination, Navigation]}
@@ -157,50 +156,61 @@ export default function Team() {
       </div>
       {/* Team section for desktop */}
       <div className="container hidden md:block">
-      <div className="flex  text-start flex-col items-start pb-5 w-[100%]">
+        <div className="flex  text-start flex-col items-start pb-5 w-[100%]">
           <div className="h-[150px] w-[100%] flex place-items-center">
-                <svg viewBox="0 0 1320 300" className="text_show">
-                    <text x="50%" y="50%" dy=".35em" textAnchor="middle">SHOPIFY EXPERTS</text>
-                </svg>
+            <svg viewBox="0 0 1320 300" className="text_show">
+              <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+                SHOPIFY EXPERTS
+              </text>
+            </svg>
           </div>
-            <p className="text-center text-[28px] mb-5 text-secondary w-full  ">
-              The people who make it happen
-            </p>
-          </div>
-          <div className="flex pb-[4%]">
-         
+          <p className="text-center text-[28px] mb-5 text-secondary w-full  ">
+            The people who make it happen
+          </p>
+        </div>
+        <div className="flex pb-[4%]">
           <div className="flex justify-center w-[100%]">
-             <div className="w-[65%] flex">
-             {teamdata.slice(0, 2).map((data, index) =>
-              <div className="p-[5%] md:p-0 w-[50%] flex justify-center" key={index} data-aos="fade-up" data-aos-duration={`${index +10}00`}>
-                <div className="w-[80%]">
-                  <div>
-                    <Image
-                      src={data.img}
-                      alt={data.membername}
-                      width={1000}
-                      height={500}
-                      className="hover_cus_scale"
-                    />
-                  </div>
-                  <div className="p-[10px_0] text-center">
-                    <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
-                    {data.memberposition}
-                    </h5>
-                    <p className=" md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-medium ">
-                      {data.membername}
-                    </p>
+            <div className="w-[65%] flex">
+              {teamdata.slice(0, 2).map((data, index) =>
+                <div
+                  className="p-[5%] md:p-0 w-[50%] flex justify-center"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-duration={`${index + 10}00`}
+                >
+                  <div className="w-[80%]">
+                    <div>
+                      <Image
+                        src={data.img}
+                        alt={data.membername}
+                        width={1000}
+                        height={500}
+                        className="hover_cus_scale"
+                      />
+                    </div>
+                    <div className="p-[10px_0] text-center">
+                      <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
+                        {data.memberposition}
+                      </h5>
+                      <p className=" md:text-[16px] text-[17px] leading-[27px] md:leading-[20px] font-semibold ">
+                        {data.membername}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
-             </div>
+              )}
+            </div>
           </div>
-         </div>
+        </div>
         <div>
-        <div className="flex flex-wrap justify-center w-[100%]">
+          <div className="flex flex-wrap justify-center w-[100%]">
             {teamdata.slice(2, teamdata.length).map((data, index) =>
-              <div className="p-[5%] md:p-0 w-[33%] flex justify-center mb-[4%]" key={index} data-aos="fade-up" data-aos-duration={`${index + 9}00`}>
+              <div
+                className="p-[5%] md:p-0 w-[33%] flex justify-center mb-[4%]"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration={`${index + 9}00`}
+              >
                 <div className="w-[80%]">
                   <div>
                     <Image
@@ -213,9 +223,9 @@ export default function Team() {
                   </div>
                   <div className="p-[10px_0] text-center">
                     <h5 className="md:text-[18px] text-[25px] leading-[35px] md:leading-[25px] font-light">
-                    {data.memberposition}
+                      {data.memberposition}
                     </h5>
-                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px]  m-0 font-medium">
+                    <p className="md:text-[16px] text-[17px] leading-[27px] md:leading-[20px]  m-0 font-semibold">
                       {data.membername}
                     </p>
                   </div>
