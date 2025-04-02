@@ -769,7 +769,7 @@ const page = () => {
                           height={35}
                           className="w-[35px] h-[35px] object-contain"
                         />
-                        
+
                         <a
                         target="_blank"
                         href="mailto:tech@base2brand.com"
@@ -777,6 +777,7 @@ const page = () => {
                         tech@base2brand.com
                       </a>
                       </div>
+                      
                     
                         <div className="text-[14px] font-thin flex items-center gap-[10px] ">
                         <Image
