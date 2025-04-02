@@ -125,10 +125,10 @@ export default function Reviews() {
           <div className="pb-[5%] ">
             <Swiper
               loop={true}
-              // autoplay={{
-              //   delay: 2500,
-              //   disableOnInteraction: false
-              // }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false
+              }}
               pagination={{
                 clickable: true,
                 type:"bullets"
@@ -152,7 +152,7 @@ export default function Reviews() {
                         className="w-[85%] md:w-[70%] rounded-[25px] z-20"
                       />
                     </div>
-                    <div className="w-[100%] md:w-[60%] p-[10%_0] md:p-0">
+                    <div className="w-[100%] md:w-[60%] p-[10%_0] md:p-0 flex flex-col justify-center">
                       <div className="flex flex-col gap-[20px]">
                         <div className="flex justify-end md:justify-start">
                           <Image

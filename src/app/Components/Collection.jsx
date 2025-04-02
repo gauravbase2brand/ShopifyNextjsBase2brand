@@ -568,7 +568,7 @@ const page = () => {
               project management."
               CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
               CardButton="Get Started"
-              CardLink="https://wa.me/90417-00209"
+              CardLink="https://wa.me/9041700209"
               CardImage={fiestsliderimage}
             />
             </div>
@@ -580,7 +580,7 @@ const page = () => {
             Cardpara1="Shopify API integration is key for businesses looking to streamline e-commerce operations. It connects Shopify with external systems, enabling smooth data synchronization, efficient workflows, and personalized customer experiences. This powerful integration enhances operational efficiency and helps businesses improve their online presence across platforms."
             CardPara2=""
             CardButton="Get Started  "
-            CardLink="https://wa.me/90417-00209"
+            CardLink="https://wa.me/9041700209"
             CardImage={cardimage}
             Cardbg="#5C772A"
             />
@@ -593,7 +593,7 @@ const page = () => {
             Cardpara1="Custom apps and integrations let you add unique features to your Shopify store. Built specifically for your store, they allow customization of your admin, access to store data via Shopify APIs, and integration with other platforms using the Storefront API."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/90417-00209"
+            CardLink="https://wa.me/9041700209"
             CardImage={cardimage3}
             />
             </div>
@@ -608,7 +608,7 @@ const page = () => {
             engaging customer experience for Shopify stores."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/90417-00209"
+            CardLink="https://wa.me/9041700209"
             CardImage={cardimage4}
             Cardbg="#5C772A"
             />
@@ -625,7 +625,7 @@ const page = () => {
              and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/90417-00209"
+            CardLink="https://wa.me/9041700209"
             CardImage={cardimage5}
             />
             </div>
@@ -641,7 +641,7 @@ const page = () => {
               and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/90417-00209"
+            CardLink="https://wa.me/9041700209"
             CardImage={cardimage6}
             Cardbg="#5C772A"
             />
@@ -669,7 +669,7 @@ const page = () => {
             <div className="container">
               <div className="hidden md:block">
                 {/* Upper Section */}
-                <div className="flex w-[100%] pb-[20px]">
+                <div className="flex w-[100%] pb-[20px] justify-between">
                   <div className="w-[50%]">
                     <Image
                       src={base2brand2}
@@ -679,126 +679,9 @@ const page = () => {
                       className="w-[55%]"
                     />
                   </div>
-                 
-                </div>
-      
-                {/* Lower Section */}
-                <div className="flex flex-col lg:flex-row lg:gap-0 gap-[20px]">
-                  <div className="lg:w-[65%] w-[100%]">
-                    <div className="pt-2 pb-3 ps-[2.5%]">
-                      <p className="text-[24px] font-light leading-[34px] m-0">
-                        Have a project in mind?
-                      </p>
-                      <p className="text-[24px] font-light leading-[34px] m-0">
-                        let’s get to work.
-                      </p>
-                    </div>
-                    <div className="flex flex-col gap-[15px] ps-[2.5%]">
-                      
-                      <div className="text-[14px] font-thin flex items-center gap-[10px] ">
-                      <Image
-                          src={gmail}
-                          alt="gmail"
-                          width={35}
-                          height={35}
-                          className="w-[35px] h-[35px] object-contain"
-                        />
-                        <a
-                        target="_blank"
-                        href="mailto:tech@base2brand.com"
-                      >
-                        tech@base2brand.com
-                      </a>
-                      </div>
-                    
-                        <div className="text-[14px] font-thin flex items-center gap-[10px] ">
-                        <Image
-                          src={whatsapp}
-                          alt="whatsapp"
-                          width={35}
-                          height={35}
-                          className="w-[35px] h-[35px] object-contain"
-                        />
-                          <a
-                        target="_blank"
-                        href="tel:(+91) 90417-00209"
-                      >
-                        (+91) 90417-00209
-                      </a>
-                      </div>
-                      <div className="flex gap-[15px]">
-                        <a
-                          target="_blank"
-                          href="tel:(+91) 98724-87850"
-                          className="text-[14px] font-thin flex items-center gap-[10px]"
-                        >
-                          <Image
-                            src={india}
-                            alt="india"
-                            width={35}
-                            height={35}
-                            className="w-[35px] h-[35px] object-contain"
-                          />
-                          (+91) 98724-87850
-                        </a>
-                        <a
-                          target="_blank"
-                          href="tel:(+1) 72090-35933"
-                          className="text-[14px] font-thin flex items-center gap-[10px]"
-                        >
-                          <Image
-                            src={usa}
-                            alt="usa"
-                            width={35}
-                            height={35}
-                            className="w-[35px] h-[35px] object-contain"
-                          />
-                          (+1) 72090-35933
-                        </a>
-                        <a
-                          target="_blank"
-                          href="tel:(+44) 74484-35973"
-                          className="text-[14px] font-thin flex items-center gap-[10px]"
-                        >
-                          <Image
-                            src={uk}
-                            alt="uk"
-                            width={35}
-                            height={35}
-                            className="w-[35px] h-[35px] object-contain"
-                          />
-                          (+44) 74484-35973
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex justify-start gap-[20%] lg:w-[35%] w-[100%] ps-[2.5%] lg:ps-0">
-                    <div className="md:w-[50%]">
-                      <span className="text-[18px] font-semibold">Services</span>
-                      <ul className="flex flex-col gap-[12px] mt-[15px]">
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                        ERP
-                        </li>
-                        {/* <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                          SAI
-                        </li> */}
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                        CUSTOM INTEGRATION
-                        </li>
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                        CRM
-                        </li>
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                        POS
-                        </li>
-                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
-                          Our Products
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
+                  <div className="flex items-center gap-[15px]">
                       <span className="text-[18px] font-semibold">Social Media Links</span>
-                      <ul className="flex flex-wrap gap-y-[10px] mt-[15px]">
+                      <ul className="flex  gap-[10px] ">
                       <a
                         href="https://www.facebook.com/TechBase2Brand/"
                         target="_blank" 
@@ -861,6 +744,160 @@ const page = () => {
                         className="h-[45px] w-[45px] cursor-pointer"
                       />
                       </a>
+                      </ul>
+                    </div>
+                </div>
+      
+                {/* Lower Section */}
+                <div className="flex flex-col lg:flex-row lg:gap-0 gap-[20px]">
+                  <div className="lg:w-[55%] w-[100%]">
+                    <div className="pt-2 pb-3 ps-[2.5%]">
+                      <p className="text-[24px] font-light leading-[34px] m-0">
+                        Have a project in mind?
+                      </p>
+                      <p className="text-[24px] font-light leading-[34px] m-0">
+                        let’s get to work.
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-[15px] ps-[2.5%]">
+                      
+                      <div className="text-[14px] font-thin flex items-center gap-[10px] ">
+                      <Image
+                          src={gmail}
+                          alt="gmail"
+                          width={35}
+                          height={35}
+                          className="w-[35px] h-[35px] object-contain"
+                        />
+                        <a
+                        target="_blank"
+                        href="mailto:tech@base2brand.com"
+                      >
+                        tech@base2brand.com
+                      </a>
+                      </div>
+                    
+                        <div className="text-[14px] font-thin flex items-center gap-[10px] ">
+                        <Image
+                          src={whatsapp}
+                          alt="whatsapp"
+                          width={35}
+                          height={35}
+                          className="w-[35px] h-[35px] object-contain"
+                        />
+                          <a
+                        target="_blank"
+                        href="https://wa.me/9041700209"
+                      >
+                        (+91) 90417-00209
+                      </a>
+                      </div>
+                      <div className="flex gap-[15px]">
+                        <a
+                          target="_blank"
+                          href="tel:(+91) 98724-87850"
+                          className="text-[14px] font-thin flex items-center gap-[10px]"
+                        >
+                          <Image
+                            src={india}
+                            alt="india"
+                            width={35}
+                            height={35}
+                            className="w-[35px] h-[35px] object-contain"
+                          />
+                          (+91) 98724-87850
+                        </a>
+                        <a
+                          target="_blank"
+                          href="tel:(+1) 72090-35933"
+                          className="text-[14px] font-thin flex items-center gap-[10px]"
+                        >
+                          <Image
+                            src={usa}
+                            alt="usa"
+                            width={35}
+                            height={35}
+                            className="w-[35px] h-[35px] object-contain"
+                          />
+                          (+1) 72090-35933
+                        </a>
+                        <a
+                          target="_blank"
+                          href="tel:(+44) 74484-35973"
+                          className="text-[14px] font-thin flex items-center gap-[10px]"
+                        >
+                          <Image
+                            src={uk}
+                            alt="uk"
+                            width={35}
+                            height={35}
+                            className="w-[35px] h-[35px] object-contain"
+                          />
+                          (+44) 74484-35973
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-start gap-[0%] lg:w-[45%] w-[100%] ps-[2.5%] lg:ps-0">
+                    <div className="md:w-[50%]">
+                      <span className="text-[18px] font-semibold">Services</span>
+                      <ul className="flex flex-col gap-[12px] mt-[15px]">
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        ERP
+                        </li>
+                        {/* <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                          SAI
+                        </li> */}
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        CUSTOM INTEGRATION
+                        </li>
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        CRM
+                        </li>
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                        POS
+                        </li>
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" onClick={()=>scrollhandler(section1)}>
+                          Our Products
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="md:w-[50%]">
+                      <span className="text-[18px] font-semibold">Explore More Shopify Services</span>
+                      <ul className="flex flex-col gap-[12px] mt-[15px]">
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" >
+                          <a target="_blank" href="https://base2brand.com/shopify-app-development-services">
+                          Shopify App Development Services</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                          <a target="_blank" href="https://base2brand.com/shopify-experts-developers">Shopify Experts Developers</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                          <a target="_blank" href="https://base2brand.com/shopify-integration-with-erp">Shopify Integration With Erp</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/custom-app-development-for-shopify">Custom App Development For Shopify</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/shopify-theme-development-services">Shopify Theme Development Services</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/hire-shopify-theme-developers">Hire Shopify Theme Developers</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/shopify-store-migration-services">Shopify Store Migration Services</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/custom-shopify-checkout-development">Custom Shopify Checkout Development</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -946,7 +983,77 @@ const page = () => {
                   </div>
                 </div>
                 {/* dropdown list 2 */}
-               
+                <div
+                  className="mb-2 custoum_border p-[10px_0]"
+                  onClick={() => toggleFAQ2(0)}
+                >
+                  <div className="flex flex-col items-start border-[1px] border-[#414141] rounded-[15px] bg-[#2e8a2e45]">
+                    <div className="flex relative w-[100%] justify-start">
+                      <button className="md:w-[80%] text-left text-[16px] md:text-[16px] p-[15px] bg-black-100 rounded-lg focus:outline-none transition duration-200 ease-in-out">
+                      Explore More Shopify Services
+                      </button>
+                      <div
+                        className={`w-[12%] absolute right-[0] h-[100%] rounded-tr-[15px] top-0 flex items-center justify-center border-l-[1px] ${activeIndex2 ===
+                        0
+                          ? "border-b-[1px] bg-[#96BF47] border-[#96BF47] rounded-bl-[15px] shadow-[inset_0_0_29px_#d8f999,0_0_34px_#b4ff23]"
+                          : "border-b-0 bg-none border-[#414141] rounded-br-[0]"}`}
+                      >
+                        <FaChevronDown
+                          className={`transform transition-transform duration-200 ${activeIndex2 ===
+                          0
+                            ? "rotate-180"
+                            : "rotate-0"}`}
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className={`overflow-hidden w-[100%] transition-all duration-200 ease-in-out ${activeIndex2 ===
+                      0
+                        ? "max-h-[500px] rounded-br-[20px] rounded-bl-[20px]"
+                        : "max-h-0"}`}
+                    >
+                      <div className="p-[0_4%_4%]  w-[100%] pt-0 text-[13px] leading-[23px] bg-[#2e8a2e00] rounded-b-lg">
+                      <div className="md:w-[50%]">
+                      <ul className="flex flex-col gap-[12px] mt-[15px]">
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer" >
+                          <a target="_blank" href="https://base2brand.com/shopify-app-development-services">
+                          Shopify App Development Services</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                          <a target="_blank" href="https://base2brand.com/shopify-experts-developers">Shopify Experts Developers</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                          <a target="_blank" href="https://base2brand.com/shopify-integration-with-erp">Shopify Integration With Erp</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/custom-app-development-for-shopify">Custom App Development For Shopify</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/shopify-theme-development-services">Shopify Theme Development Services</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/hire-shopify-theme-developers">Hire Shopify Theme Developers</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/shopify-store-migration-services">Shopify Store Migration Services</a>
+                        </li>
+
+                        <li className="font-light text-[14px] text-[#BBBBBB] cursor-pointer">
+                         <a target="_blank" href="https://base2brand.com/custom-shopify-checkout-development">Custom Shopify Checkout Development</a>
+                        </li>
+                      </ul>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 {/* links */}
                 <div className="flex w-[100%] justify-end pt-3 pb-3">
                   <div className="flex w-[100%] flex-col items-center justify-around gap-4">
@@ -1030,7 +1137,7 @@ const page = () => {
                   </a>
                   <a
                     target="_blank"
-                    href="tel:(+91) 90417-00209"
+                    href="https://wa.me/9041700209"
                     className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
                   >
                     <Image
@@ -1040,7 +1147,7 @@ const page = () => {
                       height={35}
                       className="w-[40px] h-[40px] object-contain"
                     />
-                    (+91) 90417-00209
+                    (+91) 9041700209
                   </a>
                   <a
                     target="_blank"
@@ -1110,7 +1217,7 @@ const page = () => {
               ::::::::::::::::::WHtasApp Link ::::::::::::::::::
             ::::::::::::::::::::::::::::::::::::::::::::::: */}
         <div className="fixed z-[999] right-7 bottom-7">
-            <a href="https://wa.me/90417-00209" target="_blank">
+            <a href="https://wa.me/9041700209" target="_blank">
               <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />
             </a>
         </div>

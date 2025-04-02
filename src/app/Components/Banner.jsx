@@ -42,7 +42,7 @@ const Banner = () => {
             Experts!
           </h1>
           <div className="pt-4">
-            <a href="https://wa.me/90417-00209" target="_blank">
+            <a href="https://wa.me/9041700209" target="_blank">
             <Button GButton={"Business With Us"}  />
             </a>
           </div>

@@ -302,7 +302,7 @@ export default function Slider() {
           </Swiper>
         </div>
       </div>
-      <div className="md:flex hidden absolute bottom-[-7px] left-0 w-full lg:h-[170px] h-[80px] bg-gradient-to-b from-black/0 via-[#000000] to-[#000000] z-[10]" />
+      <div className="md:flex hidden absolute bottom-[-7px] 2xl:bottom-[40px] left-0 w-full lg:h-[170px] h-[80px] bg-gradient-to-b from-black/0 via-[#000000] to-[#000000] z-[10]" />
     </div>
   );
 }
