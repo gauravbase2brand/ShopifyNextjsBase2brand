@@ -29,6 +29,7 @@ import Talk from "./Talk";
 import ScrollVideo from "./Videoani";
 // footer
 import base2brand2 from "../../../public/assets/base2brand-logo 2.png";
+import b2bwhitelogo from "../../../public/assets/whiteb2blogo.png"
 import facebook from "../../../public/assets/facebookimg.png";
 import instagram from "../../../public/assets/instaimg.png";
 import twiter from "../../../public/assets/twiterimg.png";
@@ -1223,6 +1224,8 @@ const page = () => {
               <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />
             </a>
         </div>
+
+        <Image src={b2bwhitelogo} alt="" width={1000} height={500} />
     </div>
   );
 };
