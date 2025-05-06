@@ -280,16 +280,16 @@ const page = () => {
                     </div>
                   </li>
                   <li className="mega-menu p-[5px_20px]">
-                    <Link href="https://wa.me/919041700209">
+                    <a href="https://wa.me/919872487850" target="_blank">
                       <div className="flex gap-[10px] items-center">
                         <div className="phoneMenuIcon">
                         <Image src={whatsapp} alt="" width={1000} height={500}  className="w-[30px]"/>
                         </div>
                         <p className="hover_card_p text-white">
-                          +91 (904) 1700209
+                          +91 98724-87850
                         </p>
                       </div>
-                    </Link>
+                    </a>
                   </li>
                   <li className="mega-menu p-[5px_20px]">
                     <Link href="tel:+17209035933">
@@ -490,13 +490,13 @@ const page = () => {
                     </div>
                   </li>
                   <li className="mega-menu p-[5px_20px]">
-                    <Link href="https://wa.me/919041700209">
+                    <Link href="https://wa.me/919872487850">
                       <div className="flex gap-[10px] items-center">
                         <div className="phoneMenuIcon">
                         <Image src={whatsapp} alt="" width={1000} height={500}  className="w-[30px]"/>
                         </div>
                         <p className="hover_card_p text-white">
-                          +91 (904) 1700209
+                          +91 98724-87850
                         </p>
                       </div>
                     </Link>
@@ -569,7 +569,7 @@ const page = () => {
               project management."
               CardPara2="ERP empowers an entire organization with greater visibility and real-time data, anytime, anywhere."
               CardButton="Get Started"
-              CardLink="https://wa.me/9041700209"
+              CardLink="https://wa.me/9872487850"
               CardImage={fiestsliderimage}
             />
             </div>
@@ -581,7 +581,7 @@ const page = () => {
             Cardpara1="Shopify API integration is key for businesses looking to streamline e-commerce operations. It connects Shopify with external systems, enabling smooth data synchronization, efficient workflows, and personalized customer experiences. This powerful integration enhances operational efficiency and helps businesses improve their online presence across platforms."
             CardPara2=""
             CardButton="Get Started  "
-            CardLink="https://wa.me/9041700209"
+            CardLink="https://wa.me/9872487850"
             CardImage={cardimage}
             Cardbg="#5C772A"
             />
@@ -594,7 +594,7 @@ const page = () => {
             Cardpara1="Custom apps and integrations let you add unique features to your Shopify store. Built specifically for your store, they allow customization of your admin, access to store data via Shopify APIs, and integration with other platforms using the Storefront API."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/9041700209"
+            CardLink="https://wa.me/9872487850"
             CardImage={cardimage3}
             />
             </div>
@@ -609,7 +609,7 @@ const page = () => {
             engaging customer experience for Shopify stores."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/9041700209"
+            CardLink="https://wa.me/9872487850"
             CardImage={cardimage4}
             Cardbg="#5C772A"
             />
@@ -626,7 +626,7 @@ const page = () => {
              and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/9041700209"
+            CardLink="https://wa.me/9872487850"
             CardImage={cardimage5}
             />
             </div>
@@ -642,7 +642,7 @@ const page = () => {
               and customer satisfaction."
             CardPara2=""
             CardButton="Get Started"
-            CardLink="https://wa.me/9041700209"
+            CardLink="https://wa.me/9872487850"
             CardImage={cardimage6}
             Cardbg="#5C772A"
             />
@@ -790,9 +790,9 @@ const page = () => {
                         />
                           <a
                         target="_blank"
-                        href="https://wa.me/9041700209"
+                        href="https://wa.me/9872487850"
                       >
-                        (+91) 90417-00209
+                        (+91) 98724-87850
                       </a>
                       </div>
                       <div className="flex gap-[15px]">
@@ -1140,7 +1140,7 @@ const page = () => {
                   </a>
                   <a
                     target="_blank"
-                    href="https://wa.me/9041700209"
+                    href="https://wa.me/9872487850"
                     className="text-[18px] text-[#BBBBBB] font-thin flex items-center gap-[15px]"
                   >
                     <Image
@@ -1150,7 +1150,7 @@ const page = () => {
                       height={35}
                       className="w-[40px] h-[40px] object-contain"
                     />
-                    (+91) 9041700209
+                    (+91) 9872487850
                   </a>
                   <a
                     target="_blank"
@@ -1220,7 +1220,7 @@ const page = () => {
               ::::::::::::::::::WHtasApp Link ::::::::::::::::::
             ::::::::::::::::::::::::::::::::::::::::::::::: */}
         <div className="fixed z-[999] right-7 bottom-7">
-            <a href="https://wa.me/9041700209" target="_blank">
+            <a href="https://wa.me/9872487850" target="_blank">
               <Image src={whatsappfixed} width={1000} height={500} alt="" className="w-[50px] rounded-[50%]" />
             </a>
         </div>
@@ -1230,5 +1230,5 @@ const page = () => {
   );
 };
 
-
+//9872487850 98724878509
 export default page;

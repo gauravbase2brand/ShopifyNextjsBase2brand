@@ -22,7 +22,7 @@ export default function Talk() {
       <div className="pt-[4%] relative h-[100px] flex flex-col justify-center">
         <hr className="border-[#95b950c4] " />
         <div className="absolute w-[100%] flex justify-center items-center">
-          <a href="https://wa.me/9041700209"target="_blank" >
+          <a href="https://wa.me/9872487850"target="_blank" >
            <Button GButton={"Get Started Now"} />
          </a>
         </div>
