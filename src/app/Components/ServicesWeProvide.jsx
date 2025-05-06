@@ -72,7 +72,7 @@ const ERPSection = ({
                 <h3 className="leading-normal font-medium">{TitleERP}</h3>
                 <p className="text-gray-300 font-light  m-0">{Cardpara1}</p>
                 <p className="text-gray-300 font-light  m-0">{CardPara2}</p>
-                 <Button GButton={CardButton} Glink={CardLink}/>
+                 <Button GButton={CardButton} Glink={CardLink} btn_target="_blank"/>
                 </div>
               </>
             )}
