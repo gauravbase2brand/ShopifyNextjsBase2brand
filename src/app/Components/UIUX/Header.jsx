@@ -132,7 +132,7 @@ export default function Navbar() {
                     </div>
                   </li>
                   <li className="mega-menu">
-                    <Link href="https://wa.me/919041700209">
+                    <Link href="https://wa.me/919872487850">
                       <div className="menuInner align-items-center">
                         <div className="phoneMenuIcon">
                           

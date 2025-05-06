@@ -1,5 +1,7 @@
 import { Poppins } from "next/font/google";
+import b2bpngimg from "../../public/assets/whiteb2blogo.png"
 import "./StyleCss/globals.css";
+import Image from "next/image";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -20,6 +22,10 @@ export default function RootLayout({ children }) {
     
     <body className={`${poppins.variable} antialiased`}>
         {children}
+
+        <div style={{display:"none"}} className="png_banner">
+          <Image src={b2bpngimg} alt="" width={1000} heigh={500}  />
+        </div>
       </body>
     </html>
   );

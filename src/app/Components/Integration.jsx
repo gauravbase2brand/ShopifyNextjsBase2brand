@@ -105,7 +105,7 @@ export default function Integration() {
                   </p>
                 </div>
                 <div className="flex md:justify-end justify-center">
-                  <a href="https://wa.me/9041700209" target="_blank" className="flex">
+                  <a href="https://wa.me/9872487850" target="_blank" className="flex">
                    <span className="w-[30px] integration_btn pt-3">
                     <Image src={aroow} alt="" width={1000} height={500}  />
                    </span>

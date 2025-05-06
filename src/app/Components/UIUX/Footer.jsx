@@ -136,7 +136,7 @@ export default function Footer() {
                 </a>
                 <a
                   target="_blank"
-                  href="tel:(+91) 90417-00209"
+                  href="tel:(+91)9872487850"
                   className="text-[14px] font-thin flex items-center gap-[10px]"
                 >
                   <Image
@@ -146,7 +146,7 @@ export default function Footer() {
                     height={35}
                     className="w-[35px] h-[35px] object-contain"
                   />
-                  (+91) 90417-00209
+                  (+91) 98724-87850
                 </a>
                 <div className="flex gap-[15px]">
                   <a
