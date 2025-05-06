@@ -1225,7 +1225,7 @@ const page = () => {
             </a>
         </div>
 
-        <Image src={b2bwhitelogo} alt="" width={1000} height={500} />
+        {/* <img src={b2bwhitelogo} alt="" /> */}
     </div>
   );
 };
