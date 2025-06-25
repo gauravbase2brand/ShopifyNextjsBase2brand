@@ -415,7 +415,7 @@ export default function Launched() {
         </div>
       </div>
       <div ref={lastdivRef} className="relative">
-        <Team />
+        {/* <Team /> */}
         <div className="custom_gradient_right w-[600px] h-[500px] left-[0%] top-[-10%]" />
       </div>
     </div>
