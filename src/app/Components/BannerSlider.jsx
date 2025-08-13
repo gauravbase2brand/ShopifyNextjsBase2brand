@@ -1,15 +1,15 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import sliderbanner1 from "../../../public/assets/bsliderimg1.png"; // Image import
-import sliderbanner2 from "../../../public/assets/bsliderimg2.png"; // Image import
-import sliderbanner3 from "../../../public/assets/bsliderimg3.png"; // Image import
-import sliderbanner4 from "../../../public/assets/bsliderimg4.png"; // Image import
-import sliderbanner5 from "../../../public/assets/bsliderimg5.png"; // Image import
-import sliderbanner6 from "../../../public/assets/bsliderimg6.png"; // Image import
-import sliderbanner7 from "../../../public/assets/bsliderimg7.png"; // Image import
+import sliderbanner1 from "../../../public/assets/bsliderimg1.png"; 
+import sliderbanner2 from "../../../public/assets/bsliderimg2.png"; 
+import sliderbanner3 from "../../../public/assets/bsliderimg3.png"; 
+import sliderbanner4 from "../../../public/assets/bsliderimg4.png"; 
+import sliderbanner5 from "../../../public/assets/bsliderimg5.png"; 
+import sliderbanner6 from "../../../public/assets/bsliderimg6.png"; 
+import sliderbanner7 from "../../../public/assets/bsliderimg7.png"; 
 
-// List of images for the slider (Use multiple images for variation)
+
 const images = [
   { src: sliderbanner1, alt: "Slider Image 1" },
   { src: sliderbanner2, alt: "Slider Image 2" },
@@ -21,24 +21,28 @@ const images = [
 ];
 
 export default function BannerSlider() {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
+
   return (
-    <div
-    //   className="relative w-full overflow-hidden  bg-bottom bg-[url('/assets/icons/radialbanner.svg')] bg-cover  bg-no-repeat"
-    >
+    <div>
       <div
-        className="relative w-full   overflow-hidden"
+        className="relative w-full overflow-hidden"
         style={{
-          // background:" linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(150,191,71,0.8974397376137955) 52%, rgba(0,0,0,1) 81%)"
-          // background: "radial-gradient(circle, #59890063, #000000)", // Correct radial gradient syntax
-        //   background:" rgb(0,0,0)",
-        //   background:"linear-gradient(176deg, rgba(0,0,0,0.407243659182423) 0%, rgba(34,48,8,1) 100%)"
-          // background: "linear-gradient(176deg, rgba(0, 0, 0, 0.9) 0%, rgba(34, 48, 8, 1) 100%)"
-          background:"transparent"
+          background: "transparent"
         }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <div className="marquee">
-          <div className="marquee-content">
-            {/* Duplication ensures seamless loop */}
+          <div className={`marquee-content ${isPaused ? 'paused' : ''}`}>
             {[...images, ...images, ...images].map((item, index) =>
               <div key={index} className="marquee-item">
                 <Image
@@ -55,12 +59,11 @@ export default function BannerSlider() {
         </div>
       </div>
 
-      {/* CSS for Infinite Marquee */}
       <style>
         {`
           @keyframes marqueeScroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-33.33%); } /* Moves only by one full set */
+            100% { transform: translateX(-33.33%); }
           }
 
           .marquee {
@@ -69,8 +72,8 @@ export default function BannerSlider() {
             white-space: nowrap;
             width: 100%;
             position: relative;
-            height:500px;
-            align-items:center;
+            height: 500px;
+            align-items: center;
           }
 
           .marquee-content {
@@ -79,15 +82,24 @@ export default function BannerSlider() {
             animation: marqueeScroll 15s linear infinite;
           }
 
-.marquee-item {
-    min-width: 235px;
-    margin-right: 10px;
-    transition: transform 0.3s ease-in-out;
-    margin-top: -27px;
-    margin-bottom: -27px;
-}
+          .marquee-content.paused {
+            animation-play-state: paused;
+          }
 
-        
+          .marquee-item {
+            min-width: 235px;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+            margin-top: -27px;
+            margin-bottom: -27px;
+          }
+            @media screen and (max-width:500px)
+            {
+              .marquee-item
+              {
+              min-width:180px;
+              }
+            }
         `}
       </style>
     </div>
